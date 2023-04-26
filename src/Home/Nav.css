@@ -1,9 +1,10 @@
 .header {
-  background-image: linear-gradient(#3f3d56, #0d0c11);
+  /* background-image: linear-gradient(#3f3d56, #0d0c11); */
   /* justify-content: space-between; */
   align-items: center;
   /* color: #ffffff; */
   font-size: 1.8rem;
+  font-weight: 600;
   cursor: pointer;
 
   padding: 0 6.8rem;
@@ -34,7 +35,7 @@
 .main-nav__link:visited {
   display: inline-block;
   text-decoration: none;
-  font-weight: 600;
+
   text-transform: uppercase;
 
   transition: all 0.3s;
