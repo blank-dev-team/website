@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(#3f3d56, #0d0c11);
-  /* height: 100rem; */
+  /* height: 80rem; */
 }
 
 .hero-container {
@@ -45,12 +45,12 @@
 .cta-btn:link,
 .cta-btn:visited {
   /* color: #F07E61; */
-  padding: 1.5rem 2rem 1.6rem 1.9rem;
+  padding: 1.5rem 3.4rem 1.6rem 3.4rem;
   background-color: #f07e61;
   border-radius: 33px;
   text-decoration: none;
   color: #fff;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   /* margin-top: 2.3rem; */
   cursor: pointer;
   font-weight: 400;
