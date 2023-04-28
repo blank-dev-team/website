@@ -1,6 +1,9 @@
 import "./Section2.css";
 import Wallet from "../Images/Wallet.png";
 import Floating from "../Images/floating-card.png";
+import AddCard from "../Images/Addcard.svg";
+import BlockCard from "../Images/Blockcard.svg";
+import SuperTransfer from "../Images/Supertransfer.svg";
 
 function Section2() {
   return (
@@ -51,8 +54,19 @@ function Section2() {
             See More
           </a>
         </div>
-        <div className="container__img-box">
-          <img className="box-img-2" src={Floating}></img>
+        <div className="container__img-box img-box__grid">
+          <div className="box-container">
+            <img className="box-icon " src={AddCard}></img>
+            <p className="box-icon__text">Add Cards</p>
+          </div>
+          <div className="box-container">
+            <img className="box-icon" src={SuperTransfer}></img>
+            <p className="box-icon__text">Super Transfer</p>
+          </div>
+          <div className="box-container">
+            <img className="box-icon" src={BlockCard}></img>
+            <p className="box-icon__text">Block Cards</p>
+          </div>
         </div>
       </div>
     </div>

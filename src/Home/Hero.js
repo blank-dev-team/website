@@ -14,7 +14,7 @@ function Hero() {
           </h1>
           <h3 className="hero-container__text-box-heading-secondary">
             Now you can put all your cards in one card.Never have to fumble
-            between cards again when you need to pay at a terminal
+            between cards again when you need to pay at a terminal.
           </h3>
           <a className="cta-btn" href="#">
             Get Started
