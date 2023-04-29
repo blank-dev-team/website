@@ -1,7 +1,14 @@
 .footer {
   /* background-color: aqua; */
   height: 100rem;
-  padding: 0rem 14rem 0rem 5rem;
+  /* padding: 0rem 14rem 0rem 5rem; */
+}
+
+.footer-container {
+  max-width: 110rem;
+  /* padding: 0 7.2rem; */
+  margin: 0 auto;
+  margin-top: 10.5rem;
 }
 
 .footer-container-container {
@@ -9,8 +16,9 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background-image: linear-gradient(#3f3d56, #0d0c11);
+  border-radius: 10px;
   height: 32rem;
-  width: 92rem;
+  /* width: 92rem; */
   padding: 0 3rem;
 }
 
@@ -20,8 +28,8 @@
 
 .phone-img {
   position: absolute;
-  top: -21.5rem;
-  width: 90%;
+  top: -22rem;
+  width: 75%;
 }
 
 .footer-container-img_text-box {
@@ -65,5 +73,5 @@
 
 .footer-icon {
   /* padding: 0rem 1.5rem 1.7rem 1.5rem; */
-  width: 40%;
+  width: 30%;
 }

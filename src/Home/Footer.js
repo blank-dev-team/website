@@ -5,7 +5,7 @@ import FooterIcon from "../Images/FooterIcon.png";
 function Footer() {
   return (
     <div className="footer">
-      <div className="container">
+      <div className="footer-container">
         <div className="footer-container-container">
           <div className="footer-container-img-container">
             <img className="phone-img" src={Phones}></img>

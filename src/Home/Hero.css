@@ -8,7 +8,7 @@
   margin-top: 4.3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6.4rem;
+  /* gap: 6.4rem; */
   align-items: center;
   margin: 0 auto;
 }

@@ -1,24 +1,21 @@
 .section-2 {
   background-color: #fff;
   margin-bottom: 12.7rem;
-  padding: 0rem 14rem 0rem 5rem;
+  /* padding: 0rem 14rem 0rem 5rem; */
+  margin: 0 auto;
 }
 
 .container {
   max-width: 130rem;
   /* padding: 0 7.2rem; */
   margin: 0 auto;
-  /* margin-left: 20rem; */
   margin-top: 10.5rem;
 }
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid {
   display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 .text-box__header-primary {

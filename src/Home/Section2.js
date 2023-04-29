@@ -8,7 +8,7 @@ import SuperTransfer from "../Images/Supertransfer.svg";
 function Section2() {
   return (
     <div className="section-2">
-      <div className="container grid grid--2-cols">
+      <div className="container grid--2-cols">
         <div className="container__text-box">
           <h1 className="text-box__header-primary">
             Say Goodbye to Wallet Clutter with Blank Card

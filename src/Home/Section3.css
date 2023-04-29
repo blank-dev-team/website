@@ -2,20 +2,9 @@
   background-color: #f3f3f4;
   /* height: 100rem; */
   margin-bottom: 3rem;
-  padding: 0rem 14rem 0rem 5rem;
+  /* padding: 0rem 14rem 0rem 5rem; */
 }
 
-.u-margin-top {
-  /* margin-top: 130rem; */
-}
-
-.container {
-  max-width: 130rem;
-  /* padding: 0 7.2rem; */
-  margin: 0 auto;
-  margin-left: 20rem;
-  margin-top: 10.5rem;
-}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
