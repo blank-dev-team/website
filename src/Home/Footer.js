@@ -1,6 +1,11 @@
 import "./Footer.css";
 import Phones from "../Images/Phones.png";
 import FooterIcon from "../Images/FooterIcon.png";
+import logo from "../Images/Logo.png";
+import Facebook from "../Images/facebook.svg";
+import Instagram from "../Images/instagram.svg";
+import Twitter from "../Images/twitter.svg";
+import Linkedin from "../Images/linkedin.svg";
 
 function Footer() {
   return (
@@ -29,6 +34,75 @@ function Footer() {
             </form>
           </div>
         </div>
+      </div>
+      <div className="footer-border container"></div>
+      <div className="footer-links container">
+        <div className="footer-links__logo-links">
+          <a href="#">
+            <img className="logo" src={logo}></img>
+          </a>
+          <p>The Only Card You'll Ever Need</p>
+          <div className="footer-links__logo-links__social-links">
+            <a href="#">
+              <img src={Facebook}></img>
+            </a>
+            <a href="#">
+              <img src={Twitter}></img>
+            </a>
+            <a href="#">
+              <img src={Linkedin}></img>
+            </a>
+            <a href="#">
+              <img src={Instagram}></img>
+            </a>
+          </div>
+        </div>
+        <div className="footer-links_logo-links">
+          <a href="#">
+            <h3 className="footer-links_logo-links__heading">Quick Links</h3>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">About Us</p>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">Services</p>
+          </a>
+        </div>
+        <div className="footer-links_logo-links">
+          <a href="#">
+            <h3 className="footer-links_logo-links__heading">Legal</h3>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">Privacy Policy</p>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">Terms Of Use</p>
+          </a>
+        </div>
+        <div className="footer-links_logo-links">
+          <a href="#">
+            <h3 className="footer-links_logo-links__heading">Help</h3>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">FAQ</p>
+          </a>
+          <a href="#">
+            <p className="footer-links_logo-links__secondary">Contact Us</p>
+          </a>
+        </div>
+      </div>
+      <div className="footer-border-2 container"></div>
+      <div className="footer-end-container">
+        <p className="footer-end">
+          Blank Technologies Ltd, registered in Nigeria, #09523903
+        </p>
+        <p className="footer-end">
+          Copyright - 2023 © Blank Tech ltd. The Blank Card, the Blank app and
+          everything related Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Bibendum est ultricies integer quis. Iaculis urna id and
+          located at 5 Adedeji Street, Ogba, Lagos, Nigeria,
+        </p>
       </div>
     </div>
   );

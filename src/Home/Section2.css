@@ -8,6 +8,7 @@
 .container {
   max-width: 130rem;
   /* padding: 0 7.2rem; */
+  padding: 0 6.8rem;
   margin: 0 auto;
   margin-top: 10.5rem;
 }
