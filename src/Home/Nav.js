@@ -1,5 +1,6 @@
 import "./Nav.css";
 import logo from "../Images/Logo.png";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -11,16 +12,20 @@ function Nav() {
         <div className="main-nav">
           <ul className="main-nav__list">
             <li>
-              <a className="main-nav__link">Home</a>
+              <Link className="main-nav__link" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <a className="main-nav__link">About Us</a>
+              <Link className="main-nav__link" to="/aboutus">
+                About Us
+              </Link>
             </li>
             <li>
-              <a className="main-nav__link">Services</a>
+              <Link className="main-nav__link">Services</Link>
             </li>
             <li>
-              <a className="main-nav__link">FAQ</a>
+              <Link className="main-nav__link">FAQ</Link>
             </li>
             <li>
               <a className="main-nav__link">Contact Us</a>

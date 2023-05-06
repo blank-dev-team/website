@@ -35,8 +35,8 @@
 .main-nav__link:visited {
   display: inline-block;
   text-decoration: none;
-
-  text-transform: uppercase;
+  color: inherit;
+  /* text-transform: uppercase; */
 
   transition: all 0.3s;
 }
