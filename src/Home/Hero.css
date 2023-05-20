@@ -10,7 +10,6 @@
   grid-template-columns: 1fr 1fr;
   /* gap: 6.4rem; */
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
 }
 

@@ -1,14 +1,11 @@
 .section-2 {
   background-color: #fff;
   margin-bottom: 12.7rem;
-  /* padding: 0rem 14rem 0rem 5rem; */
-  margin: 0 auto;
 }
 
 .container {
-  max-width: 130rem;
-  /* padding: 0 7.2rem; */
-  padding: 0 6.8rem;
+  max-width: 114rem;
+  display: block;
   margin: 0 auto;
   margin-top: 10.5rem;
 }
@@ -16,7 +13,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
 }
 
 .text-box__header-primary {
@@ -49,6 +45,8 @@
 
 .box-img-1 {
   width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
 .box-img-2 {
