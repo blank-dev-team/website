@@ -22,7 +22,9 @@ function Nav() {
               </Link>
             </li>
             <li>
-              <Link className="main-nav__link">Services</Link>
+              <Link className="main-nav__link" to="/services">
+                Services
+              </Link>
             </li>
             <li>
               <Link className="main-nav__link">FAQ</Link>
