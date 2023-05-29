@@ -1,8 +1,8 @@
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Pic1 from "../Images/About 1.png";
 import Pic2 from "../Images/About 2.png";
 import Pic3 from "../Images/About 3.png";
-// import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css";
 
 import "./Slider.css";
 
