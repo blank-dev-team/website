@@ -1,6 +1,7 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import Pic1 from "../Images/Aboutus.png";
-import Pic2 from "../Images/floating-card.png";
+import Pic1 from "../Images/About 1.png";
+import Pic2 from "../Images/About 2.png";
+import Pic3 from "../Images/About 3.png";
 import "@splidejs/react-splide/css";
 
 import "./Slider.css";
@@ -40,7 +41,7 @@ function Slider() {
       <SplideSlide>
         <div className="carousel-1">
           <div className="carousel-img-container">
-            <img className="carousel-img" src={Pic1} />
+            <img className="carousel-img" src={Pic3} />
           </div>
           <h1 className="carousel-text">
             With Blank Card, you can shop anywhere you want, whether in-store or
