@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  gap: 8rem;
 }
 
 .text-box__header-primary {
@@ -44,7 +45,7 @@
 }
 
 .box-img-1 {
-  width: 60%;
+  width: 70%;
   display: block;
   margin: 0 auto;
 }

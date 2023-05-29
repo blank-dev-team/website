@@ -31,7 +31,7 @@
 }
 
 .grid-1 {
-  /* position: relative; */
+  position: relative;
 }
 
 .phoneimg {
@@ -42,13 +42,13 @@
   display: flex;
   gap: 1.4rem;
   position: absolute;
-  left: 25rem;
+  left: 35rem;
   top: 6rem;
   /* background-color: grey; */
 }
 
 .container-text {
-  width: 45%;
+  height: 55%;
 }
 
 .container-text h1 {
@@ -66,14 +66,14 @@
 }
 
 .container-img-img {
-  width: 50%;
+  width: 80%;
 }
 
 .text-choose-container-2 {
   display: flex;
   gap: 1.4rem;
   position: absolute;
-  left: 20rem;
+  left: 30rem;
   top: 22rem;
 }
 
@@ -81,6 +81,6 @@
   display: flex;
   gap: 1.4rem;
   position: absolute;
-  left: 25rem;
-  top: 40rem;
+  left: 40rem;
+  top: 47rem;
 }

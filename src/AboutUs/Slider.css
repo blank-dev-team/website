@@ -1,0 +1,40 @@
+.carousel-1 {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: 60rem;
+}
+
+.carousel-img-container {
+  padding: 20rem;
+  width: 50%;
+}
+.carousel-img {
+  width: 100%;
+}
+
+.carousel-text {
+  padding: 25rem 20.4rem;
+  background-image: linear-gradient(#3f3d56, #0d0c11);
+  color: #ffffff;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 400;
+  width: 50%;
+}
+
+.splide__pagination__page {
+  top: -10rem;
+  left: 40rem;
+  height: 0.9rem;
+  width: 3rem;
+  border-radius: 3px;
+  margin: 1rem;
+  padding: 0.1rem;
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1.5);
+  padding: 0 3rem;
+  background: #ffffff;
+}
