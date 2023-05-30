@@ -1,0 +1,20 @@
+.ourservices {
+  background-image: linear-gradient(#3f3d56, #0d0c11);
+  height: 80rem;
+  padding: 5rem 1.7rem;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.ourservices-header {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.ourservices-text {
+  color: #bfbfc4;
+  font-size: 1.8rem;
+  margin-top: 0.9rem;
+}
