@@ -1,6 +1,7 @@
 import Nav from "../Home/Nav";
 import Accordian from "./Accordian";
 import TypesExample from "./Accordian";
+import Footer from "../Home/Footer";
 import "./FaqMain.css";
 
 function FaqMain() {
@@ -11,7 +12,7 @@ function FaqMain() {
         <div className="FaqMain">
           <div className="FaqMain-text-container">
             <h1 className="FaqMain-heading-primary">
-              Frequently Asked Questions
+              Frequently Asked<br></br> Questions
             </h1>
             <p className="FaqMain-heading-secondary">
               Find some of the most commonly asked questions and answers. If
@@ -26,6 +27,7 @@ function FaqMain() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

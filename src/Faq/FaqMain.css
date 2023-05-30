@@ -1,8 +1,7 @@
 .FaqMain-container {
   display: block;
   margin: 0 auto;
-  /* background-color: red; */
-  /* height: 20rem; */
+
   max-width: 144rem;
   margin-top: 23rem;
 }
@@ -10,16 +9,19 @@
 .FaqMain {
   display: flex;
   /* align-items: center; */
-  gap: 4rem;
+  gap: 6rem;
+  padding: 4rem 14rem;
 }
 
 .FaqMain-text-container {
+  margin-top: 6rem;
 }
 
 .FaqMain-heading-primary {
   margin-bottom: 2rem;
   color: #3f3d56;
   font-size: 5rem;
+  font-weight: 600;
 }
 
 .FaqMain-heading-secondary {

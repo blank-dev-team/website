@@ -38,7 +38,7 @@ function Accordian() {
 
 const data = [
   {
-    question: "How Does Blank Work",
+    question: "How Does Blank Work?",
     answer:
       "The Blank Card works by linking and unlinking to your existing payment cards. When you make a purchase, you can choose which payment card to use by simply switching the identity of your Blank Card.",
   },
@@ -48,12 +48,12 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    question: "What if I Lose my Blank Card",
+    question: "What if I Lose my Blank Card?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    question: "How long does it take to receive my Blank Card",
+    question: "How long does it take to receive my Blank Card?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
