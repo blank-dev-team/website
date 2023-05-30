@@ -1,4 +1,6 @@
 import Nav from "../Home/Nav";
+import Accordian from "./Accordian";
+import TypesExample from "./Accordian";
 import "./FaqMain.css";
 
 function FaqMain() {
@@ -19,7 +21,9 @@ function FaqMain() {
               Contact Us
             </a>
           </div>
-          <div className="FaqMain-accordian"> Accordian</div>
+          <div className="FaqMain-accordian">
+            <Accordian />
+          </div>
         </div>
       </div>
     </div>

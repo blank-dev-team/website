@@ -9,6 +9,8 @@
 
 .FaqMain {
   display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
 .FaqMain-text-container {
@@ -27,4 +29,8 @@
 }
 
 .faq-btn {
+}
+
+.FaqMain-accordian {
+  /* width: 70%; */
 }
