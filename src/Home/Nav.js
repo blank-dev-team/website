@@ -27,7 +27,9 @@ function Nav() {
               </Link>
             </li>
             <li>
-              <Link className="main-nav__link">FAQ</Link>
+              <Link className="main-nav__link" to="/faq">
+                FAQ
+              </Link>
             </li>
             <li>
               <Link className="main-nav__link" to="/contactus">

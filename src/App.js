@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContactUs/ContactUs";
 import Services from "./Services/Services";
+import Faq from "./Faq/Faq";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
             element={<ContactUs />}
             render={<ContactUs />}
           />
+          <Route path="/faq" element={<Faq />} render={<Faq />} />
         </Routes>
       </div>
     </Router>

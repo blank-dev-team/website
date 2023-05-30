@@ -1,0 +1,30 @@
+.FaqMain-container {
+  display: block;
+  margin: 0 auto;
+  /* background-color: red; */
+  /* height: 20rem; */
+  max-width: 144rem;
+  margin-top: 23rem;
+}
+
+.FaqMain {
+  display: flex;
+}
+
+.FaqMain-text-container {
+}
+
+.FaqMain-heading-primary {
+  margin-bottom: 2rem;
+  color: #3f3d56;
+  font-size: 5rem;
+}
+
+.FaqMain-heading-secondary {
+  margin-bottom: 7.2rem;
+  color: #3f3d56;
+  font-size: 1.8rem;
+}
+
+.faq-btn {
+}
