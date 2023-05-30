@@ -1,4 +1,5 @@
 import "./OurServices.css";
+import OurServicesTab from "./OurServicesTab";
 
 function OurServices() {
   return (
@@ -9,6 +10,7 @@ function OurServices() {
           With the Blank app you get to access a whole lot of amazing services
         </p>
       </div>
+      <OurServicesTab></OurServicesTab>
     </div>
   );
 }

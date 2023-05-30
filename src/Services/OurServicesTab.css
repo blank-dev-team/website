@@ -1,4 +1,33 @@
 .tab-container {
   display: block;
   margin: 0 auto;
+  max-width: 144rem;
+  margin-top: 6rem;
+}
+
+.service-button-contained {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.service-btn {
+  /* background-color: transparent; */
+  /* filter: brightness(50); */
+  border: 1px solid #fff;
+  padding: 3rem 3rem;
+  border-radius: 37%;
+  cursor: pointer;
+  width: 6%;
+}
+
+.service-btn-text {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.Service-content {
+  margin-top: 7rem;
 }
