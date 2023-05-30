@@ -1,12 +1,35 @@
+import { useState } from "react";
+import ArrowDown from "../Images/arrow-down.svg";
+
+import "./Accordian.css";
+
 function Accordian() {
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
+
+  const ArrowDownImg = <img src={ArrowDown}></img>;
+
   return (
     <div className="accordion">
       {data.map((item, i) => (
         <div className="item">
-          <div className="title">
+          <div
+            className={selected == i ? "title" : "title-show"}
+            onClick={() => toggle(i)}
+          >
             <h2>{item.question}</h2>
+            <span className={"arrow-down"}>&nbsp;</span>
           </div>
-          <div className="content">{item.answer}</div>
+          <div className={selected == i ? "content-show" : "content"}>
+            {item.answer}
+          </div>
         </div>
       ))}
     </div>
