@@ -7,6 +7,10 @@
 
 .service-button-contained {
   display: flex;
+}
+
+.service-button-contained {
+  display: flex;
   flex-direction: column;
   gap: 1.8rem;
   align-items: center;
