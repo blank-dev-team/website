@@ -1,6 +1,7 @@
 .hero {
   background-image: linear-gradient(#3f3d56, #0d0c11);
   /* height: 80rem; */
+  padding-left: 2rem;
 }
 
 .hero-container {
