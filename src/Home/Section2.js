@@ -4,6 +4,7 @@ import Floating from "../Images/floating-card.png";
 import AddCard from "../Images/Addcard.svg";
 import BlockCard from "../Images/Blockcard.svg";
 import SuperTransfer from "../Images/Supertransfer.svg";
+import Rocket from "../Images/rocket.svg";
 
 function Section2() {
   return (
@@ -20,7 +21,7 @@ function Section2() {
               carrying multiple cards.
             </p>
             <a className="text-box__btn" href="#">
-              Start Now
+              Start Now <img className="rocket-img" src={Rocket} />
             </a>
           </div>
           <div className="container__img-box">

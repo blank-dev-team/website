@@ -45,6 +45,11 @@
   font-weight: 400;
 }
 
+.rocket-img {
+  width: 5%;
+  stroke: currentColor;
+}
+
 .box-img-1 {
   width: 70%;
   display: block;
