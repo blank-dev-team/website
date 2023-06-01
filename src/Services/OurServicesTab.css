@@ -26,6 +26,7 @@
 .service-btn {
   border: 1px solid #fff;
   border-radius: 43%;
+  /* border-top-left-radius: 0; */
   padding: 3rem 3rem;
   cursor: pointer;
 }
