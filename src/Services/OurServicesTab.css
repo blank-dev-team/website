@@ -12,7 +12,7 @@
   display: flex;
   gap: 21.1rem;
   /* background-color: red; */
-  padding: 5rem;
+  padding: 5rem 14rem;
 }
 
 .service-button-contained {
@@ -24,13 +24,19 @@
 }
 
 .service-btn {
+  border: 1px solid #fff;
+  border-radius: 43%;
+  padding: 3rem 3rem;
+  cursor: pointer;
+}
+
+.service-btn img {
   /* background-color: transparent; */
   /* filter: brightness(50); */
-  border: 1px solid #fff;
   padding: 3rem 3rem;
-  border-radius: 43%;
+
   cursor: pointer;
-  width: 73%;
+  width: 100%;
 }
 
 .service-btn-text {
