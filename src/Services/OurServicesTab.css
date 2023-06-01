@@ -3,10 +3,16 @@
   margin: 0 auto;
   max-width: 144rem;
   margin-top: 6rem;
+  height: fit-content;
+  /* background-color: red; */
+  /* padding: 2rem; */
 }
 
-.service-button-contained {
+.services-button-container {
   display: flex;
+  gap: 21.1rem;
+  /* background-color: red; */
+  padding: 5rem;
 }
 
 .service-button-contained {
@@ -14,6 +20,7 @@
   flex-direction: column;
   gap: 1.8rem;
   align-items: center;
+  /* background-color: red; */
 }
 
 .service-btn {
@@ -21,19 +28,9 @@
   /* filter: brightness(50); */
   border: 1px solid #fff;
   padding: 3rem 3rem;
-  border-radius: 37%;
+  border-radius: 43%;
   cursor: pointer;
-  width: 6%;
-}
-
-.service-btn-show {
-  /* background-color: transparent; */
-  /* filter: brightness(50); */
-  border: 1px solid #fff;
-  padding: 3rem 3rem;
-  border-radius: 37%;
-  cursor: pointer;
-  width: 6%;
+  width: 73%;
 }
 
 .service-btn-text {
