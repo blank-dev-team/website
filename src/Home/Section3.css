@@ -34,3 +34,10 @@
 .img-container__img {
   width: 25%;
 }
+
+@media (max-width: 35.625em) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
