@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.box-img-4 {
+  width: 60%;
+}
+
 .grid-section {
   grid-template-columns: 1fr 1fr;
 }

@@ -4,7 +4,7 @@ import HoldingCard from "../Images/HoldingCard.png";
 function Section4() {
   return (
     <div className="section-4">
-      <div className="container">
+      <div className="container-1">
         <div className="grid grid--2-cols">
           <div className="container__text-box">
             <h1 className="text-box__header-primary">
@@ -20,7 +20,7 @@ function Section4() {
             </a>
           </div>
           <div className="container__img-box-1">
-            <img className="box-img-1" src={HoldingCard}></img>
+            <img className="box-img-4" src={HoldingCard}></img>
           </div>
         </div>
       </div>

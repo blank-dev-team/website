@@ -9,6 +9,14 @@
   margin: 0 auto;
   margin-top: 10.5rem;
 }
+
+.container-1 {
+  /* max-width: 114rem; */
+  display: block;
+  margin: 0 auto;
+  margin-top: 10.5rem;
+}
+
 .grid--2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -46,23 +54,25 @@
 }
 
 .rocket-img {
-  width: 5%;
+  width: 3%;
   stroke: currentColor;
 }
 
 .box-img-1 {
-  width: 70%;
+  width: 50%;
   display: block;
   margin: 0 auto;
 }
 
 .box-img-2 {
-  width: 100%;
+  width: 75%;
 }
 
 .img-box__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  gap: 4rem;
   align-items: center;
 }
 
