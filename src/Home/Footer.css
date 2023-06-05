@@ -147,6 +147,10 @@
   margin-top: 10.5rem;
 }
 
+.container-2 {
+  max-width: 144rem;
+}
+
 @media (max-width: 35.625em) {
   .footer-container {
     max-width: none;

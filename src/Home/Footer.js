@@ -36,7 +36,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-border container-border"></div>
-      <div className="footer-links container-1">
+      <div className="footer-links container">
         <div className="footer-links__logo-links">
           <a href="#">
             <img className="logo" src={logo}></img>
