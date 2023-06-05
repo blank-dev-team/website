@@ -9,14 +9,14 @@ function Hero() {
       <div className="hero-container-1">
         <div className="hero-container__text-box">
           <h1 className="hero-container__text-box-heading-primary">
-            Hello to <span className="fig">Convenience.</span>All your cards in
-            one place!
+            Hello to <span className="fig">Convenience.</span>
+            <br></br>All your cards in one place!
           </h1>
           <h3 className="hero-container__text-box-heading-secondary">
             Now you can put all your cards in one card.Never have to fumble
             between cards again when you need to pay at a terminal.
           </h3>
-          <a className="cta-btn" href="#">
+          <a className="cta-btn-1" href="#">
             Get Started
           </a>
         </div>
