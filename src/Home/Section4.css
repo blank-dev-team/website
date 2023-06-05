@@ -17,3 +17,9 @@
 .grid-section {
   grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 35.625em) {
+  .box-img-4 {
+    width: 90%;
+  }
+}
