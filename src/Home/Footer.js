@@ -35,8 +35,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-border container"></div>
-      <div className="footer-links container">
+      <div className="footer-border container-border"></div>
+      <div className="footer-links container-1">
         <div className="footer-links__logo-links">
           <a href="#">
             <img className="logo" src={logo}></img>
@@ -91,7 +91,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer-border-2 container"></div>
+      <div className="footer-border-2 container-border"></div>
       <div className="footer-end-container">
         <p className="footer-end">
           Blank Technologies Ltd, registered in Nigeria, #09523903

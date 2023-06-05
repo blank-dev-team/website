@@ -137,3 +137,56 @@
   font-size: 1.6rem;
   font-weight: 400;
 }
+
+.container-border {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.footer-border-2 {
+  margin-top: 10.5rem;
+}
+
+@media (max-width: 35.625em) {
+  .footer-container {
+    max-width: none;
+  }
+
+  .footer-container-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    border-radius: 0;
+    padding: 3rem 4rem;
+  }
+
+  .footer-text-primary {
+    font-size: 12rem;
+  }
+
+  .footer-text-secondary {
+    font-size: 4.4rem;
+  }
+
+  .footer-container-img-container {
+  }
+
+  .form-email input {
+    height: 16rem;
+    border-radius: 16px;
+  }
+
+  .phone-img {
+    position: unset;
+    position: relative;
+    top: 6rem;
+    left: 10rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
