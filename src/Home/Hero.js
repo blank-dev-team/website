@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="hero">
       <Nav></Nav>
-      <div className="hero-container">
+      <div className="hero-container-1">
         <div className="hero-container__text-box">
           <h1 className="hero-container__text-box-heading-primary">
             Hello to <span className="fig">Convenience.</span>All your cards in

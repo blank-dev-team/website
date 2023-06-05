@@ -1,7 +1,7 @@
 .hero {
   background-image: linear-gradient(#3f3d56, #0d0c11);
   /* height: 80rem; */
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .hero-container {
@@ -12,6 +12,18 @@
   /* gap: 6.4rem; */
   align-items: center;
   margin: 0 auto;
+  /* background-color: red; */
+}
+
+.hero-container-1 {
+  /* padding: 0 7.8rem; */
+  margin-top: 4.3rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  /* gap: 6.4rem; */
+  align-items: center;
+  margin: 0 auto;
+  /* background-color: red; */
 }
 
 .hero-container__text-box {
