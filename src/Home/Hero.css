@@ -31,7 +31,7 @@
   /* background-color: red; */
   margin-top: 5rem;
   margin-left: 7.8rem;
-  width: 56.7rem;
+  /* width: 56.7rem; */
 }
 
 .fig {
@@ -40,7 +40,7 @@
 }
 
 .hero-container__text-box-heading-primary {
-  font-size: 4.8rem;
+  font-size: 7rem;
   line-height: 1.4;
   color: #fcfbfa;
   font-weight: 700;
@@ -79,6 +79,131 @@
   width: 100%;
 }
 
+/* ******************************************* */
+/* ******************************************* */
+/* POP UP */
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.8);
+  z-index: 99999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(black, 0.3);
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  width: 75%;
+  height: 60rem;
+  background-color: #fff8e1;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+  opacity: 1;
+  /* transform: translate(-50%, -50%) scale(0.25); */
+  transition: all 0.3s 0.2s;
+}
+
+.popup-left {
+  width: 33.3333333%;
+  align-self: center;
+}
+
+.popup-right {
+  width: 66.666667%;
+  background-image: linear-gradient(#3f3d56, #0d0c11);
+  height: auto;
+  padding: 10rem 17rem;
+}
+
+.popup-logo {
+  width: 20%;
+}
+
+.popup-heading {
+  color: #fcfbfa;
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.popup-form {
+  margin-top: 3.2rem;
+}
+
+.popup-label-container {
+  display: flex;
+  gap: 17rem;
+  margin-bottom: 0.8rem;
+}
+
+.popup-input-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.popup-name-input {
+  width: 24rem;
+  height: 4rem;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.popup-name-label {
+  color: #f5f5f5;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.popup-email-div {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.popup-email-input {
+  width: 50rem;
+  height: 4rem;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 4.7rem;
+}
+
+.popup-submit {
+  width: 51rem;
+  background-color: #f07e61;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 2.6rem 1.7rem 1.7rem 2.6rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+/* ******************************************* */
+/* ******************************************* */
 /* Media Queries */
 @media (max-width: 81.25em) {
   .hero-container__text-box-heading-primary {
