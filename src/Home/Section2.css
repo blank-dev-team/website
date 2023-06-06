@@ -185,3 +185,7 @@
     /* display: none; */
   }
 }
+
+.btn-0:hover .rocket-img {
+  transform: scale(1.2);
+}

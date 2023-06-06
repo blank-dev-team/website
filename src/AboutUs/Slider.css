@@ -6,7 +6,7 @@
 }
 
 .carousel-img-container {
-  padding: 20rem;
+  padding: 12rem;
   width: 50%;
 }
 .carousel-img {
@@ -37,6 +37,14 @@
   transform: scale(1.5);
   padding: 0 3rem;
   background: #ffffff;
+}
+
+.splide__arrow--prev {
+  display: none;
+}
+
+.splide__arrow--next {
+  display: none;
 }
 
 /* Slider css */

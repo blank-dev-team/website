@@ -20,7 +20,7 @@ function Section2() {
               your payment cards in one place, freeing you from the burden of
               carrying multiple cards.
             </p>
-            <a className="text-box__btn" href="#">
+            <a className="text-box__btn btn-0" href="#">
               Start Now <img className="rocket-img" src={Rocket} />
             </a>
           </div>

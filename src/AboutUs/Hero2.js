@@ -12,7 +12,8 @@ function Hero2() {
       <div className="hero-container">
         <div className="hero-container__text-box">
           <h1 className="text-box__primary">
-            <span className="spanner">One Card</span> for all your other cards.
+            <span className="spanner">One Card</span> for all your<br></br>{" "}
+            other cards.
           </h1>
           <p className="text-box__secondary">
             With Blank Card, you can now leave all your cards at home and take
