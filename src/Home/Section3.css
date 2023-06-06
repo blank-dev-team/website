@@ -38,7 +38,7 @@
 @media (max-width: 35.625em) {
   .grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .img {
