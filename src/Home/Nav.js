@@ -1,16 +1,27 @@
 import "./Nav.css";
 import logo from "../Images/Logo.png";
 import { Link } from "react-router-dom";
+import MobileBar from "../Images/mobileIcon.svg";
+import MobileClose from "../Images/mobileClose.svg";
+import { useRef } from "react";
 
 function Nav() {
+  const navRef = useRef();
+  const listRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("open-nav");
+    listRef.current.classList.toggle("nav-list-open");
+  };
+
   return (
     <div>
       <div className="header">
         <a href="#">
           <img className="logo" src={logo}></img>
         </a>
-        <div className="main-nav">
-          <ul className="main-nav__list">
+        <div ref={navRef} className="main-nav">
+          <ul ref={listRef} className="main-nav__list ">
             <li>
               <Link className="main-nav__link" to="/">
                 Home
@@ -38,6 +49,14 @@ function Nav() {
             </li>
           </ul>
         </div>
+        <button className="mobile-button">
+          <img
+            onClick={showNavbar}
+            className="mobile-open"
+            src={MobileBar}
+          ></img>
+          <img className="mobile-close" src={MobileClose}></img>
+        </button>
       </div>
     </div>
   );

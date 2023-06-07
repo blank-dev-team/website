@@ -12,7 +12,8 @@ function Hero() {
         <div className="hero-container-1">
           <div className="hero-container__text-box">
             <h1 className="hero-container__text-box-heading-primary">
-              Hello to <span className="fig">Convenience.</span>
+              Hello to <br className="mobile-br"></br>{" "}
+              <span className="fig">Convenience.</span>
               <br></br>All your cards in one<br></br> place!
             </h1>
             <h3 className="hero-container__text-box-heading-secondary">

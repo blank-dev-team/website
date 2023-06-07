@@ -34,6 +34,10 @@
   /* width: 56.7rem; */
 }
 
+.mobile-br {
+  display: none;
+}
+
 .fig {
   color: #f07e61;
   display: inline-block;
