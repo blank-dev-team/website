@@ -134,7 +134,7 @@
     flex-direction: column-reverse;
     align-items: center;
     border: 1px solid black;
-    height: 120rem;
+    height: 200rem;
   }
   .splide__pagination__page {
     top: -73rem;

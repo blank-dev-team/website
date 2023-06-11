@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Card_history" data-name="Card history" transform="translate(-175 -978)">
+    <g id="Ellipse_197" data-name="Ellipse 197" transform="translate(175 978)" fill="none" stroke="#9c9ba6" stroke-width="1">
+      <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>
+      <circle cx="37.5" cy="37.5" r="37" fill="none"/>
+    </g>
+    <path id="history" d="M26.864,4.059A17.38,17.38,0,0,0,4.738,8.96V4.614A.869.869,0,1,0,3,4.614v6.954a.869.869,0,0,0,.869.868h6.953a.869.869,0,1,0,0-1.738H5.648a15.633,15.633,0,1,1,13,24.337.869.869,0,1,0,0,1.738A17.392,17.392,0,0,0,26.864,4.059Zm-8.219,8.378a.869.869,0,0,0-.869.869v6.085a.869.869,0,0,0,.869.868h4.346a.869.869,0,0,0,0-1.738H19.514V13.306A.869.869,0,0,0,18.645,12.437Z" transform="translate(192.872 996.094)" fill="#9c9ba6"/>
+  </g>
+</svg>

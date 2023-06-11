@@ -1,0 +1,30 @@
+.services-section-2 {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 30.8rem;
+}
+
+.services-section-container {
+  display: flex;
+  align-items: center;
+  gap: 11rem;
+}
+
+.services-primary-text {
+  color: #3f3350;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-secondary-text {
+  color: #707070;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  width: 56rem;
+}
+
+.Smarterway-img {
+  width: 100%;
+}

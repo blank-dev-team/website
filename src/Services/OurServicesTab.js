@@ -1,8 +1,8 @@
 import "./OurServicesTab.css";
-import Addcard from "../Images/white-add-card.svg";
-import RequestCard from "../Images/white-request-card.svg";
-import CardHistory from "../Images/white-add-card.svg";
-import SuperTransfer from "../Images/white-super-transfer.svg";
+import Addcard from "../Images/Add card.svg";
+import RequestCard from "../Images/Request card.svg";
+import CardHistory from "../Images/Card history.svg";
+import SuperTransfer from "../Images/Super transfer.svg";
 import Lottie from "lottie-react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import RequestCardImg from "../Images/Transport2.json";
