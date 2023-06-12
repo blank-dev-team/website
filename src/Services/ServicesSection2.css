@@ -36,3 +36,31 @@
     margin-left: 10.8rem;
   }
 }
+
+@media (max-width: 32.5em) {
+  .services-section-2 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 0rem;
+    padding: 2rem 7rem;
+  }
+  .services-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11rem;
+  }
+
+  .services-primary-text {
+    font-size: 7rem;
+  }
+  .services-secondary-text {
+    font-size: 3.7rem;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .cta-btn:link {
+    font-size: 5rem;
+  }
+}
