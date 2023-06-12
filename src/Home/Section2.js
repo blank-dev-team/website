@@ -4,9 +4,13 @@ import Floating from "../Images/floating-card.png";
 import AddCard from "../Images/Addcard.svg";
 import BlockCard from "../Images/Blockcard.svg";
 import SuperTransfer from "../Images/Supertransfer.svg";
-import Rocket from "../Images/rocket.svg";
+import Rocket from "../Images/white-rocket.svg";
+import Modal from "./Modal.js";
+import { useState } from "react";
 
 function Section2() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="section-2">
       <div className="container-1">
@@ -20,9 +24,11 @@ function Section2() {
               your payment cards in one place, freeing you from the burden of
               carrying multiple cards.
             </p>
-            <a className="text-box__btn btn-0" href="#">
-              Start Now <img className="rocket-img" src={Rocket} />
-            </a>
+            {/* Modal btn */}
+            <button onClick={() => setOpenModal(true)} className="Modal-btn">
+              Start Now <img className="rocket" src={Rocket} />
+            </button>
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="container__img-box">
             <img className="box-img-1" src={Wallet}></img>
@@ -39,9 +45,10 @@ function Section2() {
               you link and unlink your cards with just a few clicks, making it
               easy to switch between different payment methods as you need them.
             </p>
-            <a className="text-box__btn" href="#">
-              Get Onboard
-            </a>
+            {/* Modal btn */}
+            <button onClick={() => setOpenModal(true)} className="Modal-btn">
+              Get Onboard <img className="rocket" src={Rocket} />
+            </button>
           </div>
           <div className="container__text-box">
             <h1 className="text-box__header-primary">

@@ -1,7 +1,12 @@
 import "./Section4.css";
 import HoldingCard from "../Images/HoldingCard.png";
+import Rocket from "../Images/white-rocket.svg";
+import Modal from "./Modal.js";
+import { useState } from "react";
 
 function Section4() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="section-4">
       <div className="container-1">
@@ -15,9 +20,11 @@ function Section4() {
               you to shop anywhere, whether in-store or online, with ease and
               confidence.
             </p>
-            <a className="text-box__btn" href="#">
-              Get Now
-            </a>
+            {/* Modal btn */}
+            <button onClick={() => setOpenModal(true)} className="Modal-btn">
+              Get Now <img className="rocket" src={Rocket} />
+            </button>
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="container__img-box-1">
             <img className="box-img-4" src={HoldingCard}></img>
