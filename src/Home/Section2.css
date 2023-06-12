@@ -68,13 +68,11 @@
   transition: all 0.3s;
 }
 
-.Modal-btn:hover {
-  transform: scale(1.2);
+.rocket {
+  transition: all 0.3s;
 }
-
-.rocket-img {
-  width: 3%;
-  stroke: currentColor;
+.rocket:hover {
+  /* transform: translate(111%, -80%); */
 }
 
 .box-img-1 {
