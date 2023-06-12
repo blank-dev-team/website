@@ -200,6 +200,10 @@
     gap: 10rem;
     /* display: none; */
   }
+
+  .Modal-btn {
+    font-size: 5.4rem;
+  }
 }
 
 .btn-0:hover .rocket-img {
