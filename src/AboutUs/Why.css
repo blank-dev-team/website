@@ -32,6 +32,8 @@
 
 .grid-1 {
   position: relative;
+  /* background-color: orangered; */
+  width: 100%;
 }
 
 .phoneimg {
@@ -48,7 +50,7 @@
 }
 
 .container-text {
-  height: 55%;
+  width: 100%;
 }
 
 .container-text h1 {
@@ -73,14 +75,73 @@
   display: flex;
   gap: 1.4rem;
   position: absolute;
-  left: 30rem;
-  top: 22rem;
+  left: 33rem;
+  top: 26rem;
 }
 
 .text-choose-container-3 {
   display: flex;
   gap: 1.4rem;
   position: absolute;
-  left: 40rem;
-  top: 47rem;
+  left: 37rem;
+  top: 48rem;
+}
+
+.grid-3 {
+  position: relative;
+  /* background-color: orangered; */
+  width: 100%;
+}
+
+.container-img-2 {
+  width: 30%;
+}
+
+.container-img-img-2 {
+  width: 75%;
+}
+
+.text-choose-container-4 {
+  display: flex;
+  /* gap: 1.4rem; */
+  position: absolute;
+  left: 3rem;
+  top: 6rem;
+  text-align: left;
+}
+
+.container-text-2 {
+  width: 100%;
+}
+
+.container-text-2 h1 {
+  font-size: 2.4rem;
+  color: #3f3d56;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.container-text-2 p {
+  font-size: 1.6rem;
+  /* text-align: right; */
+  /* width: 150%; */
+}
+
+.text-choose-container-5 {
+  display: flex;
+  /* gap: 1.4rem; */
+  position: absolute;
+  left: 7rem;
+  top: 28rem;
+  text-align: left;
+}
+
+.text-choose-container-6 {
+  display: flex;
+  /* gap: 1.4rem; */
+  position: absolute;
+  left: 7rem;
+  top: 48rem;
+  text-align: left;
 }
