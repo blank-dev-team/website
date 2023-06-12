@@ -25,7 +25,9 @@ function Accordian() {
             onClick={() => toggle(i)}
           >
             <h2>{item.question}</h2>
-            <span className={"arrow-down"}>&nbsp;</span>
+            <span className={selected == i ? "arrow-left" : "arrow-down"}>
+              &nbsp;
+            </span>
           </div>
           <div className={selected == i ? "content-show" : "content"}>
             {item.answer}
