@@ -67,3 +67,37 @@
   text-align: left;
   font-style: italic;
 }
+
+@media (max-width: 81.25em) {
+  .service-btn-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 48.125em) {
+  .services-button-container {
+    gap: 16.1rem;
+    padding: 5rem 9rem;
+  }
+}
+
+@media (max-width: 35.625em) {
+  .services-button-container {
+    gap: 12.1rem;
+    padding: 5rem 9rem;
+  }
+
+  .service-btn-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .services-button-container {
+    gap: 6.1rem;
+    padding: 5rem 6rem;
+  }
+  .service-btn-text {
+    font-size: 2.5rem;
+  }
+}

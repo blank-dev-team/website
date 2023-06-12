@@ -28,3 +28,11 @@
 .Smarterway-img {
   width: 100%;
 }
+
+@media (max-width: 93.25em) {
+  .services-section-2 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 10.8rem;
+  }
+}
