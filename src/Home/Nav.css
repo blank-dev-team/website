@@ -94,15 +94,15 @@
   width: 100%;
   position: absolute;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: block;
+  display: flex;
 }
 
 .main-nav .nav-list-open {
-  display: block;
+  display: flex;
 }
 
 /* &__nav {
@@ -141,5 +141,21 @@
   .mobile-open {
     height: 4rem;
     display: block;
+  }
+
+  .main-nav .nav-list-open {
+    display: flex;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .main-nav .nav-list-open {
+    display: flex;
+    font-size: 3.5rem;
+    top: 50%;
+    left: 20%;
   }
 }
