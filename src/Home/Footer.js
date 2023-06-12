@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Phones from "../Images/Phones.png";
+import Phones from "../Images/newPhones.png";
 import FooterIcon from "../Images/FooterIcon.png";
 import logo from "../Images/Logo.png";
 import Facebook from "../Images/facebook.svg";

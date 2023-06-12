@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.147" height="48.086" viewBox="0 0 58.147 48.086">
+  <defs>
+    <filter id="Ellipse_110" x="24.553" y="14.492" width="33.594" height="33.594" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Add_card_-_icon" data-name="Add card - icon" transform="translate(-709.927 -1990.915)">
+    <g id="Icon_feather-credit-card" data-name="Icon feather-credit-card" transform="translate(710.927 1991.915)">
+      <path id="Path_51" data-name="Path 51" d="M5.009,6H36.586a3.509,3.509,0,0,1,3.509,3.509V30.56a3.509,3.509,0,0,1-3.509,3.509H5.009A3.509,3.509,0,0,1,1.5,30.56V9.509A3.509,3.509,0,0,1,5.009,6Z" transform="translate(-1.5 -6)" fill="none" stroke="#ff7043" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_52" data-name="Path 52" d="M1.5,15H40.095" transform="translate(-1.5 -4.474)" fill="none" stroke="#ff7043" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 709.93, 1990.91)" filter="url(#Ellipse_110)">
+      <ellipse id="Ellipse_110-2" data-name="Ellipse 110" cx="7.797" cy="7.797" rx="7.797" ry="7.797" transform="translate(33.55 20.49)" fill="#fff"/>
+    </g>
+    <path id="Icon_ionic-ios-add" data-name="Icon ionic-ios-add" d="M17.739,13.061H14.225V9.547a.582.582,0,0,0-1.165,0v3.513H9.547a.582.582,0,0,0,0,1.165h3.513v3.513a.582.582,0,1,0,1.165,0V14.225h3.513a.582.582,0,1,0,0-1.165Z" transform="translate(737.332 2005.505)" fill="#ffd740"/>
+  </g>
+</svg>

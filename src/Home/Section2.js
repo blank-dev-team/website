@@ -1,9 +1,9 @@
 import "./Section2.css";
-import Wallet from "../Images/Wallet.png";
+import Wallet from "../Images/newWallet.png";
 import Floating from "../Images/floating-card.png";
-import AddCard from "../Images/Addcard.svg";
-import BlockCard from "../Images/Blockcard.svg";
-import SuperTransfer from "../Images/Supertransfer.svg";
+import AddCard from "../Images/newAddCard.svg";
+import BlockCard from "../Images/newBlockCard.svg";
+import SuperTransfer from "../Images/newSuperTransfer.svg";
 import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";

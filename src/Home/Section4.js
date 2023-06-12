@@ -1,5 +1,5 @@
 import "./Section4.css";
-import HoldingCard from "../Images/HoldingCard.png";
+import HoldingCard from "../Images/newHoldingCard.png";
 import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import "./Section3.css";
-import PaymentImg from "../Images/PaymentImage.png";
+import PaymentImg from "../Images/newPaymentImage.png";
 import GooglePlay from "../Images/GooglePlay.png";
 import AppStore from "../Images/AppStore.png";
 
