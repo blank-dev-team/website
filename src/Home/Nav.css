@@ -53,7 +53,7 @@
   display: block;
   z-index: 9999;
 
-  /* display: none; */
+  display: none;
 }
 
 .mobile-open {
@@ -132,6 +132,10 @@
   }
   .logo {
     height: 6.8rem;
+  }
+
+  .mobile-button {
+    display: block;
   }
 
   .mobile-open {

@@ -82,6 +82,9 @@
   background-color: #f07e61;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2.6rem 1.7rem 1.7rem 2.6rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
