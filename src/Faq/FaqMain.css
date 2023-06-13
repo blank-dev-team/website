@@ -36,3 +36,30 @@
 .FaqMain-accordian {
   /* width: 70%; */
 }
+
+@media (max-width: 27.5em) {
+  .FaqMain-container {
+    display: block;
+    margin: auto;
+
+    width: 100%;
+    margin-top: 18rem;
+    /* background-color: red; */
+  }
+
+  .FaqMain {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .FaqMain-heading-primary {
+    margin-bottom: 2rem;
+    font-size: 9rem;
+  }
+
+  .FaqMain-heading-secondary {
+    margin-bottom: 7.2rem;
+    font-size: 3.8rem;
+  }
+}
