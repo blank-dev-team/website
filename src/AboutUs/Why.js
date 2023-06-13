@@ -1,5 +1,5 @@
 import "./Why.css";
-import Phone2 from "../Images/Phone2.png";
+import Phone2 from "../Images/newPhone2.png";
 import SuperFast from "../Images/SuperFast.png";
 import AllOne from "../Images/AllOne.png";
 import DataTransparency from "../Images/DataTrans.png";
