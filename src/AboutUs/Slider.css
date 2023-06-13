@@ -133,11 +133,11 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    border: 1px solid black;
+    border: none;
     height: 200rem;
   }
   .splide__pagination__page {
-    top: -73rem;
+    top: -130rem;
     left: -5rem;
     height: 2rem;
     width: 3.5rem;
