@@ -61,10 +61,18 @@
   display: none;
 }
 
-.mobile-close {
-  height: 2.5rem;
+.mobile-close-btn {
+  height: 4.5rem;
   display: none;
   /* visibility: hidden; */
+}
+
+.mobile-close .mobile-close-btn {
+  display: block;
+}
+
+.mobile-close .mobile-open-btn {
+  display: none;
 }
 
 .open-nav {
@@ -138,7 +146,7 @@
     display: block;
   }
 
-  .mobile-open {
+  .mobile-open-btn {
     height: 4rem;
     display: block;
   }

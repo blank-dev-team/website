@@ -8,10 +8,12 @@ import { useRef } from "react";
 function Nav() {
   const navRef = useRef();
   const listRef = useRef();
+  const navBtn = useRef();
 
   const showNavbar = () => {
     navRef.current.classList.toggle("open-nav");
     listRef.current.classList.toggle("nav-list-open");
+    navBtn.current.classList.toggle("mobile-close");
   };
 
   return (
@@ -49,13 +51,13 @@ function Nav() {
             </li>
           </ul>
         </div>
-        <button className="mobile-button">
-          <img
-            onClick={showNavbar}
-            className="mobile-open"
-            src={MobileBar}
-          ></img>
-          <img className="mobile-close" src={MobileClose}></img>
+        <button
+          onClick={showNavbar}
+          ref={navBtn}
+          className="mobile-button mobile-open"
+        >
+          <img className="mobile-open-btn" src={MobileBar}></img>
+          <img className="mobile-close-btn" src={MobileClose}></img>
         </button>
       </div>
     </div>
