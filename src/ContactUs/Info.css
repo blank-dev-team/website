@@ -39,3 +39,34 @@
   color: #707070;
   font-size: 1.6rem;
 }
+
+@media (max-width: 53.75em) {
+  .icon-box-heading {
+    font-size: 2.5rem;
+  }
+  .icon-box-p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .icon-box {
+    padding: 5rem 11rem;
+  }
+  .box-icon-info {
+    padding: 4rem 1rem;
+  }
+
+  .icon-box-heading {
+    font-size: 3.5rem;
+  }
+  .icon-box-p {
+    font-size: 2rem;
+    /* max-width: 20rem; */
+  }
+}
