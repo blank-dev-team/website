@@ -22,8 +22,8 @@ function Hero() {
             </h1>
             <h3 className="hero-container__text-box-heading-secondary">
               Now you can put all your cards in one card.Never have to<br></br>{" "}
-              fumble between cards again when you need to pay at a<br></br>{" "}
-              terminal.
+              fumble between cards again when you need to pay at a
+              <br className="tab-br"></br> terminal.
             </h3>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">

@@ -223,6 +223,11 @@
   .hero-container__text-box-heading-secondary {
     font-size: 1.4rem;
   }
+
+  .tab-br {
+    display: none;
+    visibility: none;
+  }
 }
 
 @media (max-width: 35.625em) {
