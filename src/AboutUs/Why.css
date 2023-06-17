@@ -63,12 +63,12 @@
 
 .container-text p {
   font-size: 1.6rem;
-  /* text-align: right; */
+  text-align: right;
   /* width: 150%; */
 }
 
 .container-img-img {
-  width: 80%;
+  width: 70%;
 }
 
 .text-choose-container-2 {
@@ -98,7 +98,7 @@
 }
 
 .container-img-img-2 {
-  width: 75%;
+  width: 65%;
 }
 
 .text-choose-container-4 {
@@ -272,6 +272,38 @@
   .text-choose-container-6 {
     left: 7rem;
     top: 48rem;
+  }
+}
+
+@media (max-width: 90.625em) {
+  .text-choose-container-1 {
+    left: 18rem;
+    top: 6rem;
+  }
+
+  .text-choose-container-2 {
+    left: 16rem;
+    top: 24rem;
+  }
+
+  .text-choose-container-3 {
+    left: 20rem;
+    top: 40rem;
+  }
+
+  .text-choose-container-4 {
+    left: 3rem;
+    top: 6rem;
+  }
+
+  .text-choose-container-5 {
+    left: 4rem;
+    top: 25rem;
+  }
+
+  .text-choose-container-6 {
+    left: 5rem;
+    top: 41rem;
   }
 }
 

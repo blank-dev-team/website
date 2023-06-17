@@ -11,7 +11,7 @@
 .title-show {
   color: #3f3d56;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@
 
 .title {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
