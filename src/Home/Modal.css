@@ -261,7 +261,7 @@
 
 @media (max-width: 35.625em) {
   .modalContainer {
-    width: 70%;
+    width: 90%;
     height: 60rem;
   }
 
@@ -292,7 +292,7 @@
   }
 
   .popup-label-container {
-    gap: 24rem;
+    gap: 32rem;
   }
 
   .popup-name-label {
