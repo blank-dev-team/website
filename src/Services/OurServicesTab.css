@@ -24,12 +24,12 @@
 }
 
 .service-btn {
-  /* border: 1px solid #fff; */
-  /* border-radius: 43%; */
-  /* border-top-left-radius: 0; */
-  /* padding: 3rem 3rem; */
-  /* width: 100%; */
   cursor: pointer;
+}
+
+.service-btn-active {
+  cursor: pointer;
+  filter: brightness(180%);
 }
 
 .service-btn img {

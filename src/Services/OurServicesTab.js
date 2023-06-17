@@ -1,6 +1,6 @@
 import "./OurServicesTab.css";
 import Addcard from "../Images/Add card.svg";
-import RequestCard from "../Images/Request card.svg";
+import RequestCard from "../Images/Request card 1.svg";
 import CardHistory from "../Images/Card history.svg";
 import SuperTransfer from "../Images/Super transfer.svg";
 import Lottie from "lottie-react";

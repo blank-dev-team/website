@@ -1,5 +1,6 @@
 import "./Nav.css";
 import logo from "../Images/Logo.png";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import MobileBar from "../Images/mobileIcon.svg";
 import MobileClose from "../Images/mobileClose.svg";
@@ -8,6 +9,8 @@ import { useState } from "react";
 
 function Nav() {
   const [active, setActive] = useState("FirstCard");
+  const activeLink = "main-nav__link-active";
+  const normalLink = "main-nav__link";
 
   const navRef = useRef();
   const listRef = useRef();
@@ -28,29 +31,29 @@ function Nav() {
         <div ref={navRef} className="main-nav">
           <ul ref={listRef} className="main-nav__list ">
             <li>
-              <Link className="main-nav__link" to="/">
+              <NavLink className="main-nav__link" to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="main-nav__link" to="/aboutus">
+              <NavLink className="main-nav__link" to="/aboutus">
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="main-nav__link" to="/services">
+              <NavLink className="main-nav__link" to="/services">
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="main-nav__link" to="/faq">
+              <NavLink className="main-nav__link" to="/faq">
                 FAQ
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="main-nav__link" to="/contactus">
+              <NavLink className="main-nav__link" to="/contactus">
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
