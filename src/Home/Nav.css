@@ -41,6 +41,11 @@
   transition: all 0.3s;
 }
 
+.main-nav__link-active:link,
+.main-nav__link-active:visited {
+  color: #f07e61;
+}
+
 .main-nav__link:hover,
 .main-nav__link:active {
   color: #f07e61;

@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import MobileBar from "../Images/mobileIcon.svg";
 import MobileClose from "../Images/mobileClose.svg";
 import { useRef } from "react";
+import { useState } from "react";
 
 function Nav() {
+  const [active, setActive] = useState("FirstCard");
+
   const navRef = useRef();
   const listRef = useRef();
   const navBtn = useRef();

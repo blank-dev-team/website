@@ -260,6 +260,11 @@
 }
 
 @media (max-width: 35.625em) {
+  .modalContainer {
+    width: 70%;
+    height: 60rem;
+  }
+
   .popup-img {
     width: 136%;
   }
@@ -287,7 +292,7 @@
   }
 
   .popup-label-container {
-    gap: 14rem;
+    gap: 24rem;
   }
 
   .popup-name-label {
