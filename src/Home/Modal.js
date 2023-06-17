@@ -11,7 +11,7 @@ function Modal({ open, onClose }) {
       <div className="modalContainer">
         <div className="modal-Left">
           <div className="modalImg">
-            <img src={POPUP}></img>
+            <img className="popup-img" src={POPUP}></img>
           </div>
         </div>
         <button onClick={onClose} className="closeBtn">
