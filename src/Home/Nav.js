@@ -8,7 +8,7 @@ import { useRef } from "react";
 import { useState } from "react";
 
 function Nav() {
-  const [active, setActive] = useState("FirstCard");
+  // const [active, setActive] = useState("FirstCard");
   const activeLink = "main-nav__link-active";
   const normalLink = "main-nav__link";
 

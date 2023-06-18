@@ -42,6 +42,12 @@
 }
 
 .service-btn-text {
+  color: #9c9ba6;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.service-btn-text-active {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 400;
@@ -72,6 +78,9 @@
   .service-btn-text {
     font-size: 1.3rem;
   }
+  .service-btn-text-active {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 48.125em) {
@@ -90,6 +99,9 @@
   .service-btn-text {
     font-size: 2rem;
   }
+  .service-btn-text-active {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 27.5em) {
@@ -98,6 +110,9 @@
     padding: 5rem 6rem;
   }
   .service-btn-text {
+    font-size: 2.5rem;
+  }
+  .service-btn-text-active {
     font-size: 2.5rem;
   }
 }

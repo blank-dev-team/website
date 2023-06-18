@@ -17,44 +17,115 @@ import CardTabs from "./CardTabs";
 function OurServicesTab() {
   const [active, setActive] = useState("FirstCard");
 
+  const [activeBtn, setActiveBtn] = useState("");
+
+  const Btntoggle = (i) => {
+    if (activeBtn == i) {
+      return setActiveBtn(null);
+    }
+
+    setActiveBtn(i);
+  };
+
   return (
-    <div className="tab-container">
-      <div className="services-button-container">
-        <div
-          onClick={() => setActive("FirstCard")}
-          className="service-button-contained"
-        >
-          <img className="service-btn" src={RequestCard}></img>
-          <p className="service-btn-text">Request Card</p>
+    <div>
+      {/* {data.map((item, i) => ( */}
+      <div className="tab-container">
+        <div className="services-button-container">
+          <div
+            onClick={() => setActive("FirstCard")}
+            className="service-button-contained"
+          >
+            <img
+              // onClick={() => setActiveBtn(!activeBtn)}
+              className={
+                active === "FirstCard" ? "service-btn-active" : "service-btn"
+              }
+              src={RequestCard}
+            ></img>
+            <p
+              className={
+                active === "FirstCard"
+                  ? "service-btn-text-active"
+                  : "service-btn-text"
+              }
+            >
+              Request Card
+            </p>
+          </div>
+          <div
+            onClick={() => setActive("SecondCard")}
+            className="service-button-contained"
+          >
+            <img
+              className={
+                active === "SecondCard" ? "service-btn-active" : "service-btn"
+              }
+              src={Addcard}
+            ></img>
+            <p
+              className={
+                active === "SecondCard"
+                  ? "service-btn-text-active"
+                  : "service-btn-text"
+              }
+            >
+              Add Card
+            </p>
+          </div>
+          <div
+            onClick={() => setActive("ThridCard")}
+            className="service-button-contained"
+          >
+            <img
+              className={
+                active === "ThridCard" ? "service-btn-active" : "service-btn"
+              }
+              src={CardHistory}
+            ></img>
+            <p
+              className={
+                active === "ThridCard"
+                  ? "service-btn-text-active"
+                  : "service-btn-text"
+              }
+            >
+              Card History
+            </p>
+          </div>
+          <div
+            onClick={() => setActive("FourthCard")}
+            className="service-button-contained"
+          >
+            <img
+              className={
+                active === "FourthCard" ? "service-btn-active" : "service-btn"
+              }
+              src={SuperTransfer}
+            ></img>
+            <p
+              className={
+                active === "FourthCard"
+                  ? "service-btn-text-active"
+                  : "service-btn-text"
+              }
+            >
+              Super Transfer
+            </p>
+          </div>
         </div>
-        <div
-          onClick={() => setActive("SecondCard")}
-          className="service-button-contained"
-        >
-          <img className="service-btn" src={Addcard}></img>
-          <p className="service-btn-text">Add Card</p>
-        </div>
-        <div
-          onClick={() => setActive("ThridCard")}
-          className="service-button-contained"
-        >
-          <img className="service-btn" src={CardHistory}></img>
-          <p className="service-btn-text">Card History</p>
-        </div>
-        <div
-          onClick={() => setActive("FourthCard")}
-          className="service-button-contained"
-        >
-          <img className="service-btn" src={SuperTransfer}></img>
-          <p className="service-btn-text">Super Transfer</p>
+        <div>
+          {active === "FirstCard" && <CardTabs data={CardData} cardIndex={0} />}
+          {active === "SecondCard" && (
+            <CardTabs data={CardData} cardIndex={1} />
+          )}
+          {active === "ThridCard" && <CardTabs data={CardData} cardIndex={2} />}
+          {active === "FourthCard" && (
+            <CardTabs data={CardData} cardIndex={3} />
+          )}
         </div>
       </div>
-      <div>
-        {active === "FirstCard" && <CardTabs data={CardData} cardIndex={0} />}
-        {active === "SecondCard" && <CardTabs data={CardData} cardIndex={1} />}
-        {active === "ThridCard" && <CardTabs data={CardData} cardIndex={2} />}
-        {active === "FourthCard" && <CardTabs data={CardData} cardIndex={3} />}
-      </div>
+      {/* ))} */}
     </div>
   );
 }
