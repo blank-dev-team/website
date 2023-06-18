@@ -105,6 +105,10 @@
   width: 15rem;
 }
 
+.box-container:hover {
+  border: 1px solid #ff7043;
+}
+
 .box-icon {
 }
 
