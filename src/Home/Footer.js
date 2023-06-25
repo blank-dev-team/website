@@ -98,10 +98,8 @@ function Footer() {
         </p>
         <p className="footer-end">
           Copyright - 2023 © Blank Tech ltd. The Blank Card, the Blank app and
-          everything related Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Bibendum est ultricies integer quis. Iaculis urna id and
-          located at 5 Adedeji Street, Ogba, Lagos, Nigeria,
+          everything related is a product of Blank Technologies Limited. Located
+          at 8 Musa Akor Off Akin Oshiyemi street Allen Avenue, Lagos
         </p>
       </div>
     </div>

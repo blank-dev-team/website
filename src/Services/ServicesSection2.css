@@ -1,13 +1,23 @@
 .services-section-2 {
   margin-top: 2rem;
   margin-bottom: 4rem;
-  margin-left: 30.8rem;
+  display: block;
+  margin: 0 auto;
+  /* max-width: 144rem; */
+  /* background-color: #3f3350; */
+  /* margin-left: 30.8rem; */
 }
 
 .services-section-container {
   display: flex;
   align-items: center;
-  gap: 11rem;
+  /* gap: 8rem; */
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.services-text-box {
+  flex: 0 0 40%;
 }
 
 .services-primary-text {
@@ -26,6 +36,7 @@
 }
 
 .Smarterway-img {
+  flex: 1;
   width: 100%;
 }
 

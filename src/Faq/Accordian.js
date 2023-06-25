@@ -47,22 +47,22 @@ const data = [
   {
     question: "Is the Blank Card secure?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "Yes, the Blank Card is secure. It uses advanced encryption technology and has multiple layers of security to protect your financial information.",
   },
   {
     question: "What if I Lose my Blank Card?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "If you lose your Blank Card, you can easily unlink all your mapped cards to it through the mobile app. You can then block the Blank Card through the app or by contacting our customer support.",
   },
   {
     question: "How long does it take to receive my Blank Card?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "The delivery time for the Blank Card varies depending on your location. Please check the delivery estimates in the mobile app.",
   },
   {
     question: "Can I add my Blank Card to my digital wallet?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+      "Yes, you can add your Blank Card to your digital wallet, such as Apple Pay or Google Pay.",
   },
 ];
 
