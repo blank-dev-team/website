@@ -57,7 +57,9 @@ function ContactForm() {
             <input className="message-input" type="text" for="message" />
           </div>
         </div>
-        <button className="submit-button">Send Message</button>
+        <button className="submit-button" type="submit">
+          Send Message
+        </button>
       </form>
     </div>
   );

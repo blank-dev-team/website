@@ -1,11 +1,12 @@
 .carousel-1 {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 60rem;
 }
 
 .carousel-img-container {
+  background-color: #fffcf2;
   padding: 12rem;
   width: 50%;
 }
