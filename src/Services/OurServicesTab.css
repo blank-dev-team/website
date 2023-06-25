@@ -74,6 +74,12 @@
   font-style: italic;
 }
 
+@media (max-width: 90.625em) {
+  .services-button-container {
+    padding: 0 14rem;
+  }
+}
+
 @media (max-width: 81.25em) {
   .service-btn-text {
     font-size: 1.3rem;
