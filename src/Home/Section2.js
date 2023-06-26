@@ -7,6 +7,8 @@ import SuperTransfer from "../Images/newSuperTransfer.svg";
 import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Section2() {
   const [openModal, setOpenModal] = useState(false);
@@ -59,9 +61,9 @@ function Section2() {
               convenient, and customizable way to manage all your payment cards.
               Add all your cards and enjoy a truly limitless experience.
             </p>
-            <a className="text-box__btn" href="#">
+            <Link className="text-box__btn" to="/services">
               See More
-            </a>
+            </Link>
           </div>
           <div className="container__img-box img-box__grid">
             <div className="box-container">

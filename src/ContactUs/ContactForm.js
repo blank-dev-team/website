@@ -1,11 +1,40 @@
-import { Form } from "react-router-dom";
+// import { Form } from "react-router-dom";
 import "./ContactForm.css";
 import Facebook from "../Images/facebook.svg";
 import Instagram from "../Images/instagram.svg";
 import Twitter from "../Images/twitter.svg";
 import Linkedin from "../Images/linkedin.svg";
+import { useState } from "react";
+import Axios from "axios";
 
 function ContactForm() {
+  const [message, setMessage] = useState("");
+  const url = "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist";
+  const [data, setData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+  });
+
+  function handle(e) {
+    const newdata = { ...data };
+    newdata[e.target.id] = e.target.value;
+    setData(newdata);
+    console.log(newdata);
+  }
+
+  function submit(e) {
+    e.preventDefault();
+    Axios.post(url, {
+      email: data.email,
+      firstName: data.firstName,
+      lastName: data.lastName,
+    }).then((res) => {
+      console.log(res);
+      alert("You've Joined Succesfully");
+    });
+  }
+
   return (
     <div className="form">
       <div className="text-heading">
@@ -32,37 +61,95 @@ function ContactForm() {
         </div>
       </div>
 
-      <form className="contact-form">
+      <form onSubmit={(e) => submit(e)} className="contact-form">
         <div className="contact-from-container">
           <div className="name-grid">
             <div className="label-grid">
               <label id="first-name">First Name</label>
-              <input className="name-input" type="text" for="first-name" />
+
+              <input
+                className="name-input"
+                onChange={(e) => handle(e)}
+                value={data.firstName}
+                id="firstName"
+                type="text"
+                for="first-name"
+                required
+              />
             </div>
             <div className="label-grid">
               <label id="last-name">Last Name</label>
-              <input className="name-input" type="text" for="last-name" />
+              <input
+                className="name-input"
+                onChange={(e) => handle(e)}
+                value={data.lastName}
+                id="lastName"
+                type="text"
+                for="last-name"
+                required
+              />
             </div>
           </div>
           <div className="label-grid">
             <label id="email">Email</label>
             <input
               className="name-input email-input"
+              onChange={(e) => handle(e)}
+              value={data.email}
+              id="email"
               type="email"
               for="email"
+              required
             />
           </div>
           <div className="label-grid">
-            <label id="Message">Message</label>
-            <input className="message-input" type="text" for="message" />
+            <label>Message</label>
+            <textarea className="message-input" type="text" for="message" />
           </div>
         </div>
         <button className="submit-button" type="submit">
           Send Message
         </button>
+        {/* <div className="message">{message ? <p>{message}</p> : null}</div> */}
       </form>
     </div>
   );
 }
 
 export default ContactForm;
+
+// const [firstName, setFirstName] = useState("");
+// const [lastName, setLastName] = useState("");
+// const [email, setEmail] = useState("");
+// const [message, setMessage] = useState("");
+
+// let handleSubmit = async (e) => {
+//   e.preventDefault();
+
+//   try {
+//     let res = await fetch(
+//       "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist",
+//       {
+//         method: "POST",
+//         body: JSON.stringify({
+//           email: email,
+//           firstName: firstName,
+//           lastName: lastName,
+//         }),
+//       }
+//     );
+
+//     if (res.status === 200) {
+//       setFirstName("");
+//       setLastName("");
+//       setEmail("");
+//       setMessage("We'll be in touch soon.");
+//     } else {
+//       setMessage("Error occured");
+//       console.log(email);
+//     }
+//   } catch (err) {
+//     console.log(err);
+//     // console.log(res);
+//   }
+// };

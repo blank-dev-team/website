@@ -2,9 +2,43 @@ import "./Modal.css";
 import POPUP from "../Images/popup-img.png";
 import LOGO from "../Images/Logo.png";
 import CloseButton from "../Images/closeBtn.svg";
+import Axios from "axios";
 import { useState } from "react";
 
 function Modal({ open, onClose }) {
+  // const [message, setMessage] = useState("");
+
+  function alertText() {
+    alert("Joined successfully");
+  }
+
+  const url = "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist";
+  const [data, setData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+  });
+
+  function handle(e) {
+    const newdata = { ...data };
+    newdata[e.target.id] = e.target.value;
+    setData(newdata);
+    console.log(newdata);
+  }
+
+  function submit(e) {
+    e.preventDefault();
+    Axios.post(url, {
+      email: data.email,
+      firstName: data.firstName,
+      lastName: data.lastName,
+    }).then((res) => {
+      console.log(res);
+      alertText();
+      onClose();
+    });
+  }
+
   if (!open) return null;
   return (
     <div className="modalOverlay">
@@ -20,7 +54,7 @@ function Modal({ open, onClose }) {
         <div className="modal-Right">
           <img src={LOGO} className="popup-logo"></img>
           <h1 className="popup-heading">Please enter your details</h1>
-          <form className="popup-form">
+          <form onSubmit={(e) => submit(e)} className="popup-form">
             <div className="popup-label-container">
               <label id="first-name" className="popup-name-label">
                 First name
@@ -31,13 +65,21 @@ function Modal({ open, onClose }) {
             </div>
             <div className="popup-input-container">
               <input
+                onChange={(e) => handle(e)}
+                value={data.firstName}
+                id="firstName"
                 type="text"
                 for="first-name"
+                required
                 className="popup-name-input"
               ></input>
               <input
+                onChange={(e) => handle(e)}
+                value={data.lastName}
+                id="lastName"
                 type="text"
                 for="last-name"
+                required
                 className="popup-name-input"
               ></input>
             </div>
@@ -45,10 +87,20 @@ function Modal({ open, onClose }) {
               <label id="email" className="popup-name-label">
                 Email address
               </label>
-              <input for="email" className="popup-email-input"></input>
+              <input
+                onChange={(e) => handle(e)}
+                value={data.email}
+                id="email"
+                type="email"
+                for="email"
+                required
+                className="popup-email-input"
+              ></input>
             </div>
 
-            <button className="popup-submit">Submit</button>
+            <button type="submit" className="popup-submit">
+              Submit
+            </button>
           </form>
         </div>
       </div>
@@ -56,7 +108,8 @@ function Modal({ open, onClose }) {
   );
 }
 
-<div id="popup1" className="popup">
+{
+  /* <div id="popup1" className="popup">
   <div className="popup-content">
     <div className="popup-left">
       <img src={POPUP}></img>
@@ -96,6 +149,7 @@ function Modal({ open, onClose }) {
       </form>
     </div>
   </div>
-</div>;
+</div>; */
+}
 
 export default Modal;

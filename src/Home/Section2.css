@@ -71,8 +71,21 @@
 .rocket {
   transition: all 0.3s;
 }
-.rocket:hover {
-  /* transform: translate(111%, -80%); */
+.rocket:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+
+.Modal-btn:hover img {
+  transform: rotateX(90deg) translateY(-22px);
 }
 
 .box-img-1 {

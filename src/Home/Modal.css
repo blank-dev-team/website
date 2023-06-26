@@ -139,6 +139,7 @@
   border: none;
   padding: 0.5rem 0.5rem;
   margin-bottom: 0.9rem;
+  font-family: inherit;
 }
 
 .popup-name-label {
@@ -159,6 +160,7 @@
   border: none;
   padding: 0.5rem 0.5rem;
   margin-bottom: 4.7rem;
+  font-family: inherit;
 }
 
 .popup-submit {
@@ -171,6 +173,7 @@
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* ************************************** */

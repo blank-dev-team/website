@@ -60,6 +60,7 @@
   border: 1px solid #3f3350;
   border-radius: 5px;
   padding: 2rem;
+  font-family: inherit;
 }
 
 .name-grid {
@@ -69,6 +70,7 @@
 
 .email-input {
   width: 65rem;
+  font-family: inherit;
 }
 
 .message-input {
@@ -76,6 +78,9 @@
   height: 10rem;
   border: 1px solid #3f3350;
   border-radius: 5px;
+  padding: 1.2rem 2rem;
+  resize: none;
+  font-family: inherit;
 }
 
 .submit-button {
@@ -90,6 +95,13 @@
   font-family: inherit;
   font-size: 1.8rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 1.2em;
+  text-align: center;
+  color: #36a936;
 }
 
 @media (max-width: 53.75em) {
