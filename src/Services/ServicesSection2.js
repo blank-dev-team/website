@@ -1,7 +1,11 @@
 import "./ServicesSection2.css";
 import SmarterWay from "../Images/Smarter way.png";
-
+import { useState } from "react";
+import Modal from "../Home/Modal";
+import Rocket from "../Images/white-rocket.svg";
 function ServicesSection2() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="services-section-2">
       <div className="services-section-container">
@@ -13,9 +17,10 @@ function ServicesSection2() {
             Manage all your payment cards in one place, minimizing wallet
             clutter and simplifying your payment life. What are you waiting for?
           </p>
-          <a className="cta-btn" href="#">
-            Start Now
-          </a>
+          {/* Modal btn */}
+          <button onClick={() => setOpenModal(true)} className="Modal-btn">
+            Start Now <img className="rocket" src={Rocket} />
+          </button>
         </div>
         <div className="services-img-box">
           <img className="Smarterway-img" src={SmarterWay}></img>

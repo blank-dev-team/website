@@ -3,8 +3,12 @@ import Accordian from "./Accordian";
 import TypesExample from "./Accordian";
 import Footer from "../Home/Footer";
 import "./FaqMain.css";
+import { Link } from "react-router-dom";
 
 function FaqMain() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       {/* <Nav></Nav> */}
@@ -18,9 +22,13 @@ function FaqMain() {
               Find some of the most commonly asked questions and answers. If
               your question isn't here, feel free to reach out.
             </p>
-            <a className="cta-btn faq-btn" href="#">
+            <Link
+              onClick={scrollToTop}
+              className="text-box__btn"
+              to="/contactus"
+            >
               Contact Us
-            </a>
+            </Link>
           </div>
           <div className="FaqMain-accordian">
             <Accordian />

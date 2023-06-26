@@ -13,6 +13,10 @@ import { NavLink } from "react-router-dom";
 function Section2() {
   const [openModal, setOpenModal] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="section-2">
       <div className="container-1">
@@ -61,7 +65,11 @@ function Section2() {
               convenient, and customizable way to manage all your payment cards.
               Add all your cards and enjoy a truly limitless experience.
             </p>
-            <Link className="text-box__btn" to="/services">
+            <Link
+              onClick={scrollToTop}
+              className="text-box__btn"
+              to="/services"
+            >
               See More
             </Link>
           </div>

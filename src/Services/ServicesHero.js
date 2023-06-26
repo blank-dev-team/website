@@ -1,8 +1,12 @@
 import Nav from "../Home/Nav";
 import "./ServicesHero.css";
 import Services from "../Images/Services.png";
+import { useState } from "react";
+import Modal from "../Home/Modal";
 
 function ServicesHero() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="servicesHero">
       <Nav></Nav>
@@ -18,9 +22,10 @@ function ServicesHero() {
               only one card with you wherever you go. Isn't that just
               convenient?
             </p>
-            <a className="cta-btn" href="#">
+            {/* Modal btn */}
+            <button onClick={() => setOpenModal(true)} className="Modal-btn">
               Get Started
-            </a>
+            </button>
           </div>
           <div className="hero-container__img-box">
             <img className="img-box-img" src={Services}></img>
