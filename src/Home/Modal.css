@@ -123,7 +123,7 @@
 
 .popup-label-container {
   display: flex;
-  gap: 17rem;
+  gap: 18rem;
   margin-bottom: 0.8rem;
 }
 
@@ -183,7 +183,17 @@
   }
 
   .popup-label-container {
-    gap: 14rem;
+    gap: 16rem;
+  }
+  .modal-Right {
+    width: 75%;
+    padding: 10rem 15rem;
+  }
+}
+
+@media (max-width: 98.75em) {
+  .popup-label-container {
+    gap: 13rem;
   }
 }
 
