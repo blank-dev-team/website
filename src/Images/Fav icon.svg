@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Fav_icon" data-name="Fav icon" transform="translate(-76 -36)">
+    <g id="Ellipse_198" data-name="Ellipse 198" transform="translate(76 36)" fill="#fff" stroke="rgba(112,112,112,0.2)" stroke-width="1">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="15.5" fill="none"/>
+    </g>
+    <g id="Icon" transform="translate(-1030.845 -487.823)">
+      <path id="Path_17556" data-name="Path 17556" d="M1119.036,2344.89v.012l-.006-.006Z" transform="translate(-1.017 -1794.759)" fill="#ea6a5e"/>
+      <path id="Path_17557" data-name="Path 17557" d="M1130.071,667.191l-6.676,6.676a2.581,2.581,0,0,1-3.651,0l-.744-.744V652.5l10.3,10.3.015-.015.752.752A2.582,2.582,0,0,1,1130.071,667.191Z" transform="translate(-0.988 -122.981)" fill="#ff7043"/>
+      <path id="Path_17558" data-name="Path 17558" d="M1119.5,2345.834l0,0v-.008Z" transform="translate(-1.482 -1795.688)" fill="#ea6a5e"/>
+      <path id="Path_17559" data-name="Path 17559" d="M1129.089,535.435l-6.676-6.676a2.582,2.582,0,0,0-3.651,0l-.758.758.086.086,0,0-.082-.071-.006-.005v.007h0l.005.005v20.605l-.006.006v.01l4.34-4.34,5.986-5.973,0,0,.761-.761A2.582,2.582,0,0,0,1129.089,535.435Zm-10.25-5.927.011.011-.011.011Z" transform="translate(0 0)" fill="#fa8668"/>
+      <path id="Path_17560" data-name="Path 17560" d="M1125.9,1088.539l-3.643,3.643-1.341,1.338-.909.907v-5.148H1120V1079l5.116,5.116h0l.014.014.006-.006.771.771h0A2.582,2.582,0,0,1,1125.9,1088.539Z" transform="translate(-1.976 -544.287)" fill="#f4a08b"/>
+      <path id="Path_17561" data-name="Path 17561" d="M1126.894,659.918l-.764.764-.006.006-.014-.014-5.11,5.11v-15.4l6,6,.008.009h0A2.581,2.581,0,0,1,1126.894,659.918Z" transform="translate(-2.964 -120.887)" fill="#f6b2a0"/>
+    </g>
+  </g>
+</svg>
