@@ -18,7 +18,7 @@ function Info() {
           <div className="icon-box">
             <img src={Call}></img>
             <h2 className="icon-box-heading">Contact</h2>
-            <p className="icon-box-p">+234 8123 238 980</p>
+            <p className="icon-box-p">+234 702 509 9226</p>
           </div>
           <div className="icon-box">
             <img src={Mail}></img>

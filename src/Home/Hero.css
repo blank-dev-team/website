@@ -2,10 +2,14 @@
   background-image: linear-gradient(#3f3d56, #0d0c11);
   /* height: 80rem; */
   padding-left: 3rem;
+  /* remember to do css for mobile view */
+  /* could be reworked */
+  height: 50em;
 }
 
 .hero-container {
   /* padding: 0 7.8rem; */
+  height: 50em;
   margin-top: 4.3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,6 +213,13 @@
 /* ******************************************* */
 /* ******************************************* */
 /* Media Queries */
+
+@media (max-width: 96em) {
+  .hero-container {
+    height: 40em;
+  }
+}
+
 @media (max-width: 81.25em) {
   .hero-container__text-box-heading-primary {
     font-size: 4rem;
@@ -216,6 +227,10 @@
 }
 
 @media (max-width: 53.75em) {
+  .hero {
+    height: auto;
+  }
+
   .hero-container__text-box-heading-primary {
     font-size: 3.5rem;
   }

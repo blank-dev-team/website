@@ -15,6 +15,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 10.5rem;
+  margin-bottom: 10rem;
   padding: 0 3rem;
 }
 
@@ -22,7 +23,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 8rem;
+  column-gap: 8rem;
+  row-gap: 25rem;
   padding: 0 7rem;
 }
 

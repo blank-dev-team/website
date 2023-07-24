@@ -1,6 +1,7 @@
 .why-container {
   margin: 0 auto;
-  margin-top: 8rem;
+  margin-top: 15rem;
+  margin-bottom: 30rem;
 }
 
 .text-content {
@@ -417,16 +418,19 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
   }
   .grid-3 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+
     gap: 4rem;
   }
   .container-img-img {
-    width: 8%;
+    width: 25%;
   }
 
   .grid-phone {
@@ -434,12 +438,14 @@
   }
 
   .container-img-img-2 {
-    margin-left: 54rem;
     width: 30%;
-    text-align: center;
   }
 
   .container-text p {
+    font-size: 2.6rem;
+  }
+
+  .container-text-2 p {
     font-size: 2.6rem;
   }
 
@@ -483,6 +489,7 @@
   }
 
   .text-choose-container-4 {
+    align-items: center;
     text-align: center;
     flex-direction: column;
     position: static;
@@ -496,6 +503,7 @@
   }
 
   .text-choose-container-5 {
+    align-items: center;
     text-align: center;
     flex-direction: column;
     position: static;
@@ -509,6 +517,7 @@
   }
 
   .text-choose-container-6 {
+    align-items: center;
     text-align: center;
     flex-direction: column;
     position: static;
@@ -524,7 +533,7 @@
 
 @media (max-width: 32.5em) {
   .container-img-img-2 {
-    margin-left: 59rem;
+    /* margin-left: 59rem; */
     width: 30%;
     text-align: center;
   }
@@ -532,7 +541,7 @@
 
 @media (max-width: 27.5em) {
   .container-img-img-2 {
-    margin-left: 50rem;
+    /* margin-left: 50rem; */
     width: 30%;
     text-align: center;
   }

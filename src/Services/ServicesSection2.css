@@ -1,16 +1,12 @@
 .services-section-2 {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  display: block;
-  margin: 0 auto;
-  /* max-width: 144rem; */
-  /* background-color: #3f3350; */
-  /* margin-left: 30.8rem; */
+  margin-top: 15rem;
+  margin-bottom: 25rem;
 }
 
 .services-section-container {
   display: flex;
   align-items: center;
+
   /* gap: 8rem; */
   padding: 2rem;
   justify-content: space-around;

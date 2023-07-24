@@ -9,11 +9,13 @@ import Axios from "axios";
 
 function ContactForm() {
   const [message, setMessage] = useState("");
-  const url = "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist";
+  const url =
+    "https://blank-card-dev.herokuapp.com/blank/api/v1/utility/contact-us";
   const [data, setData] = useState({
+    email: "",
     firstName: "",
     lastName: "",
-    email: "",
+    message: "",
   });
 
   function handle(e) {
@@ -29,9 +31,10 @@ function ContactForm() {
       email: data.email,
       firstName: data.firstName,
       lastName: data.lastName,
+      message: data.messageInput,
     }).then((res) => {
       console.log(res);
-      alert("You've Joined Succesfully");
+      alert("We'll get back to you");
     });
   }
 
@@ -103,14 +106,21 @@ function ContactForm() {
             />
           </div>
           <div className="label-grid">
-            <label>Message</label>
-            <textarea className="message-input" type="text" for="message" />
+            <label id="message">Message</label>
+            <textarea
+              className="message-input"
+              onChange={(e) => handle(e)}
+              value={data.messageInput}
+              id="message"
+              for="message"
+              required
+            />
           </div>
         </div>
         <button className="submit-button" type="submit">
           Send Message
         </button>
-        {/* <div className="message">{message ? <p>{message}</p> : null}</div> */}
+        <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
     </div>
   );

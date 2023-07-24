@@ -10,7 +10,7 @@ import { useState } from "react";
 function Hero() {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div>
+    <div className="hero-hero">
       <div className="hero">
         <Nav></Nav>
         <div className="hero-container-1">
