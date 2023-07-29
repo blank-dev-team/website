@@ -13,7 +13,9 @@ function Info() {
           <div className="icon-box box-icon-info">
             <img src={Map}></img>
             <h2 className="icon-box-heading">Address</h2>
-            <p className="icon-box-p">5 Adedeji Street Ogba, Lagos,Nigeria</p>
+            <p className="icon-box-p address-p">
+              8 Musa Akor Off Akin Oshiyemi street,<br></br> Lagos,Nigeria
+            </p>
           </div>
           <div className="icon-box">
             <img src={Call}></img>
@@ -32,3 +34,5 @@ function Info() {
 }
 
 export default Info;
+
+// &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
