@@ -4,11 +4,12 @@ import Facebook from "../Images/facebook.svg";
 import Instagram from "../Images/instagram.svg";
 import Twitter from "../Images/twitter.svg";
 import Linkedin from "../Images/linkedin.svg";
-import { useState } from "react";
 import Axios from "axios";
+import { useState } from "react";
 
 function ContactForm() {
   const [message, setMessage] = useState("");
+
   const url =
     "https://blank-card-dev.herokuapp.com/blank/api/v1/utility/contact-us";
   const [data, setData] = useState({
@@ -31,7 +32,7 @@ function ContactForm() {
       email: data.email,
       firstName: data.firstName,
       lastName: data.lastName,
-      message: data.messageInput,
+      message: data.message,
     }).then((res) => {
       console.log(res);
       alert("We'll get back to you");
@@ -110,7 +111,7 @@ function ContactForm() {
             <textarea
               className="message-input"
               onChange={(e) => handle(e)}
-              value={data.messageInput}
+              value={data.message}
               id="message"
               for="message"
               required
