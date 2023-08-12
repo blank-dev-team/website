@@ -22,4 +22,12 @@
   .box-img-4 {
     width: 90%;
   }
+
+  .b-1 {
+    order: 2;
+  }
+
+  .b-2 {
+    order: 1;
+  }
 }

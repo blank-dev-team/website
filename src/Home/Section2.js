@@ -21,7 +21,7 @@ function Section2() {
     <div className="section-2">
       <div className="container-1">
         <div className="container-1 grid--2-cols">
-          <div className="container__text-box">
+          <div className="container__text-box a-1">
             <h1 className="text-box__header-primary">
               Say Goodbye to Wallet Clutter with Blank Card
             </h1>
@@ -36,13 +36,13 @@ function Section2() {
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
-          <div className="container__img-box">
+          <div className="container__img-box a-2">
             <img className="box-img-1" src={Wallet}></img>
           </div>
-          <div className="container__img-box">
+          <div className="container__img-box a-3">
             <img className="box-img-2" src={Floating}></img>
           </div>
-          <div className="container__text-box">
+          <div className="container__text-box a-4">
             <h1 className="text-box__header-primary">
               The All-In-One Card Solution
             </h1>
@@ -56,7 +56,7 @@ function Section2() {
               Get Onboard <img className="rocket" src={Rocket} />
             </button>
           </div>
-          <div className="container__text-box">
+          <div className="container__text-box a-5">
             <h1 className="text-box__header-primary">
               The Future of Payments Is Here with Blank Card
             </h1>
@@ -73,7 +73,7 @@ function Section2() {
               See More
             </Link>
           </div>
-          <div className="container__img-box img-box__grid">
+          <div className="container__img-box img-box__grid a-6">
             <div className="box-container">
               <img className="box-icon " src={AddCard}></img>
               <p className="box-icon__text">Add Cards</p>

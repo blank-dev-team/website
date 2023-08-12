@@ -234,4 +234,28 @@
     font-size: 5.4rem;
     padding: 3.5rem 4.4rem 3.5rem 4.4rem;
   }
+
+  .a-1 {
+    order: 1;
+  }
+
+  .a-2 {
+    order: 2;
+  }
+
+  .a-3 {
+    order: 4;
+  }
+
+  .a-4 {
+    order: 3;
+  }
+
+  .a-5 {
+    order: 5;
+  }
+
+  .a-6 {
+    order: 6;
+  }
 }
