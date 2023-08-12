@@ -172,6 +172,7 @@
     height: fit-content;
     display: flex;
     flex-direction: column-reverse;
+
     gap: 3rem;
     border-radius: 0;
     padding: 3rem 4rem;
@@ -201,9 +202,25 @@
   }
 
   .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 9rem;
+    align-items: center;
+    padding: 0 4rem;
+    /* justify-items: center; */
+    /* column-gap: 2rem; */
+  }
+
+  .footer-links__logo-links p {
+    font-size: 3rem;
+  }
+
+  .footer-links_logo-links__heading {
+    font-size: 4.4rem;
+  }
+
+  .footer-links_logo-links__secondary {
+    font-size: 2.8rem;
   }
 }
 

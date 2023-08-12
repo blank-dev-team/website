@@ -55,7 +55,7 @@
 
 @media (max-width: 96em) {
   .hero2 {
-    height: 45em;
+    height: fit-content;
   }
 }
 
