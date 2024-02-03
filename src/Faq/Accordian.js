@@ -14,22 +14,22 @@ function Accordian() {
     setSelected(i);
   };
 
-  const ArrowDownImg = <img src={ArrowDown}></img>;
+  // const ArrowDownImg = <img src={ArrowDown} alt={ArrowDown}></img>;
 
   return (
     <div className="accordion">
       {data.map((item, i) => (
         <div className="item">
           <div
-            className={selected == i ? "title" : "title-show"}
+            className={selected === i ? "title" : "title-show"}
             onClick={() => toggle(i)}
           >
             <h2>{item.question}</h2>
-            <span className={selected == i ? "arrow-left" : "arrow-down"}>
+            <span className={selected === i ? "arrow-left" : "arrow-down"}>
               &nbsp;
             </span>
           </div>
-          <div className={selected == i ? "content-show" : "content"}>
+          <div className={selected === i ? "content-show" : "content"}>
             {item.answer}
           </div>
         </div>

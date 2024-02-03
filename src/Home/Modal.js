@@ -52,36 +52,38 @@ function Modal({ open, onClose }) {
           <img src={CloseButton} />
         </button>
         <div className="modal-Right">
-          <img src={LOGO} className="popup-logo"></img>
+          <img src={LOGO} alt={LOGO} className="popup-logo"></img>
           <h1 className="popup-heading">Please enter your details</h1>
           <form onSubmit={(e) => submit(e)} className="popup-form">
-            <div className="popup-label-container">
-              <label id="first-name" className="popup-name-label">
-                First name
-              </label>
-              <label id="last-name" className="popup-name-label">
-                Last name
-              </label>
-            </div>
-            <div className="popup-input-container">
-              <input
-                onChange={(e) => handle(e)}
-                value={data.firstName}
-                id="firstName"
-                type="text"
-                for="first-name"
-                required
-                className="popup-name-input"
-              ></input>
-              <input
-                onChange={(e) => handle(e)}
-                value={data.lastName}
-                id="lastName"
-                type="text"
-                for="last-name"
-                required
-                className="popup-name-input"
-              ></input>
+            <div className="name-container">
+              <div className="named-container">
+                <label id="first-name" className="popup-name-label">
+                  First name
+                </label>
+                <input
+                  onChange={(e) => handle(e)}
+                  value={data.firstName}
+                  id="firstName"
+                  type="text"
+                  for="first-name"
+                  required
+                  className="popup-name-input"
+                ></input>
+              </div>
+              <div className="named-container">
+                <label id="last-name" className="popup-name-label">
+                  Last name
+                </label>
+                <input
+                  onChange={(e) => handle(e)}
+                  value={data.lastName}
+                  id="lastName"
+                  type="text"
+                  for="last-name"
+                  required
+                  className="popup-name-input"
+                ></input>
+              </div>
             </div>
             <div className="popup-email-div">
               <label id="email" className="popup-name-label">

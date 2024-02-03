@@ -61,17 +61,23 @@
 
 @media (max-width: 27.5em) {
   .accordion {
-    width: 88rem;
+    width: 90rem;
+    margin-bottom: 2rem;
   }
 
   .title-show {
     color: #3f3d56;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .title {
     color: #ffffff;
     font-size: 2.8rem;
+  }
+
+  .content-show {
+    font-size: 2.1rem;
+    padding: 2rem;
   }
 }

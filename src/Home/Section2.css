@@ -259,3 +259,18 @@
     order: 6;
   }
 }
+
+@media (max-width: 35.625em) {
+  .text-box__btn:link,
+  .text-box__btn:visited {
+    padding: 1.5rem 3.4rem 1.6rem 3.4rem;
+    background-color: #f07e61;
+    border-radius: 33px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 5.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: inherit;
+  }
+}

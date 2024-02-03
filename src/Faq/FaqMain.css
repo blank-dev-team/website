@@ -39,6 +39,17 @@
 }
 
 @media (max-width: 27.5em) {
+  .FaqMain {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding: 0 14rem;
+    height: 100dvh;
+  }
+  .FaqMain-text-container {
+    text-align: center;
+  }
+
   .FaqMain-container {
     display: block;
     margin: auto;
