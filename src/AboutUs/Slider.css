@@ -149,6 +149,12 @@
   .carousel-img-container {
     padding: 0;
     height: 60%;
-    width: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-img {
+    width: 85%;
   }
 }
