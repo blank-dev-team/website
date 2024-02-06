@@ -11,7 +11,7 @@ function ContactForm() {
   const [message, setMessage] = useState("");
 
   const url =
-    "https://blank-card-dev.herokuapp.com/blank/api/v1/utility/contact-us";
+    "https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us";
   const [data, setData] = useState({
     email: "",
     firstName: "",

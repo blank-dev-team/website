@@ -12,7 +12,7 @@ function Modal({ open, onClose }) {
     alert("Joined successfully");
   }
 
-  const url = "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist";
+  const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
