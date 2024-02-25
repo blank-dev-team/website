@@ -186,3 +186,30 @@
     font-size: 3rem;
   }
 }
+
+@media (max-width: 27.5em) {
+  .CookingModalContainer {
+    width: 64%;
+    height: 105rem;
+  }
+
+  .cooking-header {
+    font-size: 7.5rem;
+  }
+
+  .cooking-name-label {
+    font-size: 4.5rem;
+  }
+
+  .cooking-email-label {
+    font-size: 4.5rem;
+  }
+
+  .cooking-name-input {
+    height: 7rem;
+  }
+
+  .cooking-email-input {
+    height: 7rem;
+  }
+}
