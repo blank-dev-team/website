@@ -26,7 +26,7 @@ function Nav() {
     <div>
       <div className="header">
         <a href="#">
-          <img className="logo" src={logo}></img>
+          <img className="logo" src={logo} alt="logo" />
         </a>
         <div ref={navRef} className="main-nav">
           <ul ref={listRef} className="main-nav__list ">

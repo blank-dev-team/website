@@ -10,7 +10,7 @@ function ServicesHero() {
   return (
     <div className="servicesHero">
       <Nav></Nav>
-      <div className="contain">
+      <div>
         <div className="hero-container">
           <div className="hero-container__text-box">
             <h1 className="text-box__primary ppt">

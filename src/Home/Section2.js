@@ -68,8 +68,7 @@ function Section2() {
             <Link
               onClick={scrollToTop}
               className="text-box__btn"
-              to="/services"
-            >
+              to="/services">
               See More
             </Link>
           </div>

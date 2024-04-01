@@ -34,15 +34,14 @@ function OurServicesTab() {
         <div className="services-button-container">
           <div
             onClick={() => setActive("FirstCard")}
-            className="service-button-contained"
-          >
+            className="service-button-contained">
             <img
               // onClick={() => setActiveBtn(!activeBtn)}
               className={
                 active === "FirstCard" ? "service-btn-active" : "service-btn"
               }
               src={RequestCard}
-            ></img>
+            alt="" />
             <p
               className={
                 active === "FirstCard"
@@ -62,21 +61,15 @@ function OurServicesTab() {
                 active === "SecondCard" ? "service-btn-active" : "service-btn"
               }
               src={Addcard}
-            ></img>
-            <p
-              className={
+            alt="" />
+            <p className={
                 active === "SecondCard"
                   ? "service-btn-text-active"
-                  : "service-btn-text"
-              }
-            >
-              Add Card
-            </p>
+                  : "service-btn-text"}>Add Card</p>
           </div>
           <div
             onClick={() => setActive("ThridCard")}
-            className="service-button-contained"
-          >
+            className="service-button-contained">
             <img
               className={
                 active === "ThridCard" ? "service-btn-active" : "service-btn"

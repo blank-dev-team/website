@@ -1,6 +1,5 @@
 .section-4 {
   margin-top: 5.9rem;
-  margin-bottom: 20rem;
 }
 
 .text-box__btn {
@@ -11,11 +10,17 @@
 }
 
 .box-img-4 {
-  width: 80%;
+  width: 100%;
+  max-width: 2044px;
 }
 
 .grid-section {
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.text-side{
+  margin-top: -80px;
 }
 
 @media (max-width: 35.625em) {

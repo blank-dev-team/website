@@ -11,7 +11,7 @@ function Why() {
   return (
     <div className="why-container">
       <div className="text-content">
-        <h1>Why Choose Blank</h1>
+        <h2>Why Choose Blank</h2>
         <p className="text-stuff">
           Do you dread the thought of having to switch between apps just to make
           a purchase? Here are some reasons why Blank is the only app you need
@@ -22,38 +22,38 @@ function Why() {
         <div className="grid-1">
           <div className="text-choose-container-1">
             <div className="container-text">
-              <h1>Super Fast</h1>
+              <h3>Super Fast</h3>
               <p>
                 Transactions are carried out with<br></br> ease and lightening
                 speed.
               </p>
             </div>
             <div className="container-img">
-              <img className="container-img-img" src={SuperFast} />
+              <img className="container-img-img" src={SuperFast} alt="blank Super Fast" />
             </div>
           </div>
           <div className="text-choose-container-2">
             <div className="container-text">
-              <h1>All-in-One</h1>
+              <h3>All-in-One</h3>
               <p>
                 The App has everything. From bills,<br></br> to airtime, wallet
                 and much more.
               </p>
             </div>
             <div className="container-img">
-              <img className="container-img-img" src={AllOne} />
+              <img className="container-img-img" src={AllOne} alt="Blank All in One" />
             </div>
           </div>
           <div className="text-choose-container-3">
             <div className="container-text">
-              <h1>Data Transparency</h1>
+              <h3>Data Transparency</h3>
               <p>
                 We don't store user sensitive data.<br></br> Your financial
                 information is safe.
               </p>
             </div>
             <div className="container-img">
-              <img className="container-img-img" src={DataTransparency} />
+              <img className="container-img-img" src={DataTransparency} alt="blank Data Transparency" />
             </div>
           </div>
         </div>
@@ -63,10 +63,10 @@ function Why() {
         <div className="grid-3">
           <div className="text-choose-container-4">
             <div className="container-img-2">
-              <img className="container-img-img-2" src={Secure} />
+              <img className="container-img-img-2" src={Secure} alt="Blank Secure" />
             </div>
             <div className="container-text-2">
-              <h1>Very Secure</h1>
+              <h3>Very Secure</h3>
               <p>
                 Security protocols protect all<br></br> transactions on the app.
               </p>
@@ -74,10 +74,10 @@ function Why() {
           </div>
           <div className="text-choose-container-5">
             <div className="container-img-2">
-              <img className="container-img-img-2" src={Easy} />
+              <img className="container-img-img-2" src={Easy} alt="Blank Easy" />
             </div>
             <div className="container-text-2">
-              <h1>Easy to Use</h1>
+              <h3>Easy to Use</h3>
               <p>
                 The Blank app is very simple to use,<br></br> interface is
                 sleek.
@@ -86,10 +86,10 @@ function Why() {
           </div>
           <div className="text-choose-container-6">
             <div className="container-img-2">
-              <img className="container-img-img-2" src={Subscription} />
+              <img className="container-img-img-2" src={Subscription}  alt="Blank Subscription"/>
             </div>
             <div className="container-text-2">
-              <h1>No Subscription</h1>
+              <h3>No Subscription</h3>
               <p>
                 You don't have to pay a monthly<br></br> subscription. Just
                 order the card.

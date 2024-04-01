@@ -10,10 +10,10 @@ import Linkedin from "../Images/linkedin.svg";
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-container">
+      <div className="footer-container onboard">
         <div className="footer-container-container">
           <div className="footer-container-img-container">
-            <img className="phone-img" src={Phones}></img>
+            <img className="phone-img" src={Phones} alt="" />
           </div>
           <div className="footer-container-img_text-box">
             <h2 className="footer-text-primary">Ready to Get Started?</h2>
@@ -26,8 +26,7 @@ function Footer() {
                 name="email"
                 id="email"
                 type="email"
-                placeholder="Your Email"
-              ></input>
+                placeholder="Your Email"></input>
               <button>
                 <img className="footer-icon" src={FooterIcon}></img>
               </button>
@@ -39,9 +38,9 @@ function Footer() {
       <div className="footer-links container">
         <div className="footer-links__logo-links">
           <a href="#">
-            <img className="logo" src={logo}></img>
+            <img className="logo" src={logo} alt="Blank Technologies"/>
           </a>
-          <p>The Only Card You'll Ever Need</p>
+          <p className="tagline">The Only Card You'll Ever Need</p>
           <div className="footer-links__logo-links__social-links">
             <a href="#">
               <img src={Facebook}></img>

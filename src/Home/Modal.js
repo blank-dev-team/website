@@ -53,7 +53,7 @@ function Modal({ open, onClose }) {
         </button>
         <div className="modal-Right">
           <img src={LOGO} alt={LOGO} className="popup-logo"></img>
-          <h1 className="popup-heading">Please enter your details</h1>
+          <h3 className="popup-heading">Please enter your details</h3>
           <form onSubmit={(e) => submit(e)} className="popup-form">
             <div className="name-container">
               <div className="named-container">

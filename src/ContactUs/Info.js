@@ -7,11 +7,11 @@ import Mail from "../Images/Email.svg";
 function Info() {
   return (
     <div className="Info">
-      <Nav></Nav>
+      <Nav/>
       <div className="Info-box">
         <div className="icon-container">
           <div className="icon-box box-icon-info">
-            <img src={Map}></img>
+            <img src={Map} alt=""/>
             <h2 className="icon-box-heading">Address</h2>
             <p className="icon-box-p address-p">
               8 Musa Akor Off Akin Oshiyemi street,<br></br> Lagos,Nigeria

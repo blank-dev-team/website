@@ -1,8 +1,6 @@
 .section-3 {
   background-color: #fffcf2;
-  /* height: 100rem; */
-  margin-top: 25rem;
-  margin-bottom: 25rem;
+  height: 100vh;
   /* padding: 0rem 14rem 0rem 5rem; */
 }
 
@@ -14,7 +12,8 @@
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-  align-items: center;
+  padding-block: 140px;
+  margin-bottom: 0;
 }
 
 .container__img-box-2 {
@@ -29,7 +28,8 @@
 .text-box__img-container {
   /* max-width: auto; */
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  margin-left: -30px;
   justify-items: flex-start;
 }
 
@@ -42,7 +42,8 @@
 }
 
 .img-container__img {
-  width: 100%;
+  width: 180px;
+  font-size: 1.2em;
   /* height: 6rem; */
 }
 

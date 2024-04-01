@@ -2,6 +2,7 @@
   background-image: linear-gradient(#3f3d56, #0d0c11);
   /* height: 80rem; */
   padding: 5rem 1.7rem;
+  height: 110dvh;
 }
 
 .text-container {
@@ -10,11 +11,11 @@
 
 .ourservices-header {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .ourservices-text {
   color: #bfbfc4;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-top: 0.9rem;
 }

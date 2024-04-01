@@ -1,18 +1,18 @@
 .tab-container {
   display: block;
   margin: 0 auto;
-  max-width: 144rem;
-  margin-top: 6rem;
-  height: fit-content;
+  max-width: 1024px;
+  /*height: 100dvh;*/
   /* background-color: red; */
   /* padding: 2rem; */
 }
 
 .services-button-container {
   display: flex;
-  gap: 21.1rem;
+  gap: 6rem;
+  justify-content: center;
+  margin-top: 3rem;
   /* background-color: red; */
-  padding: 5rem 14rem;
 }
 
 .service-button-contained {
@@ -43,13 +43,13 @@
 
 .service-btn-text {
   color: #9c9ba6;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .service-btn-text-active {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -58,32 +58,23 @@
 }
 
 .player-container {
-  display: flex;
+  display: grid;
+  margin-top: -50px;
+  grid-template-columns: 1.5fr 1fr;
   align-items: center;
+  gap: 2rem;
 }
 
-.player {
-  width: 70%;
-}
+/*.player {*/
+/*  width: 70%;*/
+/*}*/
 
 .player-text {
-  width: 60%;
   color: #ffffff;
-  font-size: 2.2rem;
+  line-height: 2;
+  font-size: 1.4rem;
   text-align: left;
   font-style: italic;
-}
-
-@media (max-width: 105.625em) {
-  .services-button-container {
-    padding: 0 14rem;
-  }
-}
-
-@media (max-width: 90.625em) {
-  .services-button-container {
-    padding: 0 14rem;
-  }
 }
 
 @media (max-width: 81.25em) {

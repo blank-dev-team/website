@@ -30,14 +30,14 @@ function Section3() {
                 className="img-container__img"
                 src={GooglePlay}
                 alt="GooglePlay"
-              ></img>
+              />
             </button>
             <button className="cooking-btn" onClick={() => setOpenModal(true)}>
               <img
                 className="img-container__img"
                 src={AppStore}
                 alt="Apple App Store"
-              ></img>
+              />
             </button>
             <CookingModal
               open={openModal}

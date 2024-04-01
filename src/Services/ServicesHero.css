@@ -1,3 +1,15 @@
 .ppt {
-  width: 70rem;
+  width: 80%;
+}
+.servicesHero{
+  height: 100dvh;
+}
+
+.text-box__secondary{
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.Modal-btn{
+  margin-top: -10rem;
 }

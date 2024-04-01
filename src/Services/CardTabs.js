@@ -24,7 +24,6 @@ function CardTabs({ data, cardIndex }) {
             loop
             autoplay
             speed={2}
-            style={{ height: "60rem", width: "60rem" }}
           />
           <p className="player-text">{item.playerText}</p>
         </div>

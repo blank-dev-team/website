@@ -1,23 +1,18 @@
 .header {
-  /* background-image: linear-gradient(#3f3d56, #0d0c11); */
-  /* justify-content: space-between; */
   align-items: center;
-  /* color: #ffffff; */
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-
-  padding: 0 6.8rem;
-  padding-top: 2.6rem;
-
+  width: 80%;
+  margin: 0 auto;
+  padding-block: 20px;
   display: flex;
-  /* gap: 54rem; */
   justify-content: space-between;
-  /* justify-items: auto;  */
 }
 
 .logo {
-  height: 3.8rem;
+  width: 150px;
+  height: auto;
 }
 
 .main-nav {
@@ -28,7 +23,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2.5rem;
 }
 
 .main-nav__link:link,
@@ -36,8 +31,6 @@
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  /* text-transform: uppercase; */
-
   transition: all 0.3s;
 }
 
@@ -46,7 +39,6 @@
   color: #f07e61;
   text-decoration: none;
   display: inline-block;
-  color: inherit;
 }
 
 .main-nav .active {
@@ -62,9 +54,7 @@
   border: none;
   background: none;
   cursor: pointer;
-  display: block;
   z-index: 9999;
-
   display: none;
 }
 

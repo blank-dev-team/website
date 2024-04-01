@@ -8,10 +8,10 @@ function Services() {
   return (
     <div className="services">
       {/* <Nav></Nav> */}
-      <ServicesHero></ServicesHero>
-      <OurServices></OurServices>
-      <ServicesSection2 />
-      <Footer></Footer>
+      <ServicesHero/>
+      <OurServices/>
+      <ServicesSection2/>
+      <Footer/>
     </div>
   );
 }

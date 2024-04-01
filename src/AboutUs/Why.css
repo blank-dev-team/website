@@ -1,40 +1,46 @@
 .why-container {
   margin: 0 auto;
-  margin-top: 15rem;
-  margin-bottom: 30rem;
+  margin-block: 10rem;
 }
 
 .text-content {
-  max-width: 85rem;
+  max-width: 1024px;
+  widthh: 100vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.text-content h1 {
+.text-content h2 {
   color: #3f3d56;
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .text-stuff {
   margin-top: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  text-align: center;
   color: #707070;
 }
 
 .content-container {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  gap: 4rem;
+  grid-template-columns: 2fr 1.4fr 2fr;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .grid-1 {
   position: relative;
   /* background-color: orangered; */
+  display: grid;
   width: 100%;
+  gap: 6rem;
 }
 
 .phoneimg {
@@ -44,7 +50,7 @@
 .text-choose-container-1 {
   display: flex;
   gap: 1.4rem;
-  position: absolute;
+  /*position: absolute;*/
   left: 35rem;
   top: 6rem;
   /* background-color: grey; */
@@ -54,8 +60,8 @@
   width: 100%;
 }
 
-.container-text h1 {
-  font-size: 2.4rem;
+.container-text h3 {
+  font-size: 1.4rem;
   color: #3f3d56;
   text-align: right;
   margin-bottom: 1rem;
@@ -63,60 +69,65 @@
 }
 
 .container-text p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   text-align: right;
   /* width: 150%; */
 }
 
 .container-img-img {
-  width: 70%;
+  width: 40px;
+  height: auto;
 }
 
 .text-choose-container-2 {
   display: flex;
+  margin-right: 40px;
   gap: 1.4rem;
-  position: absolute;
+  /*position: absolute;*/
   left: 33rem;
-  top: 26rem;
+  /*top: 26rem;*/
 }
 
 .text-choose-container-3 {
   display: flex;
   gap: 1.4rem;
-  position: absolute;
+  /*position: absolute;*/
   left: 37rem;
-  top: 48rem;
+  /*top: 48rem;*/
 }
 
 .grid-3 {
   position: relative;
+  display: grid;
   /* background-color: orangered; */
   width: 100%;
+  gap: 4rem;
 }
 
 .container-img-2 {
-  width: 30%;
+  width: 60px;
 }
 
 .container-img-img-2 {
-  width: 65%;
+  width: 40px;
+  height: auto;
 }
 
 .text-choose-container-4 {
   display: flex;
   /* gap: 1.4rem; */
-  position: absolute;
+  /*position: absolute;*/
   left: 3rem;
   top: 6rem;
   text-align: left;
 }
 
 .container-text-2 {
-  width: 100%;
+  width: max-content;
 }
 
-.container-text-2 h1 {
-  font-size: 2.4rem;
+.container-text-2 h3 {
+  font-size: 1.4rem;
   color: #3f3d56;
   text-align: left;
   margin-bottom: 1rem;
@@ -124,15 +135,16 @@
 }
 
 .container-text-2 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   /* text-align: right; */
   /* width: 150%; */
 }
 
 .text-choose-container-5 {
   display: flex;
+  margin-left: 40px;
   /* gap: 1.4rem; */
-  position: absolute;
+  /*position: absolute;*/
   left: 7rem;
   top: 28rem;
   text-align: left;
@@ -141,7 +153,7 @@
 .text-choose-container-6 {
   display: flex;
   /* gap: 1.4rem; */
-  position: absolute;
+  /*position: absolute;*/
   left: 7rem;
   top: 48rem;
   text-align: left;
@@ -455,11 +467,11 @@
     position: static;
     left: 6rem;
     top: 5rem;
-  }
 
-  .text-choose-container-1 h1 {
-    text-align: center;
-    font-size: 3.4rem;
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 
   .text-choose-container-2 {
@@ -470,10 +482,6 @@
     top: 5rem;
   }
 
-  .text-choose-container-2 h1 {
-    text-align: center;
-    font-size: 3.4rem;
-  }
 
   .text-choose-container-3 {
     text-align: center;
@@ -481,11 +489,11 @@
     position: static;
     left: 6rem;
     top: 5rem;
-  }
 
-  .text-choose-container-3 h1 {
-    text-align: center;
-    font-size: 3.4rem;
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 
   .text-choose-container-4 {
@@ -495,12 +503,13 @@
     position: static;
     left: 6rem;
     top: 5rem;
+
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 
-  .text-choose-container-4 h1 {
-    text-align: center;
-    font-size: 3.4rem;
-  }
 
   .text-choose-container-5 {
     align-items: center;
@@ -509,12 +518,13 @@
     position: static;
     left: 6rem;
     top: 5rem;
+
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 
-  .text-choose-container-5 h1 {
-    text-align: center;
-    font-size: 3.4rem;
-  }
 
   .text-choose-container-6 {
     align-items: center;
@@ -523,11 +533,11 @@
     position: static;
     left: 6rem;
     top: 5rem;
-  }
 
-  .text-choose-container-6 h1 {
-    text-align: center;
-    font-size: 3.4rem;
+    h3 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 }
 

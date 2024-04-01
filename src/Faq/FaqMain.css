@@ -1,16 +1,15 @@
 .FaqMain-container {
   display: block;
   margin: 0 auto;
-
-  max-width: 144rem;
-  margin-top: 18rem;
+  margin-top: 4rem;
 }
 
 .FaqMain {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   /* align-items: center; */
   gap: 6rem;
-  padding: 0 14rem;
+  padding: 0 8rem;
   height: 100dvh;
 }
 
@@ -21,14 +20,14 @@
 .FaqMain-heading-primary {
   margin-bottom: 2rem;
   color: #3f3d56;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .FaqMain-heading-secondary {
   margin-bottom: 7.2rem;
   color: #3f3d56;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .faq-btn {
@@ -40,10 +39,11 @@
 
 @media (max-width: 27.5em) {
   .FaqMain {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 6rem;
-    padding: 0 14rem;
+    padding: 0 10rem;
     height: 100dvh;
   }
   .FaqMain-text-container {
@@ -68,7 +68,7 @@
 
   .FaqMain-heading-primary {
     margin-bottom: 2rem;
-    font-size: 9rem;
+    font-size: 2rem;
   }
 
   .FaqMain-heading-secondary {

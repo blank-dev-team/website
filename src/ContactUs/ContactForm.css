@@ -1,23 +1,24 @@
 .form {
   margin-top: 3.5rem;
-  margin-bottom: 29rem;
+  margin-bottom: 10rem;
 }
 
 .text-heading {
   text-align: center;
 }
 
-.text-heading h1 {
+.text-heading h2 {
   color: #3f3d56;
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-top: 3rem;
   font-weight: 600;
 }
 
 .text-heading p {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   color: #707077;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .icon-heading {
@@ -31,17 +32,29 @@
   gap: 2.8rem;
   margin-bottom: 3.5rem;
   align-items: center;
+  justify-content: center;
+
+  a{
+    img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 }
 
 .contact-form {
   display: block;
-  max-width: 74rem;
   margin: 0 auto;
+  width: 800px;
   border-radius: 5px;
   background-color: #fffcf6;
-  padding: 4rem 4rem;
+  padding: 2rem 2rem;
   border: 0.2px solid #707070;
   border-width: 0.2px;
+
+  label{
+    font-size: 1rem !important;
+  };
 }
 
 .contact-form label {
@@ -56,27 +69,25 @@
 }
 
 .name-input {
-  width: 31rem;
-  height: 4rem;
+  width: 100%;
   border: 1px solid #3f3350;
   border-radius: 5px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   font-family: inherit;
 }
 
 .name-grid {
-  display: flex;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
 }
 
 .email-input {
-  width: 65rem;
   font-family: inherit;
 }
 
 .message-input {
-  width: 65rem;
-  height: 10rem;
   border: 1px solid #3f3350;
   border-radius: 5px;
   padding: 1.2rem 2rem;
@@ -86,31 +97,30 @@
 
 .submit-button {
   display: block;
+  width: 100%;
   /* margin: 0 auto; */
-  width: 65rem;
   background-color: #f07e61;
   color: #ffffff;
   border: none;
   border-radius: 10px;
-  padding: 2.6rem 1.7rem 1.7rem 2.6rem;
+  padding-block: 1.2rem;
   font-family: inherit;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
 
 .message {
-  font-size: 1.2em;
   text-align: center;
   color: #36a936;
 }
 
 @media (max-width: 53.75em) {
-  .text-heading h1 {
-    font-size: 5rem;
+  .text-heading h2 {
+    font-size: 2rem;
   }
   .text-heading p {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .contact-form label {
     color: #3f3d56;
@@ -118,9 +128,6 @@
   }
   .submit-button {
     font-size: 2rem;
-  }
-  .icon-heading {
-    max-width: 20rem;
   }
 }
 

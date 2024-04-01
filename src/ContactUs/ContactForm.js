@@ -42,7 +42,7 @@ function ContactForm() {
   return (
     <div className="form">
       <div className="text-heading">
-        <h1>Get in Touch</h1>
+        <h2>Get in Touch</h2>
         <p>
           Feel free to reach out to us on our various platforms, or send us a
           message by<br></br> filling the form below.

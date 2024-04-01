@@ -15,9 +15,9 @@ function FaqMain() {
       <div className="FaqMain-container">
         <div className="FaqMain">
           <div className="FaqMain-text-container">
-            <h1 className="FaqMain-heading-primary">
+            <h2 className="FaqMain-heading-primary">
               Frequently Asked<br></br> Questions
-            </h1>
+            </h2>
             <p className="FaqMain-heading-secondary">
               Find some of the most commonly asked questions and answers. If
               your question isn't here, feel free to reach out.

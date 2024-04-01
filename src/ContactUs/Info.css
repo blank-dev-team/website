@@ -1,43 +1,48 @@
 .Info-box {
   display: block;
-  max-width: 144rem;
+  max-width: 1046px;
   margin: 0 auto;
 }
 
 .icon-container {
-  margin-top: 13.6rem;
+  margin-top: 6rem;
   display: grid;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .icon-box {
   display: block;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid #ffecb3;
   border-radius: 5px;
-  padding: 5rem 6rem;
+  padding: 2rem 3rem;
 }
 
 .box-icon-info {
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 
 .icon-box img {
   display: block;
   margin: 0 auto;
+  height: 2rem;
+  width: auto;
 }
 
 .icon-box-heading {
   margin-top: 1.6rem;
   color: #3f3d56;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .icon-box-p {
-  margin-top: 2.3rem;
+  margin-top: 1rem;
   color: #707070;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .address-p {
@@ -51,12 +56,14 @@
   }
   .icon-box-p {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 27.5em) {
   .icon-container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 2rem;
   }
@@ -72,6 +79,7 @@
   }
   .icon-box-p {
     font-size: 2rem;
+    text-align: center;
     /* max-width: 20rem; */
   }
 }
