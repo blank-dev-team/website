@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Modal from "../Home/Modal";
 import About from "../Images/Aboutus.png";
 import { useState } from "react";
@@ -10,7 +9,7 @@ function Hero2() {
 
   return (
     <div className="hero2">
-      <Nav></Nav>
+      <Nav/>
       <div className="hero-container">
         <div className="hero-container__text-box">
           <h1 className="text-box__primary">
@@ -28,7 +27,7 @@ function Hero2() {
           <Modal open={openModal} onClose={() => setOpenModal(false)} />
         </div>
         <div className="hero-container__img-box">
-          <img className="img-box-img" src={About}></img>
+          <img className="img-box-img" src={About}  alt="" />
         </div>
       </div>
     </div>

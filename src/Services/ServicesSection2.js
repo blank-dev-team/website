@@ -19,12 +19,12 @@ function ServicesSection2() {
           </p>
           {/* Modal btn */}
           <button onClick={() => setOpenModal(true)} className="Modal-btn">
-            Start Now <img className="rocket" src={Rocket} />
+            Start Now <img className="rocket" src={Rocket} alt="" />
           </button>
           <Modal open={openModal} onClose={() => setOpenModal(false)} />
         </div>
         <div className="services-img-box">
-          <img className="Smarterway-img" src={SmarterWay}></img>
+          <img className="Smarterway-img" src={SmarterWay}  alt="" />
         </div>
       </div>
     </div>

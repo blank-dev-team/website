@@ -8,7 +8,6 @@ import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 function Section2() {
   const [openModal, setOpenModal] = useState(false);
@@ -32,15 +31,15 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Start Now <img className="rocket" src={Rocket} />
+              Start Now <img className="rocket" src={Rocket} alt="" />
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="container__img-box a-2">
-            <img className="box-img-1" src={Wallet}></img>
+            <img className="box-img-1" src={Wallet}  alt="" />
           </div>
           <div className="container__img-box a-3">
-            <img className="box-img-2" src={Floating}></img>
+            <img className="box-img-2" src={Floating}  alt="" />
           </div>
           <div className="container__text-box a-4">
             <h1 className="text-box__header-primary">
@@ -53,7 +52,7 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Get Onboard <img className="rocket" src={Rocket} />
+              Get Onboard <img className="rocket" src={Rocket} alt="" />
             </button>
           </div>
           <div className="container__text-box a-5">
@@ -74,15 +73,15 @@ function Section2() {
           </div>
           <div className="container__img-box img-box__grid a-6">
             <div className="box-container">
-              <img className="box-icon " src={AddCard}></img>
+              <img className="box-icon " src={AddCard}  alt="" />
               <p className="box-icon__text">Add Cards</p>
             </div>
             <div className="box-container">
-              <img className="box-icon" src={SuperTransfer}></img>
+              <img className="box-icon" src={SuperTransfer} alt="" />
               <p className="box-icon__text">Super Transfer</p>
             </div>
             <div className="box-container">
-              <img className="box-icon" src={BlockCard}></img>
+              <img className="box-icon" src={BlockCard} alt="" />
               <p className="box-icon__text">Block Cards</p>
             </div>
           </div>

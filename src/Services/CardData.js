@@ -3,7 +3,8 @@ import AddCardImg from "../Images/Add-cards.json";
 import CardHistoryImg from "../Images/Card-history.json";
 import SuperTransferImg from "../Images/Super-Transfer.json";
 
-export default [
+
+const cardsData = [
   [
     {
       player: RequestCardImg,
@@ -33,3 +34,5 @@ export default [
     },
   ],
 ];
+
+export default cardsData;

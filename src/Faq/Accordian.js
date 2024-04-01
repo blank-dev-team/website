@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ArrowDown from "../Images/arrow-down.svg";
 
 import "./Accordian.css";
 
@@ -10,7 +9,7 @@ function Accordian() {
     setSelected(i);
   };
 
-  // const ArrowDownImg = <img src={ArrowDown} alt={ArrowDown}></img>;
+  // const ArrowDownImg = <img src={ArrowDown} alt={ArrowDown}  alt="" />;
 
   return (
     <div className="accordion">

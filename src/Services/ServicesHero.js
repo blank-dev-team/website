@@ -29,7 +29,7 @@ function ServicesHero() {
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="hero-container__img-box">
-            <img className="img-box-img" src={Services}></img>
+            <img className="img-box-img" src={Services}  alt="" />
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@ function Why() {
           </div>
         </div>
         <div className="grid-phone">
-          <img className="phoneimg" src={Phone2} />
+          <img className="phoneimg" src={Phone2} alt="" />
         </div>
         <div className="grid-3">
           <div className="text-choose-container-4">

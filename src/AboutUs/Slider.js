@@ -1,4 +1,3 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React, { useState } from "react";
 import Pic1 from "../Images/About 1.png";
 import Pic2 from "../Images/About 2.png";

@@ -1,16 +1,11 @@
 import "./Nav.css";
 import logo from "../Images/Logo.png";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
 import MobileBar from "../Images/mobileIcon.svg";
 import MobileClose from "../Images/mobileClose.svg";
 import { useRef } from "react";
-import { useState } from "react";
 
 function Nav() {
-  // const [active, setActive] = useState("FirstCard");
-  const activeLink = "main-nav__link-active";
-  const normalLink = "main-nav__link";
 
   const navRef = useRef();
   const listRef = useRef();
@@ -62,8 +57,8 @@ function Nav() {
           ref={navBtn}
           className="mobile-button mobile-open"
         >
-          <img className="mobile-open-btn" src={MobileBar}></img>
-          <img className="mobile-close-btn" src={MobileClose}></img>
+          <img className="mobile-open-btn" src={MobileBar} alt="" />
+          <img className="mobile-close-btn" src={MobileClose} alt="" />
         </button>
       </div>
     </div>

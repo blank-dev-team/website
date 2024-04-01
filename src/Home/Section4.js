@@ -22,12 +22,12 @@ function Section4() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Get Now <img className="rocket" src={Rocket} />
+              Get Now <img className="rocket" src={Rocket} alt="" />
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="container__img-box-1 b-2">
-            <img className="box-img-4" src={HoldingCard} alt=""></img>
+            <img className="box-img-4" src={HoldingCard}  alt="" />
           </div>
         </div>
       </div>

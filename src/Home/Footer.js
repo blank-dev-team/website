@@ -28,7 +28,7 @@ function Footer() {
                 type="email"
                 placeholder="Your Email"></input>
               <button>
-                <img className="footer-icon" src={FooterIcon}></img>
+                <img className="footer-icon" src={FooterIcon}  alt="" />
               </button>
             </form>
           </div>
@@ -43,16 +43,16 @@ function Footer() {
           <p className="tagline">The Only Card You'll Ever Need</p>
           <div className="footer-links__logo-links__social-links">
             <a href="#">
-              <img src={Facebook}></img>
+              <img src={Facebook}  alt="" />
             </a>
             <a href="#">
-              <img src={Twitter}></img>
+              <img src={Twitter}  alt="" />
             </a>
             <a href="#">
-              <img src={Linkedin}></img>
+              <img src={Linkedin}  alt="" />
             </a>
             <a href="#">
-              <img src={Instagram}></img>
+              <img src={Instagram} alt="" />
             </a>
           </div>
         </div>

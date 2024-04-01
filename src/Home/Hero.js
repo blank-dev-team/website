@@ -1,9 +1,6 @@
 import "./Hero.css";
 import Nav from "./Nav";
 import HeroImg from "../Images/Hero.png";
-import POPUP from "../Images/popup-img.png";
-import LOGO from "../Images/Logo.png";
-import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";
 
@@ -12,7 +9,7 @@ function Hero() {
   return (
     <div className="hero-hero">
       <div className="hero">
-        <Nav></Nav>
+        <Nav/>
         <div className="hero-container-1">
           <div className="hero-container__text-box">
             <h1 className="hero-container__text-box-heading-primary">
@@ -32,7 +29,7 @@ function Hero() {
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="hero-container__img-box">
-            <img className="hero-img" src={HeroImg}></img>
+            <img className="hero-img" src={HeroImg}  alt="" />
           </div>
         </div>
       </div>

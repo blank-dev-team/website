@@ -13,7 +13,7 @@ function Section3() {
     <div className="section-3">
       <div className="container-1 grid grid--2-cols u-margin-top">
         <div className="container__img-box-2">
-          <img className="img" src={PaymentImg}></img>
+          <img className="img" src={PaymentImg}  alt="" />
         </div>
         <div className="container__text-box">
           <h1 className="text-box__header-primary">

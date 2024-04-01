@@ -8,7 +8,7 @@ import Axios from "axios";
 import { useState } from "react";
 
 function ContactForm() {
-  const [message, setMessage] = useState("");
+  const [message] = useState("");
 
   const url =
     "https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us";
@@ -50,16 +50,16 @@ function ContactForm() {
         <div className="icon-heading">
           <div className="icons">
             <a href="#">
-              <img src={Facebook}></img>
+              <img src={Facebook}  alt="" />
             </a>
             <a href="#">
-              <img src={Twitter}></img>
+              <img src={Twitter}  alt="" />
             </a>
             <a href="#">
-              <img src={Linkedin}></img>
+              <img src={Linkedin}  alt="" />
             </a>
             <a href="#">
-              <img src={Instagram}></img>
+              <img src={Instagram} alt="" />
             </a>
           </div>
         </div>
