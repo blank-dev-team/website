@@ -34,7 +34,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.blank.ng
-        local-dir: dist/apps/blank-admin/
+        local-dir: build/
         server-dir: public_html/www
         username: cicd@admin.blank.ng
         password: ${{ secrets.FTP_PASSWORD }}
