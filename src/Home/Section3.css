@@ -4,18 +4,6 @@
   /* padding: 0rem 14rem 0rem 5rem; */
 }
 
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  padding-block: 140px;
-  margin-bottom: 0;
-}
-
 .container__img-box-2 {
   margin-top: 2rem;
   justify-self: center;
@@ -47,17 +35,3 @@
   /* height: 6rem; */
 }
 
-@media (max-width: 35.625em) {
-  .grid {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .img {
-    width: 90%;
-  }
-
-  .cooking-btn {
-    width: 30.6rem;
-  }
-}

@@ -8,27 +8,28 @@ function Hero() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="hero-hero">
-      <div className="hero">
+      <div className="hero h-[100svh] w-screen">
         <Nav/>
-        <div className="hero-container-1">
-          <div className="hero-container__text-box">
-            <h1 className="hero-container__text-box-heading-primary">
-              Hello to <br className="mobile-br"></br>{" "}
-              <span className="fig">Convenience.</span>
-              <br></br>All your cards in one<br></br> place!
+        <div className="hero-container-1 grid grid-cols-1 lg:grid-cols-[5fr_3fr] xl:grid-cols-[5fr_4fr] w-screen !py-0">
+          <div className="mt-14 ml-6 lg:ml-28">
+            <h1 className="hero-container__text-box-heading-primary text-4xl lg:text-[2.5em] xl:text-[3.5em]">
+              Hello to
+              <span className="text-[#ff7043]"> Convenience. </span> <br className="lg:block hidden"/> All your cards
+              in <br className="sm:block hidden"/> one place!
             </h1>
-            <h3 className="hero-container__text-box-heading-secondary">
-              Now you can put all your cards in one card.Never have to<br></br>{" "}
+            <div
+                className="text-white text-sm lg:text-base max-w-[500px] lg:leading-10 leading-relaxed">
+              Now you can put all your cards in one card. Never have to
               fumble between cards again when you need to pay at a
-              <br className="tab-br"></br> terminal.
-            </h3>
+              terminal.
+            </div>
             {/* Modal btn */}
-            <button onClick={() => setOpenModal(true)} className="Modal-btn">
+            <button onClick={() => setOpenModal(true)} className="Modal-btn !mt-10">
               Get started
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
-          <div className="hero-container__img-box">
+          <div className="hero-container__img-box lg:block hidden">
             <img className="hero-img" src={HeroImg}  alt="" />
           </div>
         </div>

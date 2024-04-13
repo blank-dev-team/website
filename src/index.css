@@ -6,52 +6,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #707070;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
-/* Media Queries */
-@media (max-width: 71.875em) {
-  html {
-    font-size: 55.5%;
-  }
-}
-
-@media (max-width: 64em) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 53.75em) {
-  html {
-    font-size: 40%;
-  }
-}
-
-@media (max-width: 43.125em) {
-  html {
-    font-size: 33%;
-  }
-}
-
-@media (max-width: 35.625em) {
-  html {
-    font-size: 30%;
-  }
-}
-
-@media (max-width: 32.5em) {
-  html {
-    font-size: 25%;
-  }
-}

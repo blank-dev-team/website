@@ -10,7 +10,7 @@ function Section3() {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className="section-3">
+    <div className="section-3 mt-20">
       <div className="container-1 grid grid--2-cols u-margin-top">
         <div className="container__img-box-2">
           <img className="img" src={PaymentImg}  alt="" />

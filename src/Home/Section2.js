@@ -17,11 +17,11 @@ function Section2() {
   };
 
   return (
-    <div className="section-2">
-      <div className="container-1">
-        <div className="container-1 grid--2-cols">
-          <div className="container__text-box a-1">
-            <h1 className="text-box__header-primary">
+    <div className="section-2 pt-20 xl:px-24 pt-0 px-8 lg:px-24">
+      <div>
+        <div className="lg:mt-14 mt-0 pt-0 items-center gap-y-20 relative grid grid-cols-1 lg:grid-cols-2">
+          <div className="">
+            <h1 className="text-box__header-primary w-9/12 lg:w-full">
               Say Goodbye to Wallet Clutter with Blank Card
             </h1>
             <p className="text-box__header-secondary">
@@ -31,18 +31,18 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Start Now <img className="rocket" src={Rocket} alt="" />
+              <div className="flex w-full items-center justify-center gap-2"><span>Start Now</span><span> <img className="rocket" src={Rocket} alt="" /></span></div>
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
-          <div className="container__img-box a-2">
-            <img className="box-img-1" src={Wallet}  alt="" />
+          <div className="">
+            <img className="box-img-1 lg:!w-6/12 lg:static absolute -right-5 top-8 !w-5/12" src={Wallet}  alt="" />
           </div>
-          <div className="container__img-box a-3">
-            <img className="box-img-2" src={Floating}  alt="" />
+          <div className="container__img-box lg:!w-full lg:static absolute -left-5 top-[610px] !w-10/12">
+            <img className="box-img-2 lg:pt-10" src={Floating}  alt="" />
           </div>
           <div className="container__text-box a-4">
-            <h1 className="text-box__header-primary">
+            <h1 className="text-box__header-primary w-7/12 lg:w-full lg:ml-0 ml-auto lg:text-left text-right">
               The All-In-One Card Solution
             </h1>
             <p className="text-box__header-secondary">
@@ -52,10 +52,12 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Get Onboard <img className="rocket" src={Rocket} alt="" />
+              <div className="flex w-full items-center justify-center gap-2"><span>Get Onboard</span>
+                <span><img className="rocket" src={Rocket} alt="" /></span></div>
             </button>
           </div>
-          <div className="container__text-box a-5">
+
+          <div className="lg:w-11/12 w-full">
             <h1 className="text-box__header-primary">
               The Future of Payments Is Here with Blank Card
             </h1>
@@ -66,24 +68,26 @@ function Section2() {
             </p>
             <Link
               onClick={scrollToTop}
-              className="text-box__btn"
+              className="text-box__btn lg:static !text-sm lg:!text-[1.4rem] relative top-32"
               to="/services">
               See More
             </Link>
           </div>
-          <div className="container__img-box img-box__grid a-6">
+          <div className="flex justify-end w-full">
+          <div className="img-box__grid lg:w-11/12 lg:static relative -top-36">
             <div className="box-container">
-              <img className="box-icon " src={AddCard}  alt="" />
-              <p className="box-icon__text">Add Cards</p>
+              <img className="w-[40px] lg:w-[60px]" src={AddCard}  alt="" />
+              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Add Cards</p>
             </div>
             <div className="box-container">
-              <img className="box-icon" src={SuperTransfer} alt="" />
-              <p className="box-icon__text">Super Transfer</p>
+              <img className="w-[40px] lg:w-[60px]" src={SuperTransfer} alt="" />
+              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Super Transfer</p>
             </div>
             <div className="box-container">
-              <img className="box-icon" src={BlockCard} alt="" />
-              <p className="box-icon__text">Block Cards</p>
+              <img className="w-[40px] lg:w-[60px]" src={BlockCard} alt="" />
+              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Block Cards</p>
             </div>
+          </div>
           </div>
         </div>
       </div>
