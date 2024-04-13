@@ -10,7 +10,10 @@ import { useState } from "react";
 function ContactForm() {
   const [message] = useState("");
 
-  const url = process.env.REACT_APP_API_URL + 'utility/contact-us';
+  let url = 'https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us';
+  if (process.env.NODE_ENV === 'production') {
+    url = 'https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us';
+  }
   const [data, setData] = useState({
     email: "",
     firstName: "",
