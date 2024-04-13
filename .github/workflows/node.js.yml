@@ -31,7 +31,7 @@ jobs:
 
 
     - name: 📡 Deploy Blank website
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.1.0
       with:
         server: ftp.blank.ng
         local-dir: build/
