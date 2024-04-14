@@ -33,7 +33,7 @@ jobs:
       run: rm build/_redirects
 
     - name: 📡 Deploy Blank website
-      uses: SamKirkland/FTP-Deploy-Action@v4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.blank.ng
         local-dir: build/
