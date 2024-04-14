@@ -38,4 +38,4 @@ jobs:
         username: website@blank.ng
         password: ${{ secrets.FTP_PASSWORD }}
         exclude: |
-          build/_redirects
+          _redirects
