@@ -29,6 +29,8 @@ jobs:
     - run: npm install
     - run: CI=false npm run build
 
+    - name: Removing unnecessary files
+    - run: rm build/_redirects
 
     - name: 📡 Deploy Blank website
       uses: SamKirkland/FTP-Deploy-Action@v4.1.0
