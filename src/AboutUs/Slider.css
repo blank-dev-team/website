@@ -6,12 +6,7 @@
 }
 
 .slider{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
   .slider-image {
-    display: flex;
-    justify-content: center;
     img{
       height: 500px;
       width: auto;

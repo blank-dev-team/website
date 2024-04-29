@@ -17,7 +17,7 @@ function Section2() {
   };
 
   return (
-    <div className="section-2 pt-20 xl:px-24 pt-0 px-8 lg:px-24">
+    <div className="section-2 pt-20 pt-0 px-8 md:px-28 lg:!px-40">
       <div>
         <div className="lg:mt-14 mt-0 pt-0 items-center gap-y-20 relative grid grid-cols-1 lg:grid-cols-2">
           <div className="">
@@ -31,14 +31,16 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              <div className="flex w-full items-center justify-center gap-2"><span>Start Now</span><span> <img className="rocket" src={Rocket} alt="" /></span></div>
+              <div className="flex w-full items-center justify-center gap-2"><span>Start Now</span>
+                <span> <img className="rocket" src={Rocket} alt="" /></span></div>
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="">
-            <img className="box-img-1 lg:!w-6/12 lg:static absolute -right-5 top-8 !w-5/12" src={Wallet}  alt="" />
+            <img className="box-img-1 lg:!w-6/12 md:!w-3/12 md:!-top-8 md:-right-6 lg:static absolute -right-5 top-8 !w-5/12"
+                 src={Wallet}  alt="" />
           </div>
-          <div className="container__img-box lg:!w-full lg:static absolute -left-5 top-[610px] !w-10/12">
+          <div className="container__img-box lg:!w-full lg:static absolute md:top-[380px] md:!w-8/12 -left-5 top-[610px] !w-10/12">
             <img className="box-img-2 lg:pt-10" src={Floating}  alt="" />
           </div>
           <div className="container__text-box a-4">
@@ -68,7 +70,7 @@ function Section2() {
             </p>
             <Link
               onClick={scrollToTop}
-              className="text-box__btn lg:static !text-sm lg:!text-[1.4rem] relative top-32"
+              className="bg-[#ff7043] text-white px-14 text-lg font-semibold md:!text-base rounded-[33px] py-4 lg:static !text-sm lg:!text-lg relative top-32"
               to="/services">
               See More
             </Link>

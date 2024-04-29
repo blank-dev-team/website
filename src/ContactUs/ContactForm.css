@@ -3,9 +3,6 @@
   margin-bottom: 10rem;
 }
 
-.text-heading {
-  text-align: center;
-}
 
 .text-heading h2 {
   color: #3f3d56;
@@ -19,12 +16,6 @@
   margin-bottom: 2rem;
   color: #707077;
   font-size: 1.2rem;
-}
-
-.icon-heading {
-  max-width: 17rem;
-  display: block;
-  margin: 0 auto;
 }
 
 .icons {
@@ -45,21 +36,13 @@
 .contact-form {
   display: block;
   margin: 0 auto;
-  width: 800px;
-  border-radius: 5px;
   background-color: #fffcf6;
   padding: 2rem 2rem;
-  border: 0.2px solid #707070;
   border-width: 0.2px;
-
-  label{
-    font-size: 1rem !important;
-  };
 }
 
 .contact-form label {
   color: #3f3d56;
-  font-size: 1.6rem;
 }
 
 .label-grid {
@@ -72,16 +55,15 @@
   width: 100%;
   border: 1px solid #3f3350;
   border-radius: 5px;
-  padding: 1rem 2rem;
-  font-family: inherit;
+  padding: 10px 1rem;
 }
 
-.name-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  gap: 2rem;
-}
+/*.name-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+/*  width: 100%;*/
+/*  gap: 2rem;*/
+/*}*/
 
 .email-input {
   font-family: inherit;
@@ -90,7 +72,7 @@
 .message-input {
   border: 1px solid #3f3350;
   border-radius: 5px;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 14px;
   resize: none;
   font-family: inherit;
 }
@@ -113,40 +95,4 @@
 .message {
   text-align: center;
   color: #36a936;
-}
-
-@media (max-width: 53.75em) {
-  .text-heading h2 {
-    font-size: 2rem;
-  }
-  .text-heading p {
-    font-size: 1rem;
-  }
-  .contact-form label {
-    color: #3f3d56;
-    font-size: 2rem;
-  }
-  .submit-button {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 43.125em) {
-  .text-heading h1 {
-    font-size: 6rem;
-  }
-  .text-heading p {
-    font-size: 3rem;
-  }
-  .contact-form label {
-    color: #3f3d56;
-    font-size: 2.5rem;
-  }
-  .submit-button {
-    font-size: 2.5rem;
-  }
-
-  .icon-heading {
-    max-width: 24rem;
-  }
 }

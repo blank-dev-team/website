@@ -1,41 +1,44 @@
 import "./Footer.css";
 import Phones from "../Images/newPhones.png";
-import FooterIcon from "../Images/FooterIcon.png";
 import logo from "../Images/Logo.png";
 import Facebook from "../Images/facebook.svg";
 import Instagram from "../Images/instagram.svg";
 import Twitter from "../Images/twitter.svg";
 import Linkedin from "../Images/linkedin.svg";
+import {Icon} from "@iconify/react";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer-container onboard">
-        <div className="footer-container-container">
-          <div className="footer-container-img-container">
-            <img className="phone-img" src={Phones} alt="" />
+        <div className="footer-container-container max-w-[600px] lg:max-w-[800px] mx-auto md:rounded-[10px] grid lg:grid-cols-2 !rounded-0">
+          <div className="w-11/12 -mt-[75px] hidden lg:block">
+            <img className="h-full" src={Phones} alt="" />
           </div>
-          <div className="footer-container-img_text-box">
-            <h2 className="footer-text-primary">Ready to Get Started?</h2>
-            <h4 className="footer-text-secondary">
+          <div className="lg:-mt-12">
+            <h2 className="footer-text-primary !text-2xl">Ready to Get Started?</h2>
+            <h4 className="footer-text-secondary -mt-2 !mb-8 !text-white/70 !text-sm">
               Sign up to get your Blank Card today and get smarter managing your
               cards.
             </h4>
-            <form className="form-email">
+            <form>
+              <label className="!w-full relative">
+                <span className="sr-only">Email</span>
               <input
+                  className="!h-[49px] placeholder:text-sm w-full rounded-md overflow-hidden"
                 name="email"
                 id="email"
                 type="email"
-                placeholder="Your Email"></input>
-              <button>
-                <img className="footer-icon" src={FooterIcon}  alt="" />
+                placeholder="Your Email" />
+              <button className="absolute -top-[16px] flex justify-center items-center h-[50px] right-0 px-6">
+                <Icon className="text-white text-xl" icon="fa:send" />
               </button>
+              </label>
             </form>
           </div>
         </div>
       </div>
-      <div className="footer-border container-border"></div>
-      <div className="footer-links container">
+      <div className="lg:grid-cols-[.5fr,1fr] py-6 px-6 grid gap-6 lg:gap-40 lg:py-10 lg:justify-between border-y lg:px-40 border-[#ffecb3]">
         <div className="footer-links__logo-links">
           <a href="#">
             <img className="logo" src={logo} alt="Blank Technologies"/>
@@ -56,6 +59,7 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         <div className="footer-links_logo-links">
           <a href="#">
             <h3 className="footer-links_logo-links__heading">Quick Links</h3>
@@ -89,8 +93,9 @@ function Footer() {
             <p className="footer-links_logo-links__secondary">Contact Us</p>
           </a>
         </div>
+        </div>
       </div>
-      <div className="footer-border-2 container-border"></div>
+
       <div className="footer-end-container">
         <p className="footer-end">
           Blank Technologies Ltd, registered in Nigeria, #09523903

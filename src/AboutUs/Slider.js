@@ -26,11 +26,11 @@ function Slider() {
     }
   ]
   return (
-    <section className="slider">
-      <div className="slider-image">
+    <section className="slider lg:mt-20 grid lg:grid-cols-2">
+      <div className="slider-image lg:flex justify-center hidden">
         <img src={slideItem[activeSlide].img} alt="" />
       </div>
-        <div className="slider-text">
+        <div className="slider-text min-h-[400px]">
             {slideItem[activeSlide].text}
 
             <div className="indicators">

@@ -18,23 +18,14 @@
   .footer-container-container {
     display: grid;
     height: 250px;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     background-image: linear-gradient(#3f3d56, #0d0c11);
-    border-radius: 10px;
     /* width: 92rem; */
     padding: 10px 40px;
   }
 
   .footer-container-img-container {
     position: relative;
-    height: 100%;
-
-    .phone-img {
-      position: absolute;
-      bottom: -30px;
-      width: 92%;
-    }
   }
 }
 
@@ -52,26 +43,23 @@
   margin-bottom: 20px;
 }
 
-.form-email {
-  display: grid;
-  grid-template-columns: 1fr 60px;
+form {
+  label {
+    input {
+      padding-inline: 10px;
+      color: #473d3a;
+      font-weight: 500;
+      outline: none;
+      border: none;
+    }
 
-  input {
-    border-radius: 5px 0 0 5px;
-    padding-inline: 10px;
-    color: #473d3a;
-    font-weight: 500;
-    outline: none;
-    border: none;
-  }
-
-  button {
-    background: #f07e61;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    height: 45px;
-    width: 100%;
+    button {
+      background: #f07e61;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      height: 45px;
+    }
   }
 }
 
@@ -80,19 +68,7 @@
   width: 30%;
 }
 
-.footer-border {
-  border: 2px solid #ffecb3;
-}
 
-.footer-border-2 {
-  border: 2px solid #ffecb3;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr 1fr;
-  width: 1024px;
-}
 
 .footer-links__logo-links {
   display: flex;
@@ -157,19 +133,6 @@
 }
 
 @media (max-width: 35.625em) {
-  .footer-container {
-    max-width: none;
-  }
-
-  .footer-container-container {
-    height: fit-content;
-    display: flex;
-    flex-direction: column-reverse;
-
-    gap: 3rem;
-    border-radius: 0;
-    padding: 3rem 4rem;
-  }
 
   .footer-text-primary {
     font-size: 1rem;
@@ -179,40 +142,14 @@
     font-size: .9rem;
   }
 
-  .footer-container-img-container {
-  }
 
   .form-email input {
     height: 1rem;
     border-radius: 16px;
   }
 
-  .phone-img {
-    position: relative;
-    top: 6rem;
-    left: 10rem;
-  }
-
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 9rem;
-    align-items: center;
-    padding: 0 4rem;
-    /* justify-items: center; */
-    /* column-gap: 2rem; */
-  }
-
   .footer-links__logo-links p{
     font-size: 1.3rem;
-  }
-
-  .footer-links_logo-links__heading {
-    font-size: 4.4rem;
-  }
-
-  .footer-links_logo-links__secondary {
-    font-size: 2.8rem;
   }
 }
 

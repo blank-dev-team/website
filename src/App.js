@@ -12,14 +12,14 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} render={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} render={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUs />} render={<AboutUs />} />
           <Route
             path="/services"
             element={<Services />}
             render={<Services />}
           />
           <Route
-            path="/contactus"
+            path="/contact-us"
             element={<ContactUs />}
             render={<ContactUs />}
           />

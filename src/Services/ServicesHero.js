@@ -11,13 +11,12 @@ function ServicesHero() {
     <div className="servicesHero">
       <Nav></Nav>
       <div>
-        <div className="hero-container">
-          <div className="hero-container__text-box">
-            <h1 className="text-box__primary ppt">
-              <span className="spanner">The Versatile</span> payment card you
-              need
+        <div className="grid lg:grid-cols-2 mt-6 lg:px-24 px-8">
+          <div className="hero-container__text-box lg:self-center">
+            <h1 className="text-box__primary w-full lg:text-4xl lg:w-10/12 lg:leading-relaxed">
+              <span className="spanner">The Versatile</span> payment card you need
             </h1>
-            <p className="text-box__secondary">
+            <p className="text-box__secondary lg:w-[44ch]">
               With Blank Card, you can now leave all your cards at home and take
               only one card with you wherever you go. Isn't that just
               convenient?
@@ -28,7 +27,7 @@ function ServicesHero() {
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
-          <div className="hero-container__img-box">
+          <div className="hero-container__img-box hidden lg:block">
             <img className="img-box-img" src={Services}  alt="" />
           </div>
         </div>

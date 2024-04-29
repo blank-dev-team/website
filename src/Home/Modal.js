@@ -12,7 +12,8 @@ function Modal({ open, onClose }) {
     alert("Joined successfully");
   }
 
-  const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
+  // const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
+  let url = 'https://blankcard-uat.up.railway.app/blank/api/v1/waitlist';
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -23,7 +24,6 @@ function Modal({ open, onClose }) {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
     setData(newdata);
-    console.log(newdata);
   }
 
   function submit(e) {
@@ -33,7 +33,6 @@ function Modal({ open, onClose }) {
       firstName: data.firstName,
       lastName: data.lastName,
     }).then((res) => {
-      console.log(res);
       alertText();
       onClose();
     });
@@ -42,22 +41,23 @@ function Modal({ open, onClose }) {
   if (!open) return null;
   return (
     <div className="modalOverlay">
-      <div className="modalContainer">
-        <div className="modal-Left">
+      <div className="modalContainer grid lg:grid-cols-[1fr,1.5fr] w-11/12 lg:w-[750px]">
+        <div className="modal-Left hidden lg:block">
           <div className="modalImg">
             <img className="popup-img" src={POPUP} alt="popup" />
           </div>
         </div>
-        <button onClick={onClose} className="closeBtn">
+        <button onClick={onClose} className="closeBtn  top-[-3rem] right-0">
           <img alt="closebutton" src={CloseButton} />
         </button>
-        <div className="modal-Right">
+        <div className="py-3 px-4">
           <img src={LOGO} alt={LOGO} className="popup-logo" />
-          <h3 className="popup-heading">Please enter your details</h3>
-          <form onSubmit={(e) => submit(e)} className="popup-form">
-            <div className="name-container">
+          <h3 className="popup-heading mb-4">Please enter your details</h3>
+          <form onSubmit={(e) => submit(e)}
+                className="p-2 pb-6 lg:p-6 lg:pb-10 grid gap-2">
+            <div className="name-container grid gap-2 lg:grid-cols-2">
               <div className="named-container">
-                <label id="first-name" className="popup-name-label">
+                <label id="first-name" className="popup-name-label text-sm">
                   First name
                 </label>
                 <input
@@ -67,11 +67,11 @@ function Modal({ open, onClose }) {
                   type="text"
                   for="first-name"
                   required
-                  className="popup-name-input"
+                  className="popup-name-input outline-none"
                 ></input>
               </div>
               <div className="named-container">
-                <label id="last-name" className="popup-name-label">
+                <label id="last-name" className="popup-name-label text-sm">
                   Last name
                 </label>
                 <input
@@ -81,12 +81,12 @@ function Modal({ open, onClose }) {
                   type="text"
                   for="last-name"
                   required
-                  className="popup-name-input"
+                  className="popup-name-input outline-none"
                 ></input>
               </div>
             </div>
             <div className="popup-email-div">
-              <label id="email" className="popup-name-label">
+              <label id="email" className="popup-name-label text-sm">
                 Email address
               </label>
               <input
@@ -96,7 +96,7 @@ function Modal({ open, onClose }) {
                 type="email"
                 for="email"
                 required
-                className="popup-email-input"
+                className="popup-email-input outline-none"
               ></input>
             </div>
 

@@ -10,10 +10,10 @@ function Hero2() {
   return (
     <div className="hero2">
       <Nav/>
-      <div className="hero-container">
-        <div className="hero-container__text-box">
-          <h1 className="text-box__primary">
-            <span className="spanner">One Card</span> for all your<br></br>{" "}
+      <div className="grid lg:grid-cols-2 gap-10 lg:items-center px-8 lg:!px-24 lg:py-10">
+        <div className="hero-container__text-box pt-16">
+          <h1 className="text-box__primary !text-4xl lg:!text-5xl !leading-[1.4]">
+            <span className="spanner">One Card</span> for all your <br className="hidden lg:block" />
             other cards.
           </h1>
           <p className="text-box__secondary">
@@ -21,12 +21,12 @@ function Hero2() {
             only one card with you wherever you go. Isn't that just convenient?
           </p>
           {/* Modal btn */}
-          <button onClick={() => setOpenModal(true)} className="Modal-btn">
+          <button onClick={() => setOpenModal(true)} className="Modal-btn !mt-10 lg:!mt-0">
             Get started
           </button>
           <Modal open={openModal} onClose={() => setOpenModal(false)} />
         </div>
-        <div className="hero-container__img-box">
+        <div className="hero-container__img-box hidden lg:block">
           <img className="img-box-img" src={About}  alt="" />
         </div>
       </div>

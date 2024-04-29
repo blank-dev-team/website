@@ -38,14 +38,14 @@ function Nav() {
           <img className="logo" src={logo} alt="logo" />
         </NavLink>
         <div ref={navRef} className="main-nav flex lg:items-center">
-          <ul ref={listRef} className="main-nav__list top-0 mt-14 lg:mt-0 list-none flex lg:gap-[1rem] xl:gap-[2.5rem] [&>li]:pl-8">
+          <ul ref={listRef} className="main-nav__list hidden lg:flex top-0 mt-14 lg:mt-0 list-none flex lg:gap-[1rem] xl:gap-[2.5rem] [&>li]:pl-8">
             <li>
               <NavLink onClick={hideNavbar} activeClassName="main-nav__link--active" className="main-nav__link" to="/">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={hideNavbar} activeClassName="main-nav__link--active" className="main-nav__link" to="/aboutus">
+              <NavLink onClick={hideNavbar} activeClassName="main-nav__link--active" className="main-nav__link" to="/about-us">
                 About Us
               </NavLink>
             </li>
@@ -60,7 +60,7 @@ function Nav() {
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={hideNavbar} activeClassName="main-nav__link--active" className="main-nav__link" to="/contactus">
+              <NavLink onClick={hideNavbar} activeClassName="main-nav__link--active" className="main-nav__link" to="/contact-us">
                 Contact Us
               </NavLink>
             </li>
@@ -69,7 +69,7 @@ function Nav() {
           <div ref={navCopy} className="absolute hidden lg:hidden bottom-10 w-full text-center opacity-60 text-sm">Blank Technologies &copy; {year}</div>
 
           <button onClick={showNavbar} ref={navBtn}
-                  className="mobile-button mobile-open absolute top-6 right-6">
+                  className="mobile-button !block lg:!hidden mobile-open absolute top-6 right-6">
             <img className="mobile-open-btn" src={MobileBar} alt=""/>
             <img className="mobile-close-btn" src={MobileClose} alt=""/>
           </button>

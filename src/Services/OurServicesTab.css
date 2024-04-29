@@ -7,13 +7,6 @@
   /* padding: 2rem; */
 }
 
-.services-button-container {
-  display: flex;
-  gap: 6rem;
-  justify-content: center;
-  margin-top: 3rem;
-  /* background-color: red; */
-}
 
 .service-button-contained {
   display: flex;
@@ -41,29 +34,10 @@
   width: 100%;
 }
 
-.service-btn-text {
-  color: #9c9ba6;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.service-btn-text-active {
-  color: #ffffff;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
 .Service-content {
   margin-top: 7rem;
 }
 
-.player-container {
-  display: grid;
-  margin-top: -50px;
-  grid-template-columns: 1.5fr 1fr;
-  align-items: center;
-  gap: 2rem;
-}
 
 /*.player {*/
 /*  width: 70%;*/
@@ -75,59 +49,4 @@
   font-size: 1.4rem;
   text-align: left;
   font-style: italic;
-}
-
-@media (max-width: 81.25em) {
-  .service-btn-text {
-    font-size: 1.3rem;
-  }
-  .service-btn-text-active {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 64em) {
-  .services-button-container {
-    padding: 0 10rem;
-  }
-  .service-btn-text {
-    font-size: 1.5rem;
-  }
-  .service-btn-text-active {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 48.125em) {
-  .services-button-container {
-    gap: 16.1rem;
-    padding: 5rem 9rem;
-  }
-}
-
-@media (max-width: 35.625em) {
-  .services-button-container {
-    gap: 12.1rem;
-    padding: 5rem 9rem;
-  }
-
-  .service-btn-text {
-    font-size: 2rem;
-  }
-  .service-btn-text-active {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 27.5em) {
-  .services-button-container {
-    gap: 6.1rem;
-    padding: 5rem 6rem;
-  }
-  .service-btn-text {
-    font-size: 2.5rem;
-  }
-  .service-btn-text-active {
-    font-size: 2.5 rem;
-  }
 }

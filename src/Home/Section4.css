@@ -2,17 +2,6 @@
   margin-top: 5.9rem;
 }
 
-.text-box__btn {
-}
-
-.container__img-box-1 {
-  margin: 0 auto;
-}
-
-.box-img-4 {
-  width: 100%;
-  max-width: 2044px;
-}
 
 .grid-section {
   grid-template-columns: 1fr 1fr;
@@ -24,10 +13,6 @@
 }
 
 @media (max-width: 35.625em) {
-  .box-img-4 {
-    width: 90%;
-  }
-
   .b-1 {
     order: 2;
   }

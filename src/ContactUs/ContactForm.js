@@ -10,10 +10,10 @@ import { useState } from "react";
 function ContactForm() {
   const [message] = useState("");
 
-  let url = 'https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us';
-  if (process.env.NODE_ENV === 'production') {
-    url = 'https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us';
-  }
+  // let url = 'https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us';
+  // if (process.env.NODE_ENV === 'production') {
+    let url = 'https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us';
+  // }
   const [data, setData] = useState({
     email: "",
     firstName: "",
@@ -25,7 +25,6 @@ function ContactForm() {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
     setData(newdata);
-    console.log(newdata);
   }
 
   function submit(e) {
@@ -36,45 +35,44 @@ function ContactForm() {
       lastName: data.lastName,
       message: data.message,
     }).then((res) => {
-      console.log(res);
       alert("We'll get back to you");
     });
   }
 
   return (
     <div className="form">
-      <div className="text-heading">
-        <h2>Get in Touch</h2>
-        <p>
+      <div className="px-4 text-center">
+        <h2 className="font-semibold text-lg lg:text-2xl text-[#3f3d56] mb-2">Get in Touch</h2>
+        <p className="text-sm lg:text-base max-w-[47ch] mx-auto mb-6">
           Feel free to reach out to us on our various platforms, or send us a
-          message by<br></br> filling the form below.
+          message by filling the form below.
         </p>
-        <div className="icon-heading">
+        <div className="">
           <div className="icons">
             <a href="#">
               <img src={Facebook}  alt="" />
             </a>
-            <a href="#">
+            <a href="https://x.com/blankapp_ng" target="_blank">
               <img src={Twitter}  alt="" />
             </a>
             <a href="#">
               <img src={Linkedin}  alt="" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/blankapp_ng" target="_blank">
               <img src={Instagram} alt="" />
             </a>
           </div>
         </div>
       </div>
 
-      <form onSubmit={(e) => submit(e)} className="contact-form">
-        <div className="contact-from-container">
-          <div className="name-grid">
+      <form onSubmit={(e) => submit(e)} className="
+      contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md">
+        <div>
+          <div className="grid lg:grid-cols-2 gap-4 [&>div>label]:text-sm">
             <div className="label-grid">
               <label id="first-name">First Name</label>
-
               <input
-                className="name-input"
+                className="name-input outline-none"
                 onChange={(e) => handle(e)}
                 value={data.firstName}
                 id="firstName"
@@ -86,7 +84,7 @@ function ContactForm() {
             <div className="label-grid">
               <label id="last-name">Last Name</label>
               <input
-                className="name-input"
+                className="name-input outline-none"
                 onChange={(e) => handle(e)}
                 value={data.lastName}
                 id="lastName"
@@ -97,9 +95,9 @@ function ContactForm() {
             </div>
           </div>
           <div className="label-grid">
-            <label id="email">Email</label>
+            <label id="email" className="text-sm">Email</label>
             <input
-              className="name-input email-input"
+              className="name-input email-input outline-none"
               onChange={(e) => handle(e)}
               value={data.email}
               id="email"
@@ -109,9 +107,9 @@ function ContactForm() {
             />
           </div>
           <div className="label-grid">
-            <label id="message">Message</label>
+            <label id="message"  className="text-sm">Message</label>
             <textarea
-              className="message-input"
+              className="message-input outline-none"
               onChange={(e) => handle(e)}
               value={data.message}
               id="message"
