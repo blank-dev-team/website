@@ -1,4 +1,10 @@
 // import { Form } from "react-router-dom";
+import React from "react";
+
+// Toast librabry imports
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./ContactForm.css";
 import Facebook from "../Images/facebook.svg";
 import Instagram from "../Images/instagram.svg";
@@ -6,13 +12,17 @@ import Twitter from "../Images/twitter.svg";
 import Linkedin from "../Images/linkedin.svg";
 import Axios from "axios";
 import { useState } from "react";
+// used this to test toast library for errors
+// import Toast from "./Toast";
 
 function ContactForm() {
   const [message] = useState("");
+  const notify = () => toast("We'll get back to you soon");
 
   // let url = 'https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us';
   // if (process.env.NODE_ENV === 'production') {
-    let url = 'https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us';
+  let url =
+    "https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us";
   // }
   const [data, setData] = useState({
     email: "",
@@ -35,14 +45,18 @@ function ContactForm() {
       lastName: data.lastName,
       message: data.message,
     }).then((res) => {
-      alert("We'll get back to you");
+      // alert("We'll get back to you");
+      notify();
     });
   }
 
   return (
     <div className="form">
+      <ToastContainer theme="dark" />
       <div className="px-4 text-center">
-        <h2 className="font-semibold text-lg lg:text-2xl text-[#3f3d56] mb-2">Get in Touch</h2>
+        <h2 className="font-semibold text-lg lg:text-2xl text-[#3f3d56] mb-2">
+          Get in Touch
+        </h2>
         <p className="text-sm lg:text-base max-w-[47ch] mx-auto mb-6">
           Feel free to reach out to us on our various platforms, or send us a
           message by filling the form below.
@@ -50,13 +64,13 @@ function ContactForm() {
         <div className="">
           <div className="icons">
             <a href="#">
-              <img src={Facebook}  alt="" />
+              <img src={Facebook} alt="" />
             </a>
             <a href="https://x.com/blankapp_ng" target="_blank">
-              <img src={Twitter}  alt="" />
+              <img src={Twitter} alt="" />
             </a>
             <a href="#">
-              <img src={Linkedin}  alt="" />
+              <img src={Linkedin} alt="" />
             </a>
             <a href="https://www.instagram.com/blankapp_ng" target="_blank">
               <img src={Instagram} alt="" />
@@ -65,8 +79,11 @@ function ContactForm() {
         </div>
       </div>
 
-      <form onSubmit={(e) => submit(e)} className="
-      contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md">
+      <form
+        onSubmit={(e) => submit(e)}
+        className="
+      contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md"
+      >
         <div>
           <div className="grid lg:grid-cols-2 gap-4 [&>div>label]:text-sm">
             <div className="label-grid">
@@ -95,7 +112,9 @@ function ContactForm() {
             </div>
           </div>
           <div className="label-grid">
-            <label id="email" className="text-sm">Email</label>
+            <label id="email" className="text-sm">
+              Email
+            </label>
             <input
               className="name-input email-input outline-none"
               onChange={(e) => handle(e)}
@@ -107,7 +126,9 @@ function ContactForm() {
             />
           </div>
           <div className="label-grid">
-            <label id="message"  className="text-sm">Message</label>
+            <label id="message" className="text-sm">
+              Message
+            </label>
             <textarea
               className="message-input outline-none"
               onChange={(e) => handle(e)}

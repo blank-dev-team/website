@@ -5,15 +5,22 @@ import CloseButton from "../Images/closeBtn.svg";
 import Axios from "axios";
 import { useState } from "react";
 
+// Toast librabry imports
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function Modal({ open, onClose }) {
   // const [message, setMessage] = useState("");
 
-  function alertText() {
-    alert("Joined successfully");
-  }
+  // Modal toast message
+  const notify = () => toast("Recieved! You have been added to the waitlist");
+
+  // function alertText() {
+  //   alert("Joined successfully");
+  // }
 
   // const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
-  let url = 'https://blankcard-uat.up.railway.app/blank/api/v1/waitlist';
+  let url = "https://blankcard-uat.up.railway.app/blank/api/v1/waitlist";
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -33,14 +40,15 @@ function Modal({ open, onClose }) {
       firstName: data.firstName,
       lastName: data.lastName,
     }).then((res) => {
-      alertText();
-      onClose();
+      notify();
+      setTimeout(onClose, 6000);
     });
   }
 
   if (!open) return null;
   return (
     <div className="modalOverlay">
+      <ToastContainer theme="dark" />
       <div className="modalContainer grid lg:grid-cols-[1fr,1.5fr] w-11/12 lg:w-[750px]">
         <div className="modal-Left hidden lg:block">
           <div className="modalImg">
@@ -53,8 +61,10 @@ function Modal({ open, onClose }) {
         <div className="py-3 px-4">
           <img src={LOGO} alt={LOGO} className="popup-logo" />
           <h3 className="popup-heading mb-4">Please enter your details</h3>
-          <form onSubmit={(e) => submit(e)}
-                className="p-2 pb-6 lg:p-6 lg:pb-10 grid gap-2">
+          <form
+            onSubmit={(e) => submit(e)}
+            className="p-2 pb-6 lg:p-6 lg:pb-10 grid gap-2"
+          >
             <div className="name-container grid gap-2 lg:grid-cols-2">
               <div className="named-container">
                 <label id="first-name" className="popup-name-label text-sm">

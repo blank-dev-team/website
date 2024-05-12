@@ -1,11 +1,18 @@
 import "./CookingModal.css";
 
+// Toast librabry imports
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import CloseButton from "../Images/closeBtn.svg";
 import Axios from "axios";
 import { useState } from "react";
 
 function CookingModal({ open, onClose }) {
   // const [message, setMessage] = useState("");
+
+  // Modal toast message
+  const notify = () => toast("Recieved! You have been added to the waitlist");
 
   function alertText() {
     alert("Joined successfully");
@@ -32,15 +39,15 @@ function CookingModal({ open, onClose }) {
       firstName: data.firstName,
       lastName: data.lastName,
     }).then((res) => {
-      console.log(res);
-      alertText();
-      onClose();
+      notify();
+      setTimeout(onClose, 6000);
     });
   }
 
   if (!open) return null;
   return (
     <div className="modalOverlay">
+      <ToastContainer theme="dark" />
       <div className="CookingModalContainer">
         <button onClick={onClose} className="closeBtn">
           <img alt="closebutton" src={CloseButton} />
