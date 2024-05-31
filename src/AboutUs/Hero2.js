@@ -4,16 +4,17 @@ import { useState } from "react";
 import "./Hero2.css";
 import Nav from "../Home/Nav";
 
-function Hero2() {
+function Hero2({ notify }) {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className="hero2">
-      <Nav/>
+      <Nav />
       <div className="grid lg:grid-cols-2 gap-10 lg:items-center px-8 lg:!px-24 lg:py-10">
         <div className="hero-container__text-box pt-16">
           <h1 className="text-box__primary !text-4xl lg:!text-5xl !leading-[1.4]">
-            <span className="spanner">One Card</span> for all your <br className="hidden lg:block" />
+            <span className="spanner">One Card</span> for all your{" "}
+            <br className="hidden lg:block" />
             other cards.
           </h1>
           <p className="text-box__secondary">
@@ -21,13 +22,20 @@ function Hero2() {
             only one card with you wherever you go. Isn't that just convenient?
           </p>
           {/* Modal btn */}
-          <button onClick={() => setOpenModal(true)} className="Modal-btn !mt-10 lg:!mt-0">
+          <button
+            onClick={() => setOpenModal(true)}
+            className="Modal-btn !mt-10 lg:!mt-0"
+          >
             Get started
           </button>
-          <Modal open={openModal} onClose={() => setOpenModal(false)} />
+          <Modal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+            notify={notify}
+          />
         </div>
         <div className="hero-container__img-box hidden lg:block">
-          <img className="img-box-img" src={About}  alt="" />
+          <img className="img-box-img" src={About} alt="" />
         </div>
       </div>
     </div>

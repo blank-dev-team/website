@@ -1,22 +1,15 @@
 import "./CookingModal.css";
 
 // Toast librabry imports
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 import CloseButton from "../Images/closeBtn.svg";
 import Axios from "axios";
 import { useState } from "react";
 
-function CookingModal({ open, onClose }) {
+function CookingModal({ open, onClose, notify }) {
   // const [message, setMessage] = useState("");
-
-  // Modal toast message
-  const notify = () => toast("Recieved! You have been added to the waitlist");
-
-  function alertText() {
-    alert("Joined successfully");
-  }
 
   const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
   const [data, setData] = useState({
@@ -40,14 +33,14 @@ function CookingModal({ open, onClose }) {
       lastName: data.lastName,
     }).then((res) => {
       notify();
-      setTimeout(onClose, 6000);
+      // setTimeout(onClose, 6000);
+      onClose();
     });
   }
 
   if (!open) return null;
   return (
     <div className="modalOverlay">
-      <ToastContainer theme="dark" />
       <div className="CookingModalContainer">
         <button onClick={onClose} className="closeBtn">
           <img alt="closebutton" src={CloseButton} />

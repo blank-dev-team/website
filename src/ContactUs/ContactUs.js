@@ -6,9 +6,9 @@ import Footer from "../Home/Footer";
 function ContactUs() {
   return (
     <div className="contactus">
-      <Info/>
-      <ContactForm/>
-      <Footer/>
+      <Info />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

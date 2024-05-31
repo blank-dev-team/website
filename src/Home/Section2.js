@@ -9,7 +9,7 @@ import Modal from "./Modal.js";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Section2() {
+function Section2({ notify }) {
   const [openModal, setOpenModal] = useState(false);
 
   const scrollToTop = () => {
@@ -31,17 +31,29 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              <div className="flex w-full items-center justify-center gap-2"><span>Start Now</span>
-                <span> <img className="rocket" src={Rocket} alt="" /></span></div>
+              <div className="flex w-full items-center justify-center gap-2">
+                <span>Start Now</span>
+                <span>
+                  {" "}
+                  <img className="rocket" src={Rocket} alt="" />
+                </span>
+              </div>
             </button>
-            <Modal open={openModal} onClose={() => setOpenModal(false)} />
+            <Modal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+              notify={notify}
+            />
           </div>
           <div className="">
-            <img className="box-img-1 lg:!w-6/12 md:!w-3/12 md:!-top-8 md:-right-6 lg:static absolute -right-5 top-8 !w-5/12"
-                 src={Wallet}  alt="" />
+            <img
+              className="box-img-1 lg:!w-6/12 md:!w-3/12 md:!-top-8 md:-right-6 lg:static absolute -right-5 top-8 !w-5/12"
+              src={Wallet}
+              alt=""
+            />
           </div>
           <div className="container__img-box lg:!w-full lg:static absolute md:top-[380px] md:!w-8/12 -left-5 top-[610px] !w-10/12">
-            <img className="box-img-2 lg:pt-10" src={Floating}  alt="" />
+            <img className="box-img-2 lg:pt-10" src={Floating} alt="" />
           </div>
           <div className="container__text-box a-4">
             <h1 className="text-box__header-primary w-7/12 lg:w-full lg:ml-0 ml-auto lg:text-left text-right">
@@ -54,8 +66,12 @@ function Section2() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              <div className="flex w-full items-center justify-center gap-2"><span>Get Onboard</span>
-                <span><img className="rocket" src={Rocket} alt="" /></span></div>
+              <div className="flex w-full items-center justify-center gap-2">
+                <span>Get Onboard</span>
+                <span>
+                  <img className="rocket" src={Rocket} alt="" />
+                </span>
+              </div>
             </button>
           </div>
 
@@ -71,25 +87,36 @@ function Section2() {
             <Link
               onClick={scrollToTop}
               className="bg-[#ff7043] text-white px-14 text-lg font-semibold md:!text-base rounded-[33px] py-4 lg:static !text-sm lg:!text-lg relative top-32"
-              to="/services">
+              to="/services"
+            >
               See More
             </Link>
           </div>
           <div className="flex justify-end w-full">
-          <div className="img-box__grid lg:w-11/12 lg:static relative -top-36">
-            <div className="box-container">
-              <img className="w-[40px] lg:w-[60px]" src={AddCard}  alt="" />
-              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Add Cards</p>
+            <div className="img-box__grid lg:w-11/12 lg:static relative -top-36">
+              <div className="box-container">
+                <img className="w-[40px] lg:w-[60px]" src={AddCard} alt="" />
+                <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">
+                  Add Cards
+                </p>
+              </div>
+              <div className="box-container">
+                <img
+                  className="w-[40px] lg:w-[60px]"
+                  src={SuperTransfer}
+                  alt=""
+                />
+                <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">
+                  Super Transfer
+                </p>
+              </div>
+              <div className="box-container">
+                <img className="w-[40px] lg:w-[60px]" src={BlockCard} alt="" />
+                <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">
+                  Block Cards
+                </p>
+              </div>
             </div>
-            <div className="box-container">
-              <img className="w-[40px] lg:w-[60px]" src={SuperTransfer} alt="" />
-              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Super Transfer</p>
-            </div>
-            <div className="box-container">
-              <img className="w-[40px] lg:w-[60px]" src={BlockCard} alt="" />
-              <p className="box-icon__text text-[.5rem] lg:text-[.9rem]">Block Cards</p>
-            </div>
-          </div>
           </div>
         </div>
       </div>

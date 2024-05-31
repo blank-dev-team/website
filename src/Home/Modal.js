@@ -6,14 +6,14 @@ import Axios from "axios";
 import { useState } from "react";
 
 // Toast librabry imports
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
-function Modal({ open, onClose }) {
+function Modal({ open, onClose, notify }) {
   // const [message, setMessage] = useState("");
 
   // Modal toast message
-  const notify = () => toast("Recieved! You have been added to the waitlist");
+  // const notify = () => toast("Recieved! You have been added to the waitlist");
 
   // function alertText() {
   //   alert("Joined successfully");
@@ -41,14 +41,15 @@ function Modal({ open, onClose }) {
       lastName: data.lastName,
     }).then((res) => {
       notify();
-      setTimeout(onClose, 6000);
+      // setTimeout(onClose, 6000);
+      onClose();
     });
   }
 
   if (!open) return null;
   return (
     <div className="modalOverlay">
-      <ToastContainer theme="dark" />
+      {/* <ToastContainer theme="dark" /> */}
       <div className="modalContainer grid lg:grid-cols-[1fr,1.5fr] w-11/12 lg:w-[750px]">
         <div className="modal-Left hidden lg:block">
           <div className="modalImg">

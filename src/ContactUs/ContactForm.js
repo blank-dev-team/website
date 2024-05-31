@@ -37,6 +37,13 @@ function ContactForm() {
     setData(newdata);
   }
 
+  function handleInputWipe() {
+    setData.firstName = "";
+    setData.lastName = "";
+    setData.email = "";
+    setData.message = "";
+  }
+
   function submit(e) {
     e.preventDefault();
     Axios.post(url, {
@@ -45,7 +52,6 @@ function ContactForm() {
       lastName: data.lastName,
       message: data.message,
     }).then((res) => {
-      // alert("We'll get back to you");
       notify();
     });
   }
@@ -139,7 +145,11 @@ function ContactForm() {
             />
           </div>
         </div>
-        <button className="submit-button" type="submit">
+        <button
+          className="submit-button"
+          type="submit"
+          disabled={handleInputWipe}
+        >
           Send Message
         </button>
         <div className="message">{message ? <p>{message}</p> : null}</div>

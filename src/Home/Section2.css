@@ -7,7 +7,6 @@
   margin: 0 auto;
 }
 
-
 .text-box__header-primary {
   color: #3f3d56;
   font-size: 2rem;
@@ -34,16 +33,33 @@
   font-family: inherit;
   transition: all 0.3s;
 
-
   &:hover img {
     transform: rotateX(90deg) translateY(-22px);
+    /* animation: Rocketfly 3s ease; */
   }
-
 }
 
 .rocket {
-  transition: all 0.3s;
+  transition: transform 0.3s ease-out;
+  animation: fly 0.5s;
 }
+
+.rocket:hover {
+  transform: translateX(200px);
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px); /* Adjust the height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .rocket:before {
   position: absolute;
   top: 100%;
@@ -56,7 +72,6 @@
   transform-origin: 50% 0;
   text-align: center;
 }
-
 
 .box-img-1 {
   width: 50%;
@@ -97,5 +112,3 @@
   font-weight: 600;
   text-align: center;
 }
-
-
