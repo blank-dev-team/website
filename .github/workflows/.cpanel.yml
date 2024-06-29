@@ -34,6 +34,6 @@ jobs:
       with:
         server: ftp.blank.ng
         local-dir: build/
-        server-dir: www/
+        server-dir: public_html/
         username: website@blank.ng
         password: ${{ secrets.FTP_PASSWORD }}
