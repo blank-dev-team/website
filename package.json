@@ -1,6 +1,7 @@
 {
   "name": "blank",
   "version": "0.1.0",
+  "homepage": "https://blank.ng",
   "private": true,
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
