@@ -16,6 +16,7 @@ const ContactUs = lazy(() => import("./ContactUs/ContactUs"));
 const Services = lazy(() => import("./Services/Services"));
 const Faq = lazy(() => import("./Faq/Faq"));
 const PrivacyPolicy = lazy(() => import("../src/Components/PrivacyPolicy"));
+const Request = lazy(() => import("./Request/Request"));
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
               element={<PrivacyPolicy />}
               render={<PrivacyPolicy />}
             />
+            <Route path="/request" element={<Request />} render={<Request />} />
           </Routes>
         </Suspense>
       </div>
