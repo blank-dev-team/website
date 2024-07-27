@@ -1,40 +1,95 @@
 import { useState } from "react";
 import "../ContactUs/ContactForm.css";
+import { getEnquires } from "./apiRequest";
+
+// Toast librabry imports
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// Modal toast message
+const notify = () => toast("You're Request has been sent");
+
+// Api call for getting the enquires
+const enquires = await getEnquires();
+
+// Api url for POST request
+const API_REQUEST_URL =
+  "https://blankcard-dev.up.railway.app/blank/api/v1/utility/submit-request";
 
 function RequestForm() {
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [enquiry, setEnquiry] = useState("closeAccount");
-  const [message, setMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    subject: "",
+    enquiry: "Close Account",
+    message: "",
+  });
 
-  function handleSubmit(e) {
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+  // const [isLoading, setIsLoading] = useState(false);
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    setEmail("");
-    setSubject("");
-    setEnquiry("");
-    setMessage("");
-    setIsLoading(true);
+
+    // Ensuring all fields are strings (the initial Endpoint was bugged so this is not even needed but here we are)
+    const validatedFormData = {
+      email: String(formData.email),
+      subject: String(formData.subject),
+      enquiry: String(formData.enquiry) || "Close Account",
+      message: String(formData.message),
+    };
+    try {
+      const res = await fetch(`${API_REQUEST_URL}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(validatedFormData),
+      });
+      const data = await res.json();
+      if (res.status === 200) {
+        console.log("Form Submitted successfully", data);
+        notify();
+
+        // This Resets form fields after successful submission
+        setFormData({
+          email: "",
+          subject: "",
+          enquiry: "Close Account",
+          message: "",
+        });
+      } else {
+        console.log("There has been an error Boss", data);
+      }
+    } catch (error) {
+      console.error("Error submitting form", error);
+    }
   }
 
   return (
     <div>
+      <ToastContainer theme="dark" />
       <form
         onSubmit={handleSubmit}
         className="
       contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md"
       >
         <div>
-          <div className="grid lg:grid-cols-2 gap-4 [&>div>label]:text-sm">
+          <div className="grid lg:grid-cols-2 gap-1  md:gap-4 [&>div>label]:text-sm">
             <div className="label-grid">
               <label id="email">Your Email Address</label>
               <input
                 className="name-input outline-none focus:ring focus:ring-red-300 "
-                id="email"
                 type="text"
-                for="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formData.email}
+                name="email"
+                onChange={handleChange}
                 required
               />
             </div>
@@ -42,11 +97,10 @@ function RequestForm() {
               <label id="subject">Subject</label>
               <input
                 className="name-input outline-none"
-                id="lastName"
                 type="text"
-                for="subject"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
+                value={formData.subject}
+                name="subject"
+                onChange={handleChange}
                 required
               />
             </div>
@@ -57,14 +111,15 @@ function RequestForm() {
             </label>
             <select
               className="name-input email-input outline-none font-semibold text-[#3f3d56]"
-              id="enquiry"
-              type="enquiry"
-              for="enquiry"
-              value={enquiry}
-              onChange={(e) => setEnquiry(e.target.value)}
+              type="text"
+              value={formData.enquiry}
+              name="enquiry"
+              onChange={handleChange}
               required
             >
-              <option value="closeAccount">Close Account</option>
+              {enquires.map((enquire) => (
+                <option value={`${String(enquire)}`}>{enquire}</option>
+              ))}
             </select>
           </div>
           <div className="label-grid">
@@ -73,18 +128,14 @@ function RequestForm() {
             </label>
             <textarea
               className="message-input outline-none"
-              id="message"
-              for="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={formData.message}
+              name="message"
+              onChange={handleChange}
               required
             />
           </div>
         </div>
-        <button className="submit-button" disabled={isLoading}>
-          {isLoading === false ? "Send Message" : "...."}
-        </button>
-        {/* <div className="message">{message ? <p>{message}</p> : null}</div> */}
+        <button className="submit-button">Send Message</button>
       </form>
     </div>
   );

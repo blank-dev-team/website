@@ -40,6 +40,12 @@ function Modal({ open, onClose, notify }) {
       firstName: data.firstName,
       lastName: data.lastName,
     }).then((res) => {
+      // This Resets form fields after successful submission
+      setData({
+        firstName: "",
+        lastName: "",
+        email: "",
+      });
       notify();
       // setTimeout(onClose, 6000);
       onClose();

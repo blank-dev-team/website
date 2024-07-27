@@ -1,6 +1,6 @@
 .CookingModalContainer {
-  width: 45%;
-  height: 44.6rem;
+  width: 50dvw;
+  height: 76dvh;
   border-radius: 10px;
   background-image: linear-gradient(#3f3d56, #0d0c11);
   box-shadow: 0 2rem 4rem rgba(black, 0.2);
@@ -35,6 +35,7 @@
   font-size: 4rem;
   color: #ff7043;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .cooking-secondary {
@@ -105,13 +106,30 @@
   cursor: pointer;
 }
 
+/*
+/* laptop screen */
+
+@media (max-width: 108em) {
+  .CookingModalContainer {
+    width: 70%;
+    height: 83%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 4rem;
+  }
+}
+
 @media (max-width: 64em) {
   .CookingModalContainer {
     width: 70%;
-    height: 59.6rem;
+    height: 47.6rem;
     padding: 9rem;
   }
-
+}
+/*
   .cooking-header {
     font-size: 5.5rem;
   }
@@ -130,15 +148,99 @@
   .cooking-email-label {
     font-size: 2.5rem;
   }
-}
+}  */
 
+/* tablet */
+@media (max-width: 48em) {
+  .CookingModalContainer {
+    width: 70%;
+    height: 83%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 4rem;
+  }
+
+  .cooking-header {
+    font-size: 2.5rem;
+  }
+  .cooking-secondary {
+    margin-top: 0;
+    font-size: 1rem;
+    height: 4.1rem;
+    width: 29rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Cookingname-container {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cooking-name-contained {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cooking-name-label {
+    font-size: 2rem;
+  }
+
+  .cooking-name-input {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .cooking-email-label {
+    font-size: 2rem;
+  }
+
+  .cooking-email-div {
+    margin-top: 3rem;
+  }
+
+  .cooking-email-input {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .cooking-submit {
+    margin-top: 2rem;
+    font-size: 6rem;
+    height: 15rem;
+  }
+}
+/* ////////////////////////////////// */
 @media (max-width: 43.125em) {
   .CookingModalContainer {
-    width: 85%;
-    height: 85%;
-    padding: 12rem;
+    width: 70%;
+    height: 83%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 1rem 0;
   }
 
+  .cooking-header {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .cooking-secondary {
+    font-size: 0.8rem;
+    color: #f5f5f5;
+    font-weight: 400;
+    height: 1rem;
+    width: 13rem;
+    margin-top: 1rem;
+  }
+}
+/*
   .cooking-header {
     font-size: 8.5rem;
   }
@@ -147,7 +249,7 @@
     font-size: 4rem;
     height: 4.1rem;
     width: 75rem;
-    margin-bottom: 20.5rem;
+    margin-bottom: 0;
   }
 
   .Cookingname-container {
@@ -183,65 +285,4 @@
     font-size: 6rem;
     height: 15rem;
   }
-}
-
-@media (max-width: 32.5em) {
-  .CookingModalContainer {
-    width: 85%;
-    height: 85%;
-    padding: 15rem;
-  }
-
-  .cooking-header {
-    font-size: 8.5rem;
-  }
-  .cooking-secondary {
-    margin-top: 4rem;
-    font-size: 4rem;
-    height: 4.1rem;
-    width: 75rem;
-    margin-bottom: 20.5rem;
-  }
-
-  .Cookingname-container {
-    gap: 5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cooking-name-label {
-    font-size: 7rem;
-  }
-
-  .cooking-name-input {
-    width: 100%;
-    height: 10rem;
-  }
-
-  .cooking-email-label {
-    font-size: 7rem;
-  }
-
-  .cooking-email-div {
-    margin-top: 5rem;
-  }
-
-  .cooking-email-input {
-    width: 100%;
-    height: 10rem;
-  }
-
-  .cooking-submit {
-    margin-top: 8rem;
-    font-size: 6rem;
-    height: 15rem;
-  }
-}
-
-@media (max-width: 27.5em) {
-  .cooking-submit {
-    margin-top: 5rem;
-    font-size: 6rem;
-    height: 15rem;
-  }
-}
+} */

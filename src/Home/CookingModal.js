@@ -1,17 +1,11 @@
 import "./CookingModal.css";
 
-// Toast librabry imports
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-
 import CloseButton from "../Images/closeBtn.svg";
 import Axios from "axios";
 import { useState } from "react";
 
 function CookingModal({ open, onClose, notify }) {
-  // const [message, setMessage] = useState("");
-
-  const url = "https://blankcard-dev.up.railway.app/blank/api/v1/waitlist";
+  let url = "https://blankcard-uat.up.railway.app/blank/api/v1/waitlist";
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -22,7 +16,6 @@ function CookingModal({ open, onClose, notify }) {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
     setData(newdata);
-    console.log(newdata);
   }
 
   function submit(e) {
@@ -32,8 +25,14 @@ function CookingModal({ open, onClose, notify }) {
       firstName: data.firstName,
       lastName: data.lastName,
     }).then((res) => {
+      // This Resets form fields after successful submission
+      setData({
+        firstName: "",
+        lastName: "",
+        email: "",
+      });
       notify();
-      // setTimeout(onClose, 6000);
+
       onClose();
     });
   }
@@ -41,7 +40,7 @@ function CookingModal({ open, onClose, notify }) {
   if (!open) return null;
   return (
     <div className="modalOverlay">
-      <div className="CookingModalContainer">
+      <div className="CookingModalContainer text-md">
         <button onClick={onClose} className="closeBtn">
           <img alt="closebutton" src={CloseButton} />
         </button>
@@ -51,10 +50,13 @@ function CookingModal({ open, onClose, notify }) {
           enter your email below and get notified when we launch!
         </h3>
         {/* form */}
-        <form onSubmit={(e) => submit(e)} className="">
-          <div className="Cookingname-container">
-            <div className="cooking-name-contained">
-              <label id="first-name" className="cooking-name-label">
+        <form
+          onSubmit={(e) => submit(e)}
+          className="p-6 pb-6 text-sm lg:p-6 md:text-2xl lg:pb-10 grid gap-2 lg:text-2xl lg:text-left"
+        >
+          <div className="name-container grid gap-2 lg:grid-cols-2">
+            <div className="named-container">
+              <label id="first-name" className="popup-name-label text-md">
                 First name
               </label>
               <input
@@ -64,11 +66,11 @@ function CookingModal({ open, onClose, notify }) {
                 type="text"
                 for="first-name"
                 required
-                className="cooking-name-input"
+                className="popup-name-input outline-none"
               ></input>
             </div>
-            <div className="cooking-name-contained">
-              <label id="last-name" className="cooking-name-label">
+            <div className="named-container">
+              <label id="last-name" className="popup-name-label">
                 Last name
               </label>
               <input
@@ -78,12 +80,12 @@ function CookingModal({ open, onClose, notify }) {
                 type="text"
                 for="last-name"
                 required
-                className="cooking-name-input"
+                className="popup-name-input outline-none"
               ></input>
             </div>
           </div>
-          <div className="cooking-email-div">
-            <label id="email" className="cooking-email-label">
+          <div className="popup-email-div">
+            <label id="email" className="popup-name-label ">
               Email address
             </label>
             <input
@@ -93,11 +95,11 @@ function CookingModal({ open, onClose, notify }) {
               type="email"
               for="email"
               required
-              className="cooking-email-input"
+              className="popup-email-input outline-none"
             ></input>
           </div>
 
-          <button type="submit" className="cooking-submit ">
+          <button type="submit" className="popup-submit">
             Submit
           </button>
         </form>

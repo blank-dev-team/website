@@ -5,8 +5,7 @@ function Request() {
   return (
     <div>
       <Nav />
-      {/* <h1 className="text-center mt-10 mb-5 text-4xl font-semibold"> */}
-      <h1 className="font-semibold text-lg lg:text-4xl text-[#3f3d56] text-center mt-10 mb-5 ">
+      <h1 className="font-semibold text-lg text-[2rem] lg:text-4xl text-[#3f3d56] text-center mt-10 mb-5 sm:text-3xl ">
         Submit Request
       </h1>
       <RequestForm />

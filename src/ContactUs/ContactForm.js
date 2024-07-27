@@ -52,6 +52,13 @@ function ContactForm() {
       lastName: data.lastName,
       message: data.message,
     }).then((res) => {
+      // This Resets form fields after successful submission
+      setData({
+        email: "",
+        firstName: "",
+        lastName: "",
+        message: "",
+      });
       notify();
     });
   }
