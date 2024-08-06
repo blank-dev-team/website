@@ -93,7 +93,7 @@ function Footer() {
                 Privacy Policy
               </p>
             </Link>
-            <a href="#">
+            <a href="https://rentry.co/6ycre4r6" target="_blank">
               <p className="footer-links_logo-links__secondary">Terms Of Use</p>
             </a>
           </div>
