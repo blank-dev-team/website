@@ -1,35 +1,29 @@
-// import { Form } from "react-router-dom";
-import React from "react";
-
-// Toast librabry imports
+import React, { useState } from "react";
+import Axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import "./ContactForm.css";
 import Facebook from "../Images/facebook.svg";
 import Instagram from "../Images/instagram.svg";
 import Twitter from "../Images/twitter.svg";
 import Linkedin from "../Images/linkedin.svg";
-import Axios from "axios";
-import { useState } from "react";
-// used this to test toast library for errors
-// import Toast from "./Toast";
 
 function ContactForm() {
-  const [message] = useState("");
-  const notify = () => toast("We'll get back to you soon");
-
-  // let url = 'https://blankcard-dev.up.railway.app/blank/api/v1/utility/contact-us';
-  // if (process.env.NODE_ENV === 'production') {
-  let url =
-    "https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us";
-  // }
   const [data, setData] = useState({
     email: "",
     firstName: "",
     lastName: "",
     message: "",
   });
+  const [captchaToken, setCaptchaToken] = useState(null);
+
+  const notify = () => toast("We'll get back to you soon!");
+  const url =
+    "https://blankcard-uat.up.railway.app/blank/api/v1/utility/contact-us";
+  const captchaValidationUrl =
+    "https://blankcard-uat.up.railway.app/blank/api/captcha/verify-v2-captcha";
 
   function handle(e) {
     const newdata = { ...data };
@@ -37,30 +31,54 @@ function ContactForm() {
     setData(newdata);
   }
 
-  function handleInputWipe() {
-    setData.firstName = "";
-    setData.lastName = "";
-    setData.email = "";
-    setData.message = "";
+  function onCaptchaChange(value) {
+    setCaptchaToken(value);
   }
 
-  function submit(e) {
+  async function submit(e) {
     e.preventDefault();
-    Axios.post(url, {
-      email: data.email,
-      firstName: data.firstName,
-      lastName: data.lastName,
-      message: data.message,
-    }).then((res) => {
-      // This Resets form fields after successful submission
-      setData({
-        email: "",
-        firstName: "",
-        lastName: "",
-        message: "",
-      });
-      notify();
-    });
+
+    if (!captchaToken) {
+      toast.error("Please complete the CAPTCHA.");
+      return;
+    }
+
+    try {
+      // Validate the CAPTCHA
+      const validateUrl = `${captchaValidationUrl}?g-recaptcha-response=${captchaToken}`;
+      console.log(validateUrl);
+
+      const captchaResponse = await Axios.post(validateUrl);
+      console.log(captchaResponse);
+
+      if (captchaResponse.data.success) {
+        // Submit the form data
+        await Axios.post(url, {
+          email: data.email,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          message: data.message,
+        });
+
+        // Reset form fields and CAPTCHA token
+        setData({
+          email: "",
+          firstName: "",
+          lastName: "",
+          message: "",
+        });
+        setCaptchaToken(null);
+        notify();
+      } else {
+        toast.error("CAPTCHA validation failed. Please try again.");
+        console.log(captchaResponse);
+
+        console.log(captchaToken);
+      }
+    } catch (error) {
+      console.error("Error during form submission:", error);
+      toast.error("An error occurred while submitting the form.");
+    }
   }
 
   return (
@@ -94,8 +112,7 @@ function ContactForm() {
 
       <form
         onSubmit={(e) => submit(e)}
-        className="
-      contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md"
+        className="contact-form border-y-[#707070] max-w-[640px] lg:border-[#707070] rounded-none lg:round-md lg:rounded-md"
       >
         <div>
           <div className="grid lg:grid-cols-2 gap-4 [&>div>label]:text-sm">
@@ -152,53 +169,16 @@ function ContactForm() {
             />
           </div>
         </div>
-        <button
-          className="submit-button"
-          type="submit"
-          disabled={handleInputWipe}
-        >
+        <ReCAPTCHA
+          sitekey="6LcqC7EqAAAAACLRocuGFw8R6LdXOZSUWcxvvg04"
+          onChange={onCaptchaChange}
+        />
+        <button className="submit-button" type="submit">
           Send Message
         </button>
-        <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
     </div>
   );
 }
 
 export default ContactForm;
-
-// const [firstName, setFirstName] = useState("");
-// const [lastName, setLastName] = useState("");
-// const [email, setEmail] = useState("");
-// const [message, setMessage] = useState("");
-
-// let handleSubmit = async (e) => {
-//   e.preventDefault();
-
-//   try {
-//     let res = await fetch(
-//       "https://blank-card-dev.herokuapp.com/blank/api/v1/waitlist",
-//       {
-//         method: "POST",
-//         body: JSON.stringify({
-//           email: email,
-//           firstName: firstName,
-//           lastName: lastName,
-//         }),
-//       }
-//     );
-
-//     if (res.status === 200) {
-//       setFirstName("");
-//       setLastName("");
-//       setEmail("");
-//       setMessage("We'll be in touch soon.");
-//     } else {
-//       setMessage("Error occured");
-//       console.log(email);
-//     }
-//   } catch (err) {
-//     console.log(err);
-//     // console.log(res);
-//   }
-// };
