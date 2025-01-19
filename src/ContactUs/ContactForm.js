@@ -46,12 +46,12 @@ function ContactForm() {
     try {
       // Validate the CAPTCHA
       const validateUrl = `${captchaValidationUrl}?g-recaptcha-response=${captchaToken}`;
-      console.log(validateUrl);
+      // console.log(validateUrl);
 
       const captchaResponse = await Axios.post(validateUrl);
-      console.log(captchaResponse);
+      // console.log(captchaResponse);
 
-      if (captchaResponse.data.success) {
+      if (captchaResponse.data === "v2 CAPTCHA verified") {
         // Submit the form data
         await Axios.post(url, {
           email: data.email,
@@ -69,11 +69,12 @@ function ContactForm() {
         });
         setCaptchaToken(null);
         notify();
+        // toast.success("We'll get back to you soon!");
       } else {
         toast.error("CAPTCHA validation failed. Please try again.");
-        console.log(captchaResponse);
+        // console.log(captchaResponse);
 
-        console.log(captchaToken);
+        // console.log(captchaToken);
       }
     } catch (error) {
       console.error("Error during form submission:", error);
@@ -83,7 +84,7 @@ function ContactForm() {
 
   return (
     <div className="form">
-      <ToastContainer theme="dark" />
+      {/* <ToastContainer theme="dark" /> */}
       <div className="px-4 text-center">
         <h2 className="font-semibold text-lg lg:text-2xl text-[#3f3d56] mb-2">
           Get in Touch
