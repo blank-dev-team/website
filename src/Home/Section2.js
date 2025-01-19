@@ -8,6 +8,7 @@ import Rocket from "../Images/white-rocket.svg";
 import Modal from "./Modal.js";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function Section2({ notify }) {
   const [openModal, setOpenModal] = useState(false);
@@ -18,6 +19,7 @@ function Section2({ notify }) {
 
   return (
     <div className="section-2 pt-20 pt-0 px-8 md:px-28 lg:!px-40">
+      <ToastContainer theme="dark" />
       <div>
         <div className="lg:mt-14 mt-0 pt-0 items-center gap-y-20 relative grid grid-cols-1 lg:grid-cols-2">
           <div className="">

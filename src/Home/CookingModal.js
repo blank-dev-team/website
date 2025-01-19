@@ -3,14 +3,24 @@ import "./CookingModal.css";
 import CloseButton from "../Images/closeBtn.svg";
 import Axios from "axios";
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function CookingModal({ open, onClose, notify }) {
   let url = "https://blankcard-uat.up.railway.app/blank/api/v1/waitlist";
+  const siteKey =
+    "https://blankcard-uat.up.railway.app/blank/api/captcha/verify-v2-captcha";
+
+  const [captchaToken, setCaptchaToken] = useState(null);
+
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
     email: "",
   });
+
+  function onCaptchaChange(value) {
+    setCaptchaToken(value);
+  }
 
   function handle(e) {
     const newdata = { ...data };
