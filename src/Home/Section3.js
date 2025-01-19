@@ -1,6 +1,7 @@
 import "./Section3.css";
 import PaymentImg from "../Images/newPaymentImage.png";
 import CookingModal from "./CookingModal.js";
+import { ToastContainer } from "react-toastify";
 
 import { useState } from "react";
 import { Icon } from "@iconify/react";
@@ -10,6 +11,7 @@ function Section3({ notify }) {
 
   return (
     <div className="section-3 mt-20 h-auto bg-[#fffcf2]">
+      <ToastContainer theme="dark" />
       <div className="py-24 lg:py-32 lg:grid md:px-10 md:grid-cols-[.7fr,1.3fr] lg:grid-cols-[1.3fr,1fr]">
         <div className="flex z-0 justify-center h-[250px] lg:h-[350px] lg:w-auto">
           <img className="h-full" src={PaymentImg} alt="" />
