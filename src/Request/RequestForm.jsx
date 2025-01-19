@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../ContactUs/ContactForm.css";
 import { getEnquires } from "./apiRequest";
+import ReCAPTCHA from "react-google-recaptcha";
+import Axios from "axios";
 
 // Toast librabry imports
 import { ToastContainer, toast } from "react-toastify";
@@ -16,6 +18,9 @@ const enquires = await getEnquires();
 const API_REQUEST_URL =
   "https://blankcard-dev.up.railway.app/blank/api/v1/utility/submit-request";
 
+const captchaValidationUrl =
+  "https://blankcard-uat.up.railway.app/blank/api/captcha/verify-v2-captcha";
+
 function RequestForm() {
   const [formData, setFormData] = useState({
     email: "",
@@ -23,6 +28,8 @@ function RequestForm() {
     enquiry: "Close Account",
     message: "",
   });
+
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -32,43 +39,68 @@ function RequestForm() {
     });
   }
 
-  // const [isLoading, setIsLoading] = useState(false);
+  function onCaptchaChange(value) {
+    setCaptchaToken(value);
+  }
 
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // Ensuring all fields are strings (the initial Endpoint was bugged so this is not even needed but here we are)
+    // Ensuring all fields are strings
     const validatedFormData = {
       email: String(formData.email),
       subject: String(formData.subject),
       enquiry: String(formData.enquiry) || "Close Account",
       message: String(formData.message),
     };
-    try {
-      const res = await fetch(`${API_REQUEST_URL}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(validatedFormData),
-      });
-      const data = await res.json();
-      if (res.status === 200) {
-        console.log("Form Submitted successfully", data);
-        notify();
 
-        // This Resets form fields after successful submission
-        setFormData({
-          email: "",
-          subject: "",
-          enquiry: "Close Account",
-          message: "",
+    if (!captchaToken) {
+      toast.error("Please complete the CAPTCHA.");
+      return;
+    }
+
+    try {
+      // Validate the CAPTCHA
+      const validateUrl = `${captchaValidationUrl}?g-recaptcha-response=${captchaToken}`;
+
+      const captchaResponse = await Axios.post(validateUrl);
+
+      if (captchaResponse.data === "v2 CAPTCHA verified") {
+        // CAPTCHA is valid, proceed with form submission
+        const res = await fetch(API_REQUEST_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(validatedFormData),
         });
+
+        const data = await res.json();
+
+        if (res.status === 200) {
+          console.log("Form Submitted successfully", data);
+          notify();
+
+          // Reset form fields after successful submission
+          setFormData({
+            email: "",
+            subject: "",
+            enquiry: "Close Account",
+            message: "",
+          });
+
+          // Reset CAPTCHA
+          setCaptchaToken(null);
+        } else {
+          console.log("There has been an error Boss", data);
+          toast.error("Submission failed. Please try again.");
+        }
       } else {
-        console.log("There has been an error Boss", data);
+        toast.error("CAPTCHA verification failed. Please try again.");
       }
     } catch (error) {
       console.error("Error submitting form", error);
+      toast.error("An error occurred. Please try again later.");
     }
   }
 
@@ -132,6 +164,10 @@ function RequestForm() {
               name="message"
               onChange={handleChange}
               required
+            />
+            <ReCAPTCHA
+              sitekey="6LcqC7EqAAAAACLRocuGFw8R6LdXOZSUWcxvvg04"
+              onChange={onCaptchaChange}
             />
           </div>
         </div>
